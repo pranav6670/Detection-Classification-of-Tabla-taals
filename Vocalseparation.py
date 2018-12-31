@@ -1,25 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-================
-Vocal separation
-================
-
-This notebook demonstrates a simple technique for separating vocals (and
-other sporadic foreground signals) from accompanying instrumentation.
-
-This is based on the "REPET-SIM" method of `Rafii and Pardo, 2012
-<http://www.cs.northwestern.edu/~zra446/doc/Rafii-Pardo%20-%20Music-Voice%20Separation%20using%20the%20Similarity%20Matrix%20-%20ISMIR%202012.pdf>`_, but includes a couple of modifications and extensions:
-
-    - FFT windows overlap by 1/4, instead of 1/2
-    - Non-local filtering is converted into a soft mask by Wiener filtering.
-      This is similar in spirit to the soft-masking method used by `Fitzgerald, 2012
-      <http://arrow.dit.ie/cgi/viewcontent.cgi?article=1086&context=argcon>`_,
-      but is a bit more numerically stable in practice.
-"""
-
-# Code source: Brian McFee
-# License: ISC
-
 ##################
 # Standard imports
 from __future__ import print_function
@@ -31,7 +9,8 @@ import librosa.display
 
 #############################################
 # Load an example with vocals.
-y, sr = librosa.load('audio/Cheese_N_Pot-C_-_16_-_The_Raps_Well_Clean_Album_Version.mp3', duration=120)
+y, sr = librosa.load('/home/pranav/Desktop/myfinalProject/Test/'
+                     'csr.mp3', duration=120)
 
 
 # And compute the spectrogram magnitude and phase
@@ -79,8 +58,8 @@ S_filter = np.minimum(S_full, S_filter)
 
 # We can also use a margin to reduce bleed between the vocals and instrumentation masks.
 # Note: the margins need not be equal for foreground and background separation
-margin_i, margin_v = 2, 10
-power = 2
+margin_i, margin_v = 1, 8
+power = 5
 
 mask_i = librosa.util.softmask(S_filter,
                                margin_i * (S_full - S_filter),
@@ -96,7 +75,10 @@ mask_v = librosa.util.softmask(S_full - S_filter,
 S_foreground = mask_v * S_full
 S_background = mask_i * S_full
 
-
+s_foreground = librosa.istft(S_foreground)
+s_background = librosa.istft(S_background)
+librosa.output.write_wav('/home/pranav/Desktop/myfinalProject/BACK.wav', s_background, sr)
+librosa.output.write_wav('/home/pranav/Desktop/myfinalProject/FORE.wav', s_foreground, sr)
 ##########################################
 # Plot the same slice, but separated into its foreground and background
 

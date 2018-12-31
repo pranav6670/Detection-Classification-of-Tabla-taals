@@ -6,10 +6,10 @@ import librosa.display
 ##########################################################
 # Load the file
 y, sr = librosa.load('/home/pranav/Desktop/myfinalProject/Test/'
-                     'sample 4.wav')
+                     'csr.mp3', duration=120)
 ##########################################################
 # Compute the short-time Fourier transform of y
-D = librosa.stft(y,)
+D = librosa.stft(y)
 ##########################################################
 # Decompose the file
 D_harmonic, D_percussive = librosa.decompose.hpss(D)
