@@ -13,7 +13,7 @@ config = {
 acrcloud = ACRCloudRecognizer(config)
 
 # Convert output 'str' from function to 'dict'
-S = json.loads(acrcloud.recognize_by_file('/home/pranav/Desktop/myfinalProject/Test/csr.mp3', 0))
+S = json.loads(acrcloud.recognize_by_file('/home/pranav/Desktop/myfinalProject/Test/mam.mp3', 0))
 
 # Get required items from 'dict' and convert to 'list'
 C = S['metadata']['music']
