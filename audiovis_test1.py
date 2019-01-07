@@ -46,9 +46,6 @@ print('stream started')
 frame_count = 0
 start_time = time.time()
 
-
-
-
 while True:
     # binary data
     data = stream.read(CHUNK)
@@ -75,6 +72,6 @@ while True:
         print('stream stopped')
         print('average frame rate = {:.0f} FPS'.format(frame_rate))
         break
-    plt.show(block=False)
+
 
 fig.show()
