@@ -5,8 +5,8 @@ import librosa
 import librosa.display
 ##########################################################
 # Load the file
-y, sr = librosa.load('/home/pranav/Desktop/myfinalProject/Test/'
-                     'csr.mp3', duration=120)
+y, sr = librosa.load('/home/pranav/Desktop/myfinalProject/'
+                     'per.wav')
 ##########################################################
 # Compute the short-time Fourier transform of y
 D = librosa.stft(y)
