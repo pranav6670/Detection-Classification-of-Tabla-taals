@@ -3,23 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="73955db2-7166-448b-a020-900152631ce8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1margin.png" beforeDir="false" afterPath="$PROJECT_DIR$/1margin.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PNstreamsetup.py" beforeDir="false" afterPath="$PROJECT_DIR$/PNstreamsetup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/audiovis_test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/audiovis_test1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/har.wav" beforeDir="false" afterPath="$PROJECT_DIR$/har.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/har10.wav" beforeDir="false" afterPath="$PROJECT_DIR$/har10.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/har2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/har2.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/har4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/har4.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/har6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/har6.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/har8.wav" beforeDir="false" afterPath="$PROJECT_DIR$/har8.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hprss.py" beforeDir="false" afterPath="$PROJECT_DIR$/hprss.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/marginplots.png" beforeDir="false" afterPath="$PROJECT_DIR$/marginplots.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/per.wav" beforeDir="false" afterPath="$PROJECT_DIR$/per.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/per10.wav" beforeDir="false" afterPath="$PROJECT_DIR$/per10.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/per2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/per2.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/per4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/per4.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/per6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/per6.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/per8.wav" beforeDir="false" afterPath="$PROJECT_DIR$/per8.wav" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/myfinalProject$audiovis_test1.coverage" NAME="audiovis_test1 Coverage Results" MODIFIED="1549098153894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/myfinalProject$audiovis_test1.coverage" NAME="audiovis_test1 Coverage Results" MODIFIED="1549102352970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/myfinalProject$Vocalseparation.coverage" NAME="Vocalseparation Coverage Results" MODIFIED="1546014115902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/myfinalProject$PNstreamsetup.coverage" NAME="PNstreamsetup Coverage Results" MODIFIED="1547642045125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/myfinalProject$hprss.coverage" NAME="hprss Coverage Results" MODIFIED="1547873390296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -55,7 +39,7 @@
     <session id="-103933454">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="17" />
+          <entry key="project.closed" value="18" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.20" value="1" />
@@ -71,9 +55,9 @@
           <entry key="project.open.time.51" value="2" />
           <entry key="project.open.time.52" value="1" />
           <entry key="project.open.time.57" value="1" />
-          <entry key="project.open.time.59" value="1" />
+          <entry key="project.open.time.59" value="2" />
           <entry key="project.open.time.66" value="1" />
-          <entry key="project.opened" value="22" />
+          <entry key="project.opened" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -88,14 +72,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="5275" />
-          <entry key="txt" value="193" />
+          <entry key="py" value="6092" />
+          <entry key="txt" value="227" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="193" />
-          <entry key="Python" value="5275" />
+          <entry key="PLAIN_TEXT" value="227" />
+          <entry key="Python" value="6092" />
         </counts>
       </usages-collector>
     </session>
@@ -126,8 +110,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/audiovis_test1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="58" column="33" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
+            <state relative-caret-position="144">
+              <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -177,10 +161,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="63" />
-    <option name="y" value="24" />
+    <option name="x" value="714" />
+    <option name="y" value="-4" />
     <option name="width" value="652" />
-    <option name="height" value="744" />
+    <option name="height" value="772" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -188,6 +172,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -199,7 +184,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -207,7 +191,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Audio-Spectrum-Analyzer-in-Python-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="PyScientificConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -416,7 +400,14 @@
       <option name="project" value="LOCAL" />
       <updated>1547641804362</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added PyAudio real time visuals">
+      <created>1549098314428</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1549098314428</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -432,7 +423,7 @@
     <frame x="63" y="-4" width="1303" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32696897" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29514718" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -468,7 +459,8 @@
     <MESSAGE value="Basic real-time audio visuals." />
     <MESSAGE value="Re-tried HPRSS" />
     <MESSAGE value="Adding GUI to the project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding GUI to the project" />
+    <MESSAGE value="Added PyAudio real time visuals" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added PyAudio real time visuals" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -535,8 +527,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/audiovis_test1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="58" column="33" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
+        <state relative-caret-position="144">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
