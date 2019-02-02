@@ -117,7 +117,7 @@ class PNstreamsetup():
         Reads some audio and re-launches itself
         """
         try:
-            self.data = np.fromstring(self.stream.read(self.chunk),dtype=np.int16)
+            self.data = np.fromstring(self.stream.read(self.chunk), dtype=np.int16)
             self.fftx, self.fft = calculateFFT(self.data, self.rate)
 
         except Exception as E:

@@ -5,8 +5,8 @@ import librosa
 import librosa.display
 ##########################################################
 # Load the file
-y, sr = librosa.load('/home/pranav/Desktop/myfinalProject/'
-                     'per.wav')
+y, sr = librosa.load('/home/pranav/Desktop/myfinalProject/Test/'
+                     'sample 4.wav')
 ##########################################################
 # Compute the short-time Fourier transform of y
 D = librosa.stft(y)
@@ -91,7 +91,7 @@ plt.ylabel('margin=2')
 
 plt.subplot(5, 2, 4)
 librosa.display.specshow(librosa.amplitude_to_db(D_percussive2, ref=rp), y_axis='log')
-plt.yticks([]) ,plt.ylabel('')
+plt.yticks([]), plt.ylabel('')
 
 plt.subplot(5, 2, 5)
 librosa.display.specshow(librosa.amplitude_to_db(D_harmonic4, ref=rp), y_axis='log')
