@@ -12,7 +12,7 @@ p = pyaudio.PyAudio()
 
 ######################################################
 # Get number of devices
-######################################################
+#######################################################
 print(p.get_device_count(), "device(s) detected.\n")
 
 for ii in range(p.get_device_count()):
@@ -60,15 +60,23 @@ stream = p.open(format=FORMAT,
                 output=True,
                 frames_per_buffer=CHUNK,
                 input_device_index=DEVICE
-              )
+                )
 ##########################################
-
-
 
 fig, ax = plt.subplots()
 
 x = np.arange(0, 2 * CHUNK, 2)
-line, = ax.plot(x, np.random.rand(CHUNK))
+line, = ax.plot(x, np.random.rand(CHUNK), 'red', linewidth='0.5')
+ax.set_title('Raw audio')
+ax.set_xlabel('CHUNK')
+ax.set_ylabel('Amplitude')
+# removing top and right borders
+ax.spines['top'].set_visible(False)
+ax.spines['right'].set_visible(False)
+# adds major gridlines
+ax.grid(color='black', linestyle='-', linewidth=0.25, alpha=0.5)
+
+
 ax.set_ylim(0, 255)
 ax.set_xlim(0, CHUNK)
 
