@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib.style as style
 import pyaudio
 import sys
 import struct
@@ -63,6 +64,7 @@ stream = p.open(format=FORMAT,
 ##########################################
 
 
+
 fig, ax = plt.subplots()
 
 x = np.arange(0, 2 * CHUNK, 2)
@@ -71,12 +73,10 @@ ax.set_ylim(0, 255)
 ax.set_xlim(0, CHUNK)
 
 while True:
-    data = stream.read(CHUNK)
+    data = stream.read(CHUNK, exception_on_overflow=False)
     data_int = np.array(struct.unpack(str(2 * CHUNK) + 'B', data), dtype='b')[::2] + 128
     line.set_ydata(data_int)
     fig.canvas.draw()
     fig.canvas.flush_events()
     fig.show()
-
-
 
