@@ -6,7 +6,6 @@ import sys
 import struct
 from scipy.fftpack import fft
 import time
-from tkinter import TclError
 
 ##########################
 p = pyaudio.PyAudio()
