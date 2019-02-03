@@ -4,7 +4,9 @@ import matplotlib.style as style
 import pyaudio
 import sys
 import struct
+from scipy.fftpack import fft
 import time
+from tkinter import TclError
 
 ##########################
 p = pyaudio.PyAudio()
@@ -63,27 +65,39 @@ stream = p.open(format=FORMAT,
                 )
 ##########################################
 
-fig, ax = plt.subplots()
+fig, (ax1, ax2) = plt.subplots(2, figsize=(15, 7))
 
-x = np.arange(0, 2 * CHUNK, 2)
-line, = ax.plot(x, np.random.rand(CHUNK), 'red', linewidth='0.5')
-ax.set_title('Raw audio')
-ax.set_xlabel('CHUNK')
-ax.set_ylabel('Amplitude')
+x = np.arange(0, 2 * CHUNK, 2)       # samples (waveform)
+xf = np.linspace(0, RATE, CHUNK)     # frequencies (spectrum)
+####################################################################
+# Create a line object with random data
+line, = ax1.plot(x, np.random.rand(CHUNK), 'red', lw=0.5)
+ax1.set_title('Raw audio')
+ax1.set_xlabel('CHUNK')
+ax1.set_ylabel('Amplitude')
 # removing top and right borders
-ax.spines['top'].set_visible(False)
-ax.spines['right'].set_visible(False)
+ax1.spines['top'].set_visible(False)
+ax1.spines['right'].set_visible(False)
 # adds major gridlines
-ax.grid(color='black', linestyle='-', linewidth=0.25, alpha=0.5)
+ax1.grid(color='black', linestyle='-', linewidth=0.25, alpha=0.5)
+ax1.set_ylim(0, 255)
+ax1.set_xlim(0, CHUNK)
+#####################################################################
 
-
-ax.set_ylim(0, 255)
-ax.set_xlim(0, CHUNK)
+#####################################################################
+# Create semilogx line for spectrum
+line_fft, = ax2.semilogx(xf, np.random.rand(CHUNK), '-', lw=2)
+# Format spectrum axes
+ax2.set_xlim(20, RATE / 2)
+#####################################################################
 
 while True:
     data = stream.read(CHUNK, exception_on_overflow=False)
     data_int = np.array(struct.unpack(str(2 * CHUNK) + 'B', data), dtype='b')[::2] + 128
     line.set_ydata(data_int)
+    # compute FFT and update line
+    yf = fft(data_int)
+    line_fft.set_ydata(np.abs(yf[0:CHUNK]) / (128 * CHUNK))
     fig.canvas.draw()
     fig.canvas.flush_events()
     fig.show()
