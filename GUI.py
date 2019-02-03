@@ -1,5 +1,8 @@
-# from tkinter import *
+from PyQt4 import QtGui
+import sys
 
-# root = Tk()
+app = QtGui.QApplication(sys.argv)
 
-# root.mainloop()
+window = QtGui.QWidget()
+
+window.show()
