@@ -98,7 +98,7 @@ class AudioStream(object):
                 self.waveform.setYRange(0, 255, padding=0)
                 self.waveform.setXRange(0, 2 * self.CHUNK, padding=0.005)
             if name == 'spectrum':
-                self.traces[name] = self.spectrum.plot(pen='r', width=3)
+                self.traces[name] = self.spectrum.plot(pen='b', width=3)
                 self.spectrum.setLogMode(x=True, y=True)
                 self.spectrum.setYRange(-4, 0, padding=0)
                 self.spectrum.setXRange(
