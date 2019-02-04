@@ -19,36 +19,41 @@ class AudioStream(object):
         self.win.setWindowTitle('Spectrum Analyzer')
         self.win.setGeometry(5, 115, 1910, 1070)
 
-        wf_xlabels = [(0, '0'), (2048, '2048'), (4096, '4096')]
-        wf_xaxis = pg.AxisItem(orientation='bottom')
-        wf_xaxis.setTicks([wf_xlabels])
+        waveform_xlabels = [(0, '0'), (2048, '2048'), (4096, '4096')]
+        waveform_xaxis = pg.AxisItem(orientation='bottom')
+        waveform_xaxis.setTicks([waveform_xlabels])
 
-        wf_ylabels = [(0, '0'), (127, '128'), (255, '255')]
-        wf_yaxis = pg.AxisItem(orientation='left')
-        wf_yaxis.setTicks([wf_ylabels])
+        waveform_ylabels = [(0, '0'), (127, '128'), (255, '255')]
+        waveform_yaxis = pg.AxisItem(orientation='left')
+        waveform_yaxis.setTicks([waveform_ylabels])
 
-        sp_xlabels = [
+        spectrum_xlabels = [
             (np.log10(10), '10'), (np.log10(100), '100'),
             (np.log10(1000), '1000'), (np.log10(22050), '22050')
         ]
-        sp_xaxis = pg.AxisItem(orientation='bottom')
-        sp_xaxis.setTicks([sp_xlabels])
+        spectrum_xaxis = pg.AxisItem(orientation='bottom')
+        spectrum_xaxis.setTicks([spectrum_xlabels])
 
         self.waveform = self.win.addPlot(
-            title='WAVEFORM', row=1, col=1, axisItems={'bottom': wf_xaxis, 'left': wf_yaxis},
+            title='WAVEFORM', row=1, col=1, axisItems={'bottom': waveform_xaxis, 'left': waveform_yaxis},
         )
         self.spectrum = self.win.addPlot(
-            title='SPECTRUM', row=2, col=1, axisItems={'bottom': sp_xaxis},
+            title='SPECTRUM', row=2, col=1, axisItems={'bottom': spectrum_xaxis},
         )
-
-        # pyaudio stuff
+        ###############################
+        # PyAudio stuff for input
         self.FORMAT = pyaudio.paInt16
         self.CHANNELS = 1
         self.RATE = 44100
         self.CHUNK = 1024 * 4
         self.DEVICE = 2
+        ###############################
 
+        ###########################
         self.p = pyaudio.PyAudio()
+        ############################
+        # Open the stream
+        #####################################
         self.stream = self.p.open(
             format=self.FORMAT,
             channels=self.CHANNELS,
@@ -58,6 +63,7 @@ class AudioStream(object):
             frames_per_buffer=self.CHUNK,
             input_device_index=self.DEVICE
         )
+        ######################################
         # waveform and spectrum x points
         self.x = np.arange(0, 2 * self.CHUNK, 2)
         self.f = np.linspace(0, self.RATE / 2, self.CHUNK / 2)
