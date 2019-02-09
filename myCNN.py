@@ -11,7 +11,6 @@ model = Sequential()
 
 input_shape = (128, 128, 1)
 
-
 model.add(Conv2D(24, (5, 5), strides=(1, 1), input_shape=input_shape))
 model.add(MaxPool2D((4, 2), strides=(4, 2)))
 model.add(Activation('relu'))

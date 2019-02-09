@@ -85,9 +85,9 @@ ax1.set_xlim(0, CHUNK)
 
 #####################################################################
 # Create semilogx line for spectrum
-line_fft, = ax2.semilogx(xf, np.random.rand(CHUNK), '-', lw=2)
+# line_fft, = ax2.semilogx(xf, np.random.rand(CHUNK), '-', lw=2)
 # Format spectrum axes
-ax2.set_xlim(20, RATE / 2)
+# ax2.set_xlim(20, RATE / 2)
 #####################################################################
 
 while True:
@@ -96,7 +96,7 @@ while True:
     line.set_ydata(data_int)
     # compute FFT and update line
     yf = fft(data_int)
-    line_fft.set_ydata(np.abs(yf[0:CHUNK]) / (128 * CHUNK))
+    # line_fft.set_ydata(np.abs(yf[0:CHUNK]) / (128 * CHUNK))
     fig.canvas.draw()
     fig.canvas.flush_events()
     fig.show()

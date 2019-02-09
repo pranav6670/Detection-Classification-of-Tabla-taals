@@ -2,7 +2,7 @@ from __future__ import print_function
 import numpy as np
 import matplotlib.pyplot as plt
 import librosa
-import librosa.display
+# import librosa.display
 ##########################################################
 # Load the file
 y, sr = librosa.load('/home/pranav/Desktop/myfinalProject/Test/'
@@ -124,63 +124,4 @@ plt.tight_layout()
 plt.savefig('marginplots.png')
 plt.show()
 ###################################################################################################
-# TEMPOGRAM
-# hop_length = 512
-# oenv = librosa.onset.onset_strength(y=d_percussive2, sr=sr, hop_length=hop_length)
-# tempogram = librosa.feature.tempogram(onset_envelope=oenv, sr=sr, hop_length=hop_length)
-# Compute global onset autocorrelation
-# ac_global = librosa.autocorrelate(oenv, max_size=tempogram.shape[0])
-# ac_global = librosa.util.normalize(ac_global)
-# Estimate the global tempo for display purposes
-# tempo = librosa.beat.tempo(onset_envelope=oenv, sr=sr, hop_length=hop_length)[0]
-#####################################################################################################
-# plt.figure(figsize=(8, 8))
-# plt.subplot(4, 1, 1)
-# plt.plot(oenv, label='Onset strength')
-# plt.xticks([])
-# plt.legend(frameon=True)
-# plt.axis('tight')
-# plt.subplot(4, 1, 2)
-# We'll truncate the display to a narrower range of tempi
-# librosa.display.specshow(tempogram, sr=sr, hop_length=hop_length, x_axis='time', y_axis='tempo')
-# plt.axhline(tempo, color='w', linestyle='--', alpha=1, label='Estimated tempo={:g}'.format(tempo))
-# plt.legend(frameon=True, framealpha=0.75)
-# plt.subplot(4, 1, 3)
-# x = np.linspace(0, tempogram.shape[0] * float(hop_length) / sr, num=tempogram.shape[0])
-# plt.plot(x, np.mean(tempogram, axis=1), label='Mean local autocorrelation')
-# plt.plot(x, ac_global, '--', alpha=0.75, label='Global autocorrelation')
-# plt.xlabel('Lag (seconds)')
-# plt.axis('tight')
-# plt.legend(frameon=True)
-# plt.subplot(4, 1, 4)
-# We can also plot on a BPM axis
-# freqs = librosa.tempo_frequencies(tempogram.shape[0], hop_length=hop_length, sr=sr)
-# plt.semilogx(freqs[1:], np.mean(tempogram[1:], axis=1), label='Mean local autocorrelation', basex=2)
-# plt.semilogx(freqs[1:], ac_global[1:], '--', alpha=0.75, label='Global autocorrelation', basex=2)
-# plt.axvline(tempo, color='black', linestyle='--', alpha=.8, label='Estimated tempo={:g}'.format(tempo))
-# plt.legend(frameon=True)
-# plt.xlabel('BPM')
-# plt.axis('tight')
-# plt.grid()
-# plt.tight_layout()
-# plt.savefig('tempogram.png')
-# plt.show()
-###############################################################################################################
-# ONSETS
-# o_env = librosa.onset.onset_strength(d_percussive2, sr=sr)
-# times = librosa.frames_to_time(np.arange(len(o_env)), sr=sr)
-# onset_frames = librosa.onset.onset_detect(onset_envelope=o_env, sr=sr)
-#
-# D = np.abs(librosa.stft(y))
-# plt.figure()
-# ax1 = plt.subplot(2, 1, 1)
-# librosa.display.specshow(librosa.amplitude_to_db(D_percussive2, ref=np.max), x_axis='time', y_axis='log')
-# plt.title('Power spectrogram')
-# plt.subplot(2, 1, 2, sharex=ax1)
-# plt.plot(times, o_env, label='Onset strength')
-# plt.vlines(times[onset_frames], 0, o_env.max(), color='r', alpha=0.9, linestyle='--', label='Onsets')
-# plt.axis('tight')
-# plt.legend(frameon=True, framealpha=0.75)
-# plt.savefig('onset.png')
-# plt.show()
-################################################################################################################
+
