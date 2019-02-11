@@ -1,7 +1,6 @@
-
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'test.ui'
+# Form implementation generated from reading ui file 'gui.ui'
 #
 # Created by: PyQt4 UI code generator 4.11.4
 #
@@ -31,22 +30,24 @@ class Ui_MainWindow(object):
         self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
         self.verticalLayout = QtGui.QVBoxLayout(self.centralwidget)
         self.verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
-        self.rawAudio = QtGui.QFrame(self.centralwidget)
-        self.rawAudio.setFrameShape(QtGui.QFrame.StyledPanel)
-        self.rawAudio.setFrameShadow(QtGui.QFrame.Raised)
-        self.rawAudio.setObjectName(_fromUtf8("rawAudio"))
-        self.verticalLayout.addWidget(self.rawAudio)
-        self.FFT = QtGui.QFrame(self.centralwidget)
-        self.FFT.setFrameShape(QtGui.QFrame.StyledPanel)
-        self.FFT.setFrameShadow(QtGui.QFrame.Raised)
-        self.FFT.setObjectName(_fromUtf8("FFT"))
-        self.verticalLayout.addWidget(self.FFT)
-        self.start = QtGui.QPushButton(self.centralwidget)
-        self.start.setObjectName(_fromUtf8("start"))
-        self.verticalLayout.addWidget(self.start)
-        self.stop = QtGui.QPushButton(self.centralwidget)
-        self.stop.setObjectName(_fromUtf8("stop"))
-        self.verticalLayout.addWidget(self.stop)
+        self.label = QtGui.QLabel(self.centralwidget)
+        self.label.setObjectName(_fromUtf8("label"))
+        self.verticalLayout.addWidget(self.label)
+        self.graphicsView = PlotWidget(self.centralwidget)
+        self.graphicsView.setObjectName(_fromUtf8("graphicsView"))
+        self.verticalLayout.addWidget(self.graphicsView)
+        self.label_2 = QtGui.QLabel(self.centralwidget)
+        self.label_2.setObjectName(_fromUtf8("label_2"))
+        self.verticalLayout.addWidget(self.label_2)
+        self.graphicsView_2 = PlotWidget(self.centralwidget)
+        self.graphicsView_2.setObjectName(_fromUtf8("graphicsView_2"))
+        self.verticalLayout.addWidget(self.graphicsView_2)
+        self.pushButton = QtGui.QPushButton(self.centralwidget)
+        self.pushButton.setObjectName(_fromUtf8("pushButton"))
+        self.verticalLayout.addWidget(self.pushButton)
+        self.pushButton_2 = QtGui.QPushButton(self.centralwidget)
+        self.pushButton_2.setObjectName(_fromUtf8("pushButton_2"))
+        self.verticalLayout.addWidget(self.pushButton_2)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtGui.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 25))
@@ -61,9 +62,12 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow", None))
-        self.start.setText(_translate("MainWindow", "Start!!", None))
-        self.stop.setText(_translate("MainWindow", "Stop!!", None))
+        self.label.setText(_translate("MainWindow", "Raw Audio", None))
+        self.label_2.setText(_translate("MainWindow", "FFT ", None))
+        self.pushButton.setText(_translate("MainWindow", "PushButton", None))
+        self.pushButton_2.setText(_translate("MainWindow", "PushButton", None))
 
+from pyqtgraph import PlotWidget
 
 if __name__ == "__main__":
     import sys
@@ -73,3 +77,4 @@ if __name__ == "__main__":
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())
+
