@@ -14,6 +14,8 @@ def getFFT(data, rate):
 
 class PNstream():
 
+
+
     def __init__(self):
         self.p = pyaudio.PyAudio()
         self.FORMAT = pyaudio.paInt16
@@ -21,6 +23,12 @@ class PNstream():
         self.RATE = 44100
         self.CHUNK = 1024 * 4
         self.DEVICE = 2
+
+        #############################################################
+        print(self.p.get_device_count(), "device(s) detected.\n")
+        for ii in range(self.p.get_device_count()):
+            print(ii, self.p.get_device_info_by_index(ii)['name'])
+        #############################################################
 
         # Open the stream
         #####################################
@@ -37,49 +45,13 @@ class PNstream():
 
 
 
-    ### STREAM HANDLING
 
-    def stream_readchunk(self):
-        """reads some audio and re-launches itself"""
-        try:
-            self.data = np.fromstring(self.stream.read(self.chunk), dtype=np.int16)
-            self.fftx , self.fft = getFFT(self.data, self.rate)
 
-        except Exception as E:
-            print(" -- exception! terminating...")
-            print(E, "\n" * 5)
-            self.keepRecording = False
 
-        if self.keepRecording:
-            self.stream_thread_new()
-        else:
-            self.stream.close()
-            self.p.terminate()
-            print(" -- stream STOPPED")
-
-        self.chunksRead += 1
-
-    def stream_thread_new(self):
-        self.t = threading.Thread(target=self.stream_readchunk)
-        self.t.start()
-
-    def stream_start(self):
-        """adds data to self.data until termination signal"""
-        self.initiate()
-        print(" -- starting stream")
-        self.keepRecording = True  # set this to False later to terminate stream
-        self.data = None  # will fill up with threaded recording data
-        self.fft = None
-        self.dataFiltered = None  # same
-        self.stream = self.p.open(format=pyaudio.paInt16, channels=1,
-                                  rate=self.rate, input=True, frames_per_buffer=self.chunk)
-        self.stream_thread_new()
 
 
 if __name__=="__main__":
     hear = PNstream(updatesPerSecond=10)  # Optionally set sample rate here
-    hear.stream_start()  # goes forever
-    lastRead = hear.chunksRead
     while True:
         while lastRead == hear.chunksRead:
             time.sleep(.01)
