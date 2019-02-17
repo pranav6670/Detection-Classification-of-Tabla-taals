@@ -15,12 +15,18 @@ class ExampleApp(QtGui.QMainWindow, GUI.Ui_MainWindow):
         self.setupUi(self)
         self.raw.plotItem.showGrid(True, True, 0.7)
         self.FFT.plotItem.showGrid(True, True, 0.7)
-        self.hear = audioBackend.PNstream(rate=44100, updatesPerSecond=20)
-        self.hear.stream_start()
-        self.maxraw = 0
-        self.maxFFT = 0
+        self.ear = audioBackend.PNstream()
 
+    def update(self):
 
+        # rawdata = self.ear.data
+        # FFTdata = self.ear.fftx
+        self.maxFFT = np.max(np.abs(self.ear.fft))
+        pen = pyqtgraph.mkPen(color='g')
+        self.raw.plot(self.ear.data, self.ear.data, pen=pen, clear=True)
+        pen = pyqtgraph.mkPen(color='r')
+        self.FFT.plot(self.ear.fftx, self.ear.fft / self.maxFFT, pen=pen, clear=True )
+        QtCore.QTimer.singleShot(1, self.update)  # QUICKLY repeat
 
 
 if __name__ == "__main__":

@@ -38,7 +38,7 @@ class PNstream():
             input=True,
             output=True,
             frames_per_buffer=self.CHUNK,
-            input_device_index=int(input("\nEnter device index"))
+            input_device_index=0
         )
         ######################################
 
@@ -68,6 +68,6 @@ class PNstream():
 
 
 if __name__=="__main__":
-    PNstream()  # Optionally set sample rate here
+    PNstream()
 
 
