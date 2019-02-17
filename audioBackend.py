@@ -63,8 +63,14 @@ class PNstream():
         #########################################################################
 
         while True:
-            self.data = np.fromstring(self.stream.read(self.CHUNK, exception_on_overflow=False), dtype=np.int16)
-            self.fftx, self.fft = getFFT(self.data, self.RATE)
+            self.data = self.stream.read(self.CHUNK, exception_on_overflow=False)
+            self.data_int = np.array(struct.unpack(str(2 * self.CHUNK) + 'B', self.data), dtype='b')[::2] + 128
+            self.fftx, self.fft = getFFT(self.data_int, self.RATE)
+
+            # self.data = np.fromstring(self.stream.read(self.CHUNK, exception_on_overflow=False), dtype=np.int16)
+            # self.fftx, self.fft = getFFT(self.data, self.RATE)
+
+
 
 
 if __name__=="__main__":
