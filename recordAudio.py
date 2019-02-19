@@ -3,7 +3,7 @@ import wave
 
 
 FORMAT = pyaudio.paInt16
-CHANNELS = 1
+CHANNELS = 2
 RATE = 44100
 CHUNK = 1024 * 4
 RECORD_SECONDS = 25
@@ -14,7 +14,7 @@ audio = pyaudio.PyAudio()
 print("----------------------record device list---------------------")
 print(audio.get_device_count(), "device(s) detected.\n")
 for devices in range(audio.get_device_count()):
-    print(devices, audio.get_device_info_by_index(ii)['name'])
+    print(devices, audio.get_device_info_by_index(devices)['name'])
 print("-------------------------------------------------------------")
 
 index = int(input())
