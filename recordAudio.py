@@ -7,8 +7,8 @@ CHANNELS = 2
 RATE = 44100
 CHUNK = 1024 * 4
 RECORD_SECONDS = 25
-WAVE_OUTPUT_FILENAME = "recordedFiletest.wav"
-device_index = 2
+WAVE_OUTPUT_FILENAME = "test.wav"
+# device_index = 2
 audio = pyaudio.PyAudio()
 
 print("----------------------record device list---------------------")
