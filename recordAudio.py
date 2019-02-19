@@ -6,21 +6,18 @@ FORMAT = pyaudio.paInt16
 CHANNELS = 1
 RATE = 44100
 CHUNK = 1024 * 4
-RECORD_SECONDS = 5
+RECORD_SECONDS = 25
 WAVE_OUTPUT_FILENAME = "recordedFiletest.wav"
 device_index = 2
 audio = pyaudio.PyAudio()
 
 print("----------------------record device list---------------------")
-info = audio.get_host_api_info_by_index(0)
-numdevices = info.get('deviceCount')
-for i in range(0, numdevices):
-        if (audio.get_device_info_by_host_api_device_index(0, i).get('maxInputChannels')) > 0:
-            print("Input Device id ", i, " - ", audio.get_device_info_by_host_api_device_index(0, i).get('name'))
-
+print(audio.get_device_count(), "device(s) detected.\n")
+for devices in range(audio.get_device_count()):
+    print(devices, audio.get_device_info_by_index(ii)['name'])
 print("-------------------------------------------------------------")
 
-index = (input())
+index = int(input())
 print("recording via index "+str(index))
 
 stream = audio.open(format=FORMAT, channels=CHANNELS,
@@ -30,9 +27,9 @@ print("recording started")
 Recordframes = []
 
 for i in range(0, int(RATE / CHUNK * RECORD_SECONDS)):
-    data = stream.read(CHUNK)
+    data = stream.read(CHUNK, exception_on_overflow=False)
     Recordframes.append(data)
-print ("recording stopped")
+print("recording stopped")
 
 stream.stop_stream()
 stream.close()
