@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73955db2-7166-448b-a020-900152631ce8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/recordAudio.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordAudio.py" beforeDir="false" afterPath="$PROJECT_DIR$/recordAudio.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,11 +11,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/myfinalProject$audiovis_test1.coverage" NAME="audiovis_test1 Coverage Results" MODIFIED="1549633544704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/myfinalProject$audiovis_test1.coverage" NAME="audiovis_test1 Coverage Results" MODIFIED="1550553177086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/myfinalProject$Vocalseparation.coverage" NAME="Vocalseparation Coverage Results" MODIFIED="1546014115902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/myfinalProject$guiGO.coverage" NAME="guiGO Coverage Results" MODIFIED="1550417683038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/myfinalProject$auvdiovis_Qt.coverage" NAME="auvdiovis_Qt Coverage Results" MODIFIED="1549633553573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/myfinalProject$PNstreamsetup.coverage" NAME="PNstreamsetup Coverage Results" MODIFIED="1547642045125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/myfinalProject$recordAudio.coverage" NAME="recordAudio Coverage Results" MODIFIED="1550553397280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/myfinalProject$hprss.coverage" NAME="hprss Coverage Results" MODIFIED="1547873390296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/myfinalProject$audioBackend.coverage" NAME="audioBackend Coverage Results" MODIFIED="1550416502609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/myfinalProject$GUI.coverage" NAME="GUI Coverage Results" MODIFIED="1550417602387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -82,14 +82,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="9753" />
-          <entry key="txt" value="377" />
+          <entry key="py" value="9812" />
+          <entry key="txt" value="406" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="377" />
-          <entry key="Python" value="9753" />
+          <entry key="PLAIN_TEXT" value="406" />
+          <entry key="Python" value="9812" />
         </counts>
       </usages-collector>
     </session>
@@ -111,8 +111,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/audiovis_test1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1548">
-              <caret line="93" column="3" selection-start-line="93" selection-start-column="3" selection-end-line="93" selection-end-column="3" />
+            <state relative-caret-position="-180">
+              <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -120,11 +120,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/audioBackend.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+            <state relative-caret-position="144">
+              <caret line="29" column="52" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
                 <marker date="1550417512453" expanded="true" signature="391:2803" ph="..." />
@@ -133,11 +133,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/recordAudio.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="217">
+              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -258,7 +258,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.guiGO">
+  <component name="RunManager" selected="Python.recordAudio">
     <configuration name="GUI" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="myfinalProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -325,28 +325,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="auvdiovis_Qt" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="myfinalProject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/auvdiovis_Qt.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="guiGO" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="myfinalProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -369,20 +347,42 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="recordAudio" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="myfinalProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recordAudio.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.audiovis_test1" />
       <item itemvalue="Python.GUI" />
-      <item itemvalue="Python.auvdiovis_Qt" />
       <item itemvalue="Python.guiGO" />
       <item itemvalue="Python.audioBackend" />
+      <item itemvalue="Python.recordAudio" />
+      <item itemvalue="Python.audiovis_test1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.recordAudio" />
+        <item itemvalue="Python.audiovis_test1" />
         <item itemvalue="Python.guiGO" />
         <item itemvalue="Python.GUI" />
         <item itemvalue="Python.audioBackend" />
-        <item itemvalue="Python.auvdiovis_Qt" />
-        <item itemvalue="Python.audiovis_test1" />
       </list>
     </recent_temporary>
   </component>
@@ -684,7 +684,14 @@
       <option name="project" value="LOCAL" />
       <updated>1550420119526</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Added audio recording stuff">
+      <created>1550552449826</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1550552449826</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TodoView">
@@ -697,7 +704,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="62" y="-11" width="1305" height="780" extended-state="6" />
+    <frame x="63" y="-4" width="1303" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23150358" />
@@ -705,7 +712,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33074534" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33074534" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.39906833" />
@@ -743,7 +750,8 @@
     <MESSAGE value="GUI changes" />
     <MESSAGE value="Created audio backend" />
     <MESSAGE value="Created audio backend and GUI changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created audio backend and GUI changes" />
+    <MESSAGE value="Added audio recording stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added audio recording stuff" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -835,16 +843,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/audiovis_test1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1548">
-          <caret line="93" column="3" selection-start-line="93" selection-start-column="3" selection-end-line="93" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GUI.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1404">
@@ -863,23 +861,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/recordAudio.py">
+    <entry file="file://$PROJECT_DIR$/audioBackend.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="144">
+          <caret line="29" column="52" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1550417512453" expanded="true" signature="391:2803" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/audioBackend.py">
+    <entry file="file://$PROJECT_DIR$/audiovis_test1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        <state relative-caret-position="-180">
+          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <marker date="1550417512453" expanded="true" signature="391:2803" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recordAudio.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
