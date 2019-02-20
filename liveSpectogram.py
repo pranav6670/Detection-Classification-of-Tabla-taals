@@ -5,7 +5,7 @@ from PyQt4 import QtCore, QtGui
 
 FS = 44100  # Hz
 
-CHUNKSZ = 1024  # samples
+CHUNKSZ = 512 # samples
 
 
 class MicrophoneRecorder():
