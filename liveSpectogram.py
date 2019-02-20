@@ -13,10 +13,10 @@ class MicrophoneRecorder():
         self.signal = signal
         self.p = pyaudio.PyAudio()
         self.stream = self.p.open(format=pyaudio.paInt16,
-                                   channels=1,
-                                   rate=FS,
-                                   input=True,
-                                   frames_per_buffer=CHUNKSZ)
+                                  channels=1,
+                                  rate=FS,
+                                  input=True,
+                                  frames_per_buffer=CHUNKSZ)
 
     def read(self):
         data = self.stream.read(CHUNKSZ)
