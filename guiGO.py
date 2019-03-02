@@ -4,11 +4,11 @@ from PyQt5 import QtGui, QtCore
 import sys
 import numpy as np
 import pyqtgraph
-
+import librosa.display as display
 
 class ExampleApp(QtGui.QMainWindow, GUI.Ui_MainWindow):
     def __init__(self, parent=None):
-        pyqtgraph.setConfigOption('background', (50, 50, 50)) #before loading widget
+        pyqtgraph.setConfigOption('background', 'w') #before loading widget
         super(ExampleApp, self).__init__(parent)
         self.setupUi(self)
         self.FFT.plotItem.showGrid(True, True, 0.7)
@@ -26,11 +26,10 @@ class ExampleApp(QtGui.QMainWindow, GUI.Ui_MainWindow):
                 self.raw.plotItem.setRange(yRange=[-pcmMax, pcmMax])
             if np.max(self.ear.fft) > self.maxFFT:
                 self.maxFFT = np.max(np.abs(self.ear.fft))
-                #self.grFFT.plotItem.setRange(yRange=[0,self.maxFFT])
                 self.FFT.plotItem.setRange(yRange=[0, 1])
-            pen = pyqtgraph.mkPen(color='b')
-            self.raw.plot(self.ear.datax, self.ear.data, pen=pen, clear=True)
             pen = pyqtgraph.mkPen(color='r')
+            self.raw.plot(self.ear.datax, self.ear.data, pen=pen, clear=True)
+            pen = pyqtgraph.mkPen(color='b')
             self.FFT.plot(self.ear.fftx, self.ear.fft/self.maxFFT, pen=pen, clear=True)
         QtCore.QTimer.singleShot(1, self.update)  # QUICKLY repeat
 
