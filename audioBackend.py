@@ -12,7 +12,7 @@ def getFFT(data,rate):
     return freq[:int(len(freq)/2)], fft[:int(len(fft)/2)]
 
 
-class PNHear:
+class PNHear():
     """
     The PNHear class is provides access to continuously recorded
     (and mathematically processed) microphone data.
@@ -54,7 +54,7 @@ class PNHear:
             if not self.info["maxInputChannels"] > 0:
                 return False
             stream = self.p.open(format=pyaudio.paInt16, channels=1,
-                                 input_device_index=11, frames_per_buffer=self.chunk,
+                                 input_device_index=device, frames_per_buffer=self.chunk,
                                  rate=int(self.info["defaultSampleRate"]), input=True)
             stream.close()
             return True

@@ -5,17 +5,17 @@ import sys
 import numpy as np
 import pyqtgraph
 
-class ExampleApp(QtGui.QMainWindow, GUI.Ui_MainWindow):
 
+class ExampleApp(QtGui.QMainWindow, GUI.Ui_MainWindow):
     def __init__(self, parent=None):
-        pyqtgraph.setConfigOption('background', 'w') #before loading widget
+        pyqtgraph.setConfigOption('background', (50, 50, 50)) #before loading widget
         super(ExampleApp, self).__init__(parent)
         self.setupUi(self)
+        self.FFT.plotItem.showGrid(True, True, 0.7)
         self.raw.plotItem.showGrid(True, True, 0.7)
-        self.fft.plotItem.showGrid(True, True, 0.7)
         self.maxFFT = 0
         self.maxPCM = 0
-        self.ear = audioBackend.PNHear(rate=44100, updatesPerSecond=50)
+        self.ear = audioBackend.PNHear(rate=44100, updatesPerSecond=40)
         self.ear.stream_start()
 
     def update(self):
@@ -27,11 +27,11 @@ class ExampleApp(QtGui.QMainWindow, GUI.Ui_MainWindow):
             if np.max(self.ear.fft) > self.maxFFT:
                 self.maxFFT = np.max(np.abs(self.ear.fft))
                 #self.grFFT.plotItem.setRange(yRange=[0,self.maxFFT])
-                self.raw.plotItem.setRange(yRange=[0, 1])
-            pen=pyqtgraph.mkPen(color='b')
+                self.FFT.plotItem.setRange(yRange=[0, 1])
+            pen = pyqtgraph.mkPen(color='b')
             self.raw.plot(self.ear.datax, self.ear.data, pen=pen, clear=True)
-            pen=pyqtgraph.mkPen(color='r')
-            self.fft.plot(self.ear.fftx, self.ear.fft/self.maxFFT, pen=pen, clear=True)
+            pen = pyqtgraph.mkPen(color='r')
+            self.FFT.plot(self.ear.fftx, self.ear.fft/self.maxFFT, pen=pen, clear=True)
         QtCore.QTimer.singleShot(1, self.update)  # QUICKLY repeat
 
 if __name__=="__main__":
@@ -41,3 +41,4 @@ if __name__=="__main__":
     form.update() #start with something
     app.exec_()
     print("DONE")
+

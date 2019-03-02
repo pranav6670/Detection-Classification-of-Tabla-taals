@@ -11,21 +11,30 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(926, 640)
+        MainWindow.resize(1280, 667)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.raw = PlotWidget(self.centralwidget)
-        self.raw.setGeometry(QtCore.QRect(10, 20, 911, 192))
+        self.raw.setGeometry(QtCore.QRect(10, 20, 1261, 192))
         self.raw.setObjectName("raw")
-        self.fft = PlotWidget(self.centralwidget)
-        self.fft.setGeometry(QtCore.QRect(10, 220, 911, 192))
-        self.fft.setObjectName("fft")
+        self.FFT = PlotWidget(self.centralwidget)
+        self.FFT.setGeometry(QtCore.QRect(10, 230, 1261, 192))
+        self.FFT.setObjectName("FFT")
         self.spec = PlotWidget(self.centralwidget)
-        self.spec.setGeometry(QtCore.QRect(10, 420, 911, 161))
+        self.spec.setGeometry(QtCore.QRect(10, 440, 1261, 161))
         self.spec.setObjectName("spec")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(650, 210, 68, 17))
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setGeometry(QtCore.QRect(660, 420, 68, 17))
+        self.label_2.setObjectName("label_2")
+        self.label_3 = QtWidgets.QLabel(self.centralwidget)
+        self.label_3.setGeometry(QtCore.QRect(640, 600, 91, 17))
+        self.label_3.setObjectName("label_3")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 926, 25))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1280, 25))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
@@ -38,6 +47,9 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label.setText(_translate("MainWindow", "Raw"))
+        self.label_2.setText(_translate("MainWindow", "FFT"))
+        self.label_3.setText(_translate("MainWindow", "Spectogram"))
 
 from pyqtgraph import PlotWidget
 
@@ -49,3 +61,4 @@ if __name__ == "__main__":
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())
+
