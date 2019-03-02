@@ -15,7 +15,7 @@ class ExampleApp(QtGui.QMainWindow, GUI.Ui_MainWindow):
         self.raw.plotItem.showGrid(True, True, 0.9)
         self.maxFFT = 0
         self.maxPCM = 0
-        self.ear = audioBackend.PNHear(rate=44100, updatesPerSecond=50)
+        self.ear = audioBackend.PNHear(rate=44100, updatesPerSecond=40)
         self.ear.stream_start()
 
     def update(self):
