@@ -1,11 +1,9 @@
-import numpy as np
 import pyaudio
 import time
+import numpy as np
 import threading
-import sys
-import struct
 
-def getFFT(data, rate):
+def getFFT(data,rate):
     """Given some data and rate, returns FFTfreq and FFT (half)."""
     data = data*np.hamming(len(data))
     fft = np.fft.fft(data)
@@ -14,66 +12,27 @@ def getFFT(data, rate):
     return freq[:int(len(freq)/2)], fft[:int(len(fft)/2)]
 
 
-class PNstream():
+class PNHear:
+    """
+    The PNHear class is provides access to continuously recorded
+    (and mathematically processed) microphone data.
 
-    def __init__(self):
+    Arguments:
+
+        device - the number of the sound card input to use. Leave blank
+        to automatically detect one.
+
+        rate - sample rate to use. Defaults to something supported.
+
+        updatesPerSecond - how fast to record new data. Note that smaller
+        numbers allow more data to be accessed and therefore high
+        frequencies to be analyzed if using a FFT later
+    """
+
+    def __init__(self, device=None, rate=None, updatesPerSecond=10):
         self.p = pyaudio.PyAudio()
-        self.FORMAT = pyaudio.paInt16
-        self.CHANNELS = 1
-        self.RATE = 44100
-        self.CHUNK = 1024 * 4
-        self.DEVICE = 2
-
-        #############################################################
-        print(self.p.get_device_count(), "device(s) detected.\n")
-        for ii in range(self.p.get_device_count()):
-            print(ii, self.p.get_device_info_by_index(ii)['name'])
-        #############################################################
-        # Open the stream
-        #####################################
-        self.stream = self.p.open(
-            format=self.FORMAT,
-            channels=self.CHANNELS,
-            rate=self.RATE,
-            input=True,
-            output=True,
-            frames_per_buffer=self.CHUNK,
-            input_device_index=0
-        )
-        ######################################
-
-        ###########################################################
-        # Check compatibility for params
-        ###########################################################
-        print("\nChecking compatibility with input parameters:" )
-        print("\tAudio Device:", self.DEVICE)
-        print("\tRate:", self.RATE)
-        print("\tChannels:", self.CHANNELS)
-        print("\tFormat:", self.FORMAT)
-
-        isSupported = self.p.is_format_supported(input_format=self.FORMAT,
-                                                 input_channels=self.CHANNELS,
-                                                 rate=self.RATE,
-                                                 input_device=self.DEVICE)
-        if isSupported:
-            print("\nThese settings are supported on device %i!\n" % self.DEVICE)
-        else:
-            sys.exit("\nOops-_-, these settings aren't",
-                      " supported on device %i.\n" % self.DEVICE)
-        #########################################################################
-
-        while True:
-            self.data = self.stream.read(self.CHUNK, exception_on_overflow=False)
-            self.data_int = np.array(struct.unpack(str(2 * self.CHUNK) + 'B', self.data), dtype='b')[::2] + 128
-            self.fftx, self.fft = getFFT(self.data_int, self.RATE)
-
-            # self.data = np.fromstring(self.stream.read(self.CHUNK, exception_on_overflow=False), dtype=np.int16)
-            # self.fftx, self.fft = getFFT(self.data, self.RATE)
-
-
-
-
-if __name__=="__main__":
-    PNstream()
-
-
+        self.chunk = 4096  # gets replaced automatically
+        self.updatesPerSecond = updatesPerSecond
+        self.chunksRead = 0
+        self.device = device
+        self.rate = rate
