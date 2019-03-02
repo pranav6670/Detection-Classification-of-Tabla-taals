@@ -11,8 +11,8 @@ class ExampleApp(QtGui.QMainWindow, GUI.Ui_MainWindow):
         pyqtgraph.setConfigOption('background', 'k') #before loading widget
         super(ExampleApp, self).__init__(parent)
         self.setupUi(self)
-        self.FFT.plotItem.showGrid(True, True, 0.7)
-        self.raw.plotItem.showGrid(True, True, 0.7)
+        self.FFT.plotItem.showGrid(True, True, 0.9)
+        self.raw.plotItem.showGrid(True, True, 0.9)
         self.maxFFT = 0
         self.maxPCM = 0
         self.ear = audioBackend.PNHear(rate=44100, updatesPerSecond=40)
@@ -27,9 +27,9 @@ class ExampleApp(QtGui.QMainWindow, GUI.Ui_MainWindow):
             if np.max(self.ear.fft) > self.maxFFT:
                 self.maxFFT = np.max(np.abs(self.ear.fft))
                 self.FFT.plotItem.setRange(yRange=[0, 1])
-            pen = pyqtgraph.mkPen(color='m')
+            pen = pyqtgraph.mkPen(color='r')
             self.raw.plot(self.ear.datax, self.ear.data, pen=pen, clear=True)
-            pen = pyqtgraph.mkPen(color='y')
+            pen = pyqtgraph.mkPen(color='g')
             self.FFT.plot(self.ear.fftx, self.ear.fft/self.maxFFT, pen=pen, clear=True)
         QtCore.QTimer.singleShot(1, self.update)  # QUICKLY repeat
 
