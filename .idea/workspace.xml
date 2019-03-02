@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="73955db2-7166-448b-a020-900152631ce8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/audioBackend.py" beforeDir="false" afterPath="$PROJECT_DIR$/audioBackend.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guiGO.py" beforeDir="false" afterPath="$PROJECT_DIR$/guiGO.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +18,7 @@
     <SUITE FILE_PATH="coverage/myfinalProject$recordAudio.coverage" NAME="recordAudio Coverage Results" MODIFIED="1550554095591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/myfinalProject$musicrecognisation_test1.coverage" NAME="musicrecognisation_test1 Coverage Results" MODIFIED="1547328230368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/myfinalProject$liveSpectogram.coverage" NAME="liveSpectogram Coverage Results" MODIFIED="1551506141955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/myfinalProject$guiGO.coverage" NAME="guiGO Coverage Results" MODIFIED="1551511336064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/myfinalProject$guiGO.coverage" NAME="guiGO Coverage Results" MODIFIED="1551511593268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/myfinalProject$hprss.coverage" NAME="hprss Coverage Results" MODIFIED="1547873390296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/myfinalProject$audioBackend.coverage" NAME="audioBackend Coverage Results" MODIFIED="1551510468018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/myfinalProject$GUI.coverage" NAME="GUI Coverage Results" MODIFIED="1551509929396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -88,14 +86,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="10116" />
+          <entry key="py" value="10127" />
           <entry key="txt" value="458" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="458" />
-          <entry key="Python" value="10116" />
+          <entry key="Python" value="10127" />
         </counts>
       </usages-collector>
     </session>
@@ -126,8 +124,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/guiGO.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="234">
+              <caret line="13" column="51" lean-forward="true" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -170,9 +168,9 @@
         <option value="$PROJECT_DIR$/myCNN.py" />
         <option value="$PROJECT_DIR$/recordAudio.py" />
         <option value="$PROJECT_DIR$/liveSpectogram.py" />
-        <option value="$PROJECT_DIR$/guiGO.py" />
         <option value="$PROJECT_DIR$/GUI.py" />
         <option value="$PROJECT_DIR$/audioBackend.py" />
+        <option value="$PROJECT_DIR$/guiGO.py" />
       </list>
     </option>
   </component>
@@ -365,13 +363,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1545721510857</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Extract required data from nested dictionary">
-      <created>1546695646544</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1546695646544</updated>
     </task>
     <task id="LOCAL-00004" summary="Basic real-time audio visuals.">
       <created>1546783896730</created>
@@ -709,7 +700,14 @@
       <option name="project" value="LOCAL" />
       <updated>1551509567271</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Improving GUI">
+      <created>1551511487034</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1551511487034</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TodoView">
@@ -910,8 +908,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/guiGO.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="234">
+          <caret line="13" column="51" lean-forward="true" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>

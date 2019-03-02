@@ -5,7 +5,7 @@ import threading
 
 def getFFT(data,rate):
     """Given some data and rate, returns FFTfreq and FFT (half)."""
-    data = data*np.hamming(len(data))
+    data = data * np.hamming(len(data))
     fft = np.fft.fft(data)
     fft = np.abs(fft)
     freq = np.fft.fftfreq(len(fft), 1.0/rate)
