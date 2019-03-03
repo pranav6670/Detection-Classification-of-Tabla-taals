@@ -29,7 +29,8 @@ class ExampleApp(QtGui.QMainWindow, GUI.Ui_MainWindow):
             pen = pyqtgraph.mkPen(color='r')
             self.raw.plot(self.ear.datax, self.ear.data, pen=pen, clear=True)
             self.raw.plotItem.setLabel('left', "Amplitude")
-            pen = pyqtgraph.mkPen(color='g')
+            self.raw.plotItem.setLabel('bottom', "Time")
+            pen = pyqtgraph.mkPen(color='c')
             self.FFT.plot(self.ear.fftx, self.ear.fft/self.maxFFT, pen=pen, clear=True)
             self.FFT.plotItem.setLabel('bottom', "Frequency")
         QtCore.QTimer.singleShot(1, self.update)  # QUICKLY repeat
