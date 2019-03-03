@@ -4,11 +4,10 @@ from PyQt5 import QtGui, QtCore
 import sys
 import numpy as np
 import pyqtgraph
-import librosa.display as display
 
 class ExampleApp(QtGui.QMainWindow, GUI.Ui_MainWindow):
     def __init__(self, parent=None):
-        pyqtgraph.setConfigOption('background', 'k') # before loading widget
+        pyqtgraph.setConfigOption('background', 'w') # before loading widget
         super(ExampleApp, self).__init__(parent)
         self.setupUi(self)
         self.FFT.plotItem.showGrid(True, True, 0.9)
@@ -29,8 +28,10 @@ class ExampleApp(QtGui.QMainWindow, GUI.Ui_MainWindow):
                 self.FFT.plotItem.setRange(yRange=[0, 1])
             pen = pyqtgraph.mkPen(color='r')
             self.raw.plot(self.ear.datax, self.ear.data, pen=pen, clear=True)
+            self.raw.plotItem.setLabel('left', "Amplitude")
             pen = pyqtgraph.mkPen(color='g')
             self.FFT.plot(self.ear.fftx, self.ear.fft/self.maxFFT, pen=pen, clear=True)
+            self.FFT.plotItem.setLabel('bottom', "Frequency")
         QtCore.QTimer.singleShot(1, self.update)  # QUICKLY repeat
 
 if __name__=="__main__":
