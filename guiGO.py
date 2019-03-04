@@ -30,9 +30,11 @@ class ExampleApp(QtGui.QMainWindow, GUI.Ui_MainWindow):
             self.raw.plot(self.ear.datax, self.ear.data, pen=pen, clear=True)
             self.raw.plotItem.setLabel('left', "Amplitude")
             self.raw.plotItem.setLabel('bottom', "Time")
-            pen = pyqtgraph.mkPen(color='c')
+            pen = pyqtgraph.mkPen(color='b')
             self.FFT.plot(self.ear.fftx, self.ear.fft/self.maxFFT, pen=pen, clear=True)
             self.FFT.plotItem.setLabel('bottom', "Frequency")
+            self.FFT.plotItem.setLabel('left', "Amplitude(norm)")
+
         QtCore.QTimer.singleShot(1, self.update)  # QUICKLY repeat
 
 if __name__=="__main__":
