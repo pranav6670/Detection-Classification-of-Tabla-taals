@@ -20,18 +20,21 @@ class ExampleApp(QtGui.QMainWindow, GUI.Ui_MainWindow):
     def update(self):
         if not self.ear.data is None and not self.ear.fft is None:
             pcmMax = np.max(np.abs(self.ear.data))
+
             if pcmMax > self.maxPCM:
                 self.maxPCM = pcmMax
                 self.raw.plotItem.setRange(yRange=[-pcmMax, pcmMax])
             if np.max(self.ear.fft) > self.maxFFT:
                 self.maxFFT = np.max(np.abs(self.ear.fft))
                 self.FFT.plotItem.setRange(yRange=[0, 1])
+
             pen = pyqtgraph.mkPen(color='r')
             self.raw.plot(self.ear.datax, self.ear.data, pen=pen, clear=True)
             self.raw.plotItem.setLabel('left', "Amplitude")
             self.raw.plotItem.setLabel('bottom', "Time")
             # self.raw.plotItem.enableAutoScale()
-            pen = pyqtgraph.mkPen(color='k')
+
+            pen = pyqtgraph.mkPen(color='b')
             self.FFT.plot(self.ear.fftx, self.ear.fft/self.maxFFT, pen=pen, clear=True)
             self.FFT.plotItem.setLabel('bottom', "Frequency")
             self.FFT.plotItem.setLabel('left', "Amplitude(norm)")
