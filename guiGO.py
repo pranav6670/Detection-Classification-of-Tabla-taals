@@ -10,11 +10,11 @@ class ExampleApp(QtGui.QMainWindow, GUI.Ui_MainWindow):
         pyqtgraph.setConfigOption('background', 'w') # before loading widget
         super(ExampleApp, self).__init__(parent)
         self.setupUi(self)
-        self.FFT.plotItem.showGrid(True, True, 0.9)
-        self.raw.plotItem.showGrid(True, True, 0.9)
+        self.FFT.plotItem.showGrid(True, True, 1)
+        self.raw.plotItem.showGrid(True, True, 1)
         self.maxFFT = 0
         self.maxPCM = 0
-        self.ear = audioBackend.PNHear(rate=44100, updatesPerSecond=40)
+        self.ear = audioBackend.PNHear(rate=44100, updatesPerSecond=100)
         self.ear.stream_start()
 
     def update(self):
@@ -30,10 +30,12 @@ class ExampleApp(QtGui.QMainWindow, GUI.Ui_MainWindow):
             self.raw.plot(self.ear.datax, self.ear.data, pen=pen, clear=True)
             self.raw.plotItem.setLabel('left', "Amplitude")
             self.raw.plotItem.setLabel('bottom', "Time")
-            pen = pyqtgraph.mkPen(color='b')
+            # self.raw.plotItem.enableAutoScale()
+            pen = pyqtgraph.mkPen(color='k')
             self.FFT.plot(self.ear.fftx, self.ear.fft/self.maxFFT, pen=pen, clear=True)
             self.FFT.plotItem.setLabel('bottom', "Frequency")
             self.FFT.plotItem.setLabel('left', "Amplitude(norm)")
+            # self.FFT.plotItem.enableAutoScale()
 
         QtCore.QTimer.singleShot(1, self.update)  # QUICKLY repeat
 
