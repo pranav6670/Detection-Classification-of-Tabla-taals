@@ -2,7 +2,7 @@ from __future__ import print_function
 import numpy as np
 import matplotlib.pyplot as plt
 import librosa
-# import librosa.display
+import librosa.display
 ##########################################################
 # Load the file
 y, sr = librosa.load('/home/pranav/Desktop/myfinalProject/Test/'

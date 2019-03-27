@@ -3,7 +3,8 @@ import time
 import numpy as np
 import threading
 
-def getFFT(data,rate):
+
+def getFFT(data, rate):
     """Given some data and rate, returns FFTfreq and FFT (half)."""
     data = data * np.hamming(len(data))
     fft = np.fft.fft(data)
@@ -12,7 +13,7 @@ def getFFT(data,rate):
     return freq[:int(len(freq)/2)], fft[:int(len(fft)/2)]
 
 
-class PNHear():
+class PNHear:
     """
     The PNHear class is provides access to continuously recorded
     (and mathematically processed) microphone data.

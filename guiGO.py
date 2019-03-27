@@ -7,14 +7,14 @@ import pyqtgraph
 
 class ExampleApp(QtGui.QMainWindow, GUI.Ui_MainWindow):
     def __init__(self, parent=None):
-        pyqtgraph.setConfigOption('background', 'w') # before loading widget
+        pyqtgraph.setConfigOption('background', 'w')  # before loading widget
         super(ExampleApp, self).__init__(parent)
         self.setupUi(self)
         self.FFT.plotItem.showGrid(True, True, 1)
         self.raw.plotItem.showGrid(True, True, 1)
         self.maxFFT = 0
         self.maxPCM = 0
-        self.ear = audioBackend.PNHear(rate=44100, updatesPerSecond=100)
+        self.ear = audioBackend.PNHear(rate=44100, updatesPerSecond=50)
         self.ear.stream_start()
 
     def update(self):
@@ -46,7 +46,7 @@ if __name__=="__main__":
     app = QtGui.QApplication(sys.argv)
     form = ExampleApp()
     form.show()
-    form.update() #start with something
+    form.update()  # start with something
     app.exec_()
     print("DONE")
 
