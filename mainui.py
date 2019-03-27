@@ -26,7 +26,7 @@ class Ui_MainWindow(object):
         self.label.setPixmap(QtGui.QPixmap("../tabla_3_125x100.png"))
         self.label.setObjectName("label")
         self.analyze = QtWidgets.QPushButton(self.centralwidget)
-        self.analyze.setGeometry(QtCore.QRect(300, 120, 111, 41))
+        self.analyze.setGeometry(QtCore.QRect(310, 160, 111, 41))
         font = QtGui.QFont()
         font.setFamily("Purisa")
         font.setPointSize(14)
@@ -34,7 +34,7 @@ class Ui_MainWindow(object):
         self.analyze.setStyleSheet("color: rgb(85, 0, 127);")
         self.analyze.setObjectName("analyze")
         self.stop = QtWidgets.QPushButton(self.centralwidget)
-        self.stop.setGeometry(QtCore.QRect(140, 120, 111, 41))
+        self.stop.setGeometry(QtCore.QRect(160, 160, 111, 41))
         font = QtGui.QFont()
         font.setFamily("Purisa")
         font.setPointSize(14)
@@ -44,7 +44,7 @@ class Ui_MainWindow(object):
 "")
         self.stop.setObjectName("stop")
         self.start = QtWidgets.QPushButton(self.centralwidget)
-        self.start.setGeometry(QtCore.QRect(10, 120, 111, 41))
+        self.start.setGeometry(QtCore.QRect(20, 160, 111, 41))
         font = QtGui.QFont()
         font.setFamily("Purisa")
         font.setPointSize(14)
@@ -63,6 +63,8 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.textBrowser.setFont(font)
         self.textBrowser.setAutoFillBackground(True)
+        self.textBrowser.setStyleSheet("\n"
+"")
         self.textBrowser.setObjectName("textBrowser")
         self.label.raise_()
         self.analyze.raise_()
@@ -91,7 +93,7 @@ class Ui_MainWindow(object):
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'Purisa\'; font-size:11pt; font-weight:600; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">Automatic Detection and Classification of Tabla taalas from Indian Classical Music</span></p></body></html>"))
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">Automatic Detection and Classification of Tabla </span><span style=\" font-size:10pt; font-style:italic;\">taalas</span><span style=\" font-size:10pt;\"> from Indian Classical Music</span></p></body></html>"))
 
 
 if __name__ == "__main__":
