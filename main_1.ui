@@ -6,31 +6,28 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>450</width>
+    <width>449</width>
     <height>500</height>
    </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Tlwg Typo</family>
+   </font>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QTextBrowser" name="textBrowser">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>281</width>
-      <height>81</height>
-     </rect>
-    </property>
-    <property name="html">
-     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Automatic Detection and Classification Of Tabla taalas from Indian Classical music.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
@@ -44,29 +41,32 @@ p, li { white-space: pre-wrap; }
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>tabla_3_125x100.png</pixmap>
+     <pixmap>../tabla_3_125x100.png</pixmap>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="analyze">
     <property name="geometry">
      <rect>
       <x>300</x>
-      <y>150</y>
+      <y>120</y>
       <width>111</width>
       <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Ubuntu Condensed</family>
+      <family>Purisa</family>
       <pointsize>14</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(85, 0, 127);</string>
     </property>
     <property name="text">
      <string>Analyze</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="stop">
     <property name="geometry">
      <rect>
       <x>140</x>
@@ -77,15 +77,20 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="font">
      <font>
-      <family>Ubuntu Condensed</family>
+      <family>Purisa</family>
       <pointsize>14</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(150, 0, 0);
+
+</string>
     </property>
     <property name="text">
      <string>Stop</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="start">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -96,30 +101,63 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="font">
      <font>
-      <family>Ubuntu Condensed</family>
+      <family>Purisa</family>
       <pointsize>14</pointsize>
      </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 150, 0);
+gridline-color: rgb(255, 170, 0);
+</string>
     </property>
     <property name="text">
      <string>Start</string>
     </property>
    </widget>
-   <zorder>textBrowser</zorder>
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>256</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Purisa</family>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Purisa'; font-size:11pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Automatic Detection and Classification of Tabla taalas from Indian Classical Music&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
    <zorder>label</zorder>
-   <zorder>pushButton</zorder>
-   <zorder>pushButton_2</zorder>
-   <zorder>pushButton_3</zorder>
-   <zorder>pushButton</zorder>
-   <zorder>pushButton_2</zorder>
-   <zorder></zorder>
+   <zorder>analyze</zorder>
+   <zorder>start</zorder>
+   <zorder>stop</zorder>
+   <zorder>textBrowser</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>450</width>
-     <height>25</height>
+     <width>449</width>
+     <height>26</height>
     </rect>
    </property>
   </widget>
