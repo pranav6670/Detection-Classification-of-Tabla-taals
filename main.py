@@ -12,7 +12,6 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
         self.exitapp()
 
     def multipleopen(self):
-        # self.bashcommand = "python3 guiGO.py & python3 liveSpectogram.py &"
         self.output = subprocess.check_output(['bash', '-c', "python3 guiGO.py & python3 liveSpectogram.py &"])
 
     def startApp(self):
