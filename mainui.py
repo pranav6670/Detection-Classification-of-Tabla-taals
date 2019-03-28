@@ -63,14 +63,22 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.textBrowser.setFont(font)
         self.textBrowser.setAutoFillBackground(True)
-        self.textBrowser.setStyleSheet("\n"
-"")
+        self.textBrowser.setStyleSheet("")
         self.textBrowser.setObjectName("textBrowser")
+        self.exit = QtWidgets.QPushButton(self.centralwidget)
+        self.exit.setGeometry(QtCore.QRect(310, 400, 111, 41))
+        font = QtGui.QFont()
+        font.setFamily("Purisa")
+        self.exit.setFont(font)
+        self.exit.setStyleSheet("color: rgb(170, 0, 0);\n"
+"selection-color: rgb(255, 0, 0);")
+        self.exit.setObjectName("exit")
         self.label.raise_()
         self.analyze.raise_()
         self.start.raise_()
         self.stop.raise_()
         self.textBrowser.raise_()
+        self.exit.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 449, 26))
@@ -94,6 +102,7 @@ class Ui_MainWindow(object):
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'Purisa\'; font-size:11pt; font-weight:600; font-style:normal;\">\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">Automatic Detection and Classification of Tabla </span><span style=\" font-size:10pt; font-style:italic;\">taalas</span><span style=\" font-size:10pt;\"> from Indian Classical Music</span></p></body></html>"))
+        self.exit.setText(_translate("MainWindow", "Quit"))
 
 
 if __name__ == "__main__":

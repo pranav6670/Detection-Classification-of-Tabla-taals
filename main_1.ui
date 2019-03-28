@@ -138,8 +138,7 @@ gridline-color: rgb(255, 170, 0);
      <bool>true</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">
-</string>
+     <string notr="true"/>
     </property>
     <property name="html">
      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
@@ -149,11 +148,34 @@ p, li { white-space: pre-wrap; }
 &lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Automatic Detection and Classification of Tabla &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-style:italic;&quot;&gt;taalas&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; from Indian Classical Music&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="exit">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>400</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Purisa</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(170, 0, 0);
+selection-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Quit</string>
+    </property>
+   </widget>
    <zorder>label</zorder>
    <zorder>analyze</zorder>
    <zorder>start</zorder>
    <zorder>stop</zorder>
    <zorder>textBrowser</zorder>
+   <zorder>exit</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
