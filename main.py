@@ -8,8 +8,9 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
     def __init__(self, parent=None):
         super(MainApp, self).__init__(parent)
         self.setupUi(self)
-        self.startApp()
         self.exitapp()
+        self.startApp()
+
 
     def multipleopen(self):
         self.output = subprocess.check_output(['bash', '-c', "python3 guiGO.py & python3 liveSpectogram.py &"])
