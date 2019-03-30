@@ -17,17 +17,17 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
 
         self.exitapp()
         self.startApp()
+        self.stopApp()
 
     def on_readyReadStandardOutput(self):
         self.output = self._process.readAllStandardOutput()
         print(self.output)
 
-
     def startApp(self):
         self.start.clicked.connect(self._process.start)
 
     def stopApp(self):
-        self.stop.clicked.connect(self._process.terminate)
+        self.stop.clicked.connect(self._process.kill)
 
     def exitapp(self):
         self.exit.clicked.connect(QtCore.QCoreApplication.instance().quit)
