@@ -1,11 +1,13 @@
 import GUI
 import audioBackend
-from PyQt5 import QtGui, QtCore
+from PyQt5 import QtGui, QtCore, QtWidgets
 import sys
 import numpy as np
 import pyqtgraph
+import time
 
-class ExampleApp(QtGui.QMainWindow, GUI.Ui_MainWindow):
+
+class ExampleApp(QtWidgets.QMainWindow, GUI.Ui_MainWindow):
     def __init__(self, parent=None):
         pyqtgraph.setConfigOption('background', 'w')  # before loading widget
         super(ExampleApp, self).__init__(parent)
@@ -43,10 +45,16 @@ class ExampleApp(QtGui.QMainWindow, GUI.Ui_MainWindow):
         QtCore.QTimer.singleShot(1, self.update)  # QUICKLY repeat
 
 if __name__=="__main__":
-    app = QtGui.QApplication(sys.argv)
+    app = QtWidgets.QApplication(sys.argv)
     form = ExampleApp()
     form.show()
     form.update()  # start with something
     app.exec_()
     print("DONE")
+    time.sleep(5)
+    sys.exit()
+
+
+
+
 
