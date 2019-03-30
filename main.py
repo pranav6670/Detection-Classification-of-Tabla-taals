@@ -6,7 +6,7 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
         super(MainApp, self).__init__(parent)
         self.setupUi(self)
 
-        self._scripts = ("guiGO.py", "liveSpectogram.py")
+        self._scripts = ("guiGO.py", "liveSpectogram.py", "recordAudio.py")
         self._processes = []
         for script in self._scripts:
             process = QtCore.QProcess(self)
