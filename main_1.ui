@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>468</width>
-    <height>491</height>
+    <width>453</width>
+    <height>455</height>
    </rect>
   </property>
   <property name="font">
@@ -32,7 +32,7 @@
     <property name="geometry">
      <rect>
       <x>310</x>
-      <y>290</y>
+      <y>260</y>
       <width>111</width>
       <height>41</height>
      </rect>
@@ -55,7 +55,7 @@
      <rect>
       <x>20</x>
       <y>170</y>
-      <width>111</width>
+      <width>161</width>
       <height>41</height>
      </rect>
     </property>
@@ -79,7 +79,7 @@
      <rect>
       <x>20</x>
       <y>100</y>
-      <width>111</width>
+      <width>161</width>
       <height>41</height>
      </rect>
     </property>
@@ -105,7 +105,7 @@ gridline-color: rgb(255, 170, 0);
     <property name="geometry">
      <rect>
       <x>310</x>
-      <y>380</y>
+      <y>350</y>
       <width>111</width>
       <height>41</height>
      </rect>
@@ -178,7 +178,7 @@ selection-color: rgb(255, 0, 0);</string>
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>260</y>
+      <y>230</y>
       <width>131</width>
       <height>17</height>
      </rect>
@@ -202,7 +202,7 @@ selection-color: rgb(255, 0, 0);</string>
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>340</y>
+      <y>310</y>
       <width>241</width>
       <height>31</height>
      </rect>
@@ -226,7 +226,7 @@ selection-color: rgb(255, 0, 0);</string>
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>290</y>
+      <y>260</y>
       <width>231</width>
       <height>41</height>
      </rect>
@@ -236,10 +236,26 @@ selection-color: rgb(255, 0, 0);</string>
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>380</y>
+      <y>350</y>
       <width>231</width>
       <height>41</height>
      </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>100</y>
+      <width>201</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../Tabla_2_200x130.jpg</pixmap>
     </property>
    </widget>
    <zorder>analyze</zorder>
@@ -252,13 +268,14 @@ selection-color: rgb(255, 0, 0);</string>
    <zorder>label_5</zorder>
    <zorder>status</zorder>
    <zorder>optaala</zorder>
+   <zorder>label</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>468</width>
+     <width>453</width>
      <height>26</height>
     </rect>
    </property>
