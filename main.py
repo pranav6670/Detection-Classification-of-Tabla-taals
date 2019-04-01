@@ -32,7 +32,7 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
 
     def onstartclicked(self):
         self.text = "Recording Started"
-        self.showOP.setText(self.text)
+        self.status.setText(self.text)
 
     def stopApp(self):
         for process in self._processes:
@@ -41,7 +41,7 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
 
     def onstopclicked(self):
         self.text = "Recording Stopped"
-        self.showOP.setText(self.text)
+        self.status.setText(self.text)
 
 
     def exitapp(self):
