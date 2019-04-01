@@ -4,6 +4,7 @@
     <list default="true" id="73955db2-7166-448b-a020-900152631ce8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordAudio.py" beforeDir="false" afterPath="$PROJECT_DIR$/recordAudio.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,7 +22,7 @@
     <SUITE FILE_PATH="coverage/myfinalProject$test_multiproc.coverage" NAME="test_multiproc Coverage Results" MODIFIED="1553762935965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/myfinalProject$liveSpectogram.coverage" NAME="liveSpectogram Coverage Results" MODIFIED="1553286054804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/myfinalProject$guiGO.coverage" NAME="guiGO Coverage Results" MODIFIED="1553926153871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/myrepo$main.coverage" NAME="main Coverage Results" MODIFIED="1554115636437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/myrepo$main.coverage" NAME="main Coverage Results" MODIFIED="1554116536924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/myfinalProject$audioBackend.coverage" NAME="audioBackend Coverage Results" MODIFIED="1551510468018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/myfinalProject$hprss.coverage" NAME="hprss Coverage Results" MODIFIED="1553286139101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/myfinalProject$GUI.coverage" NAME="GUI Coverage Results" MODIFIED="1553930961126" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -102,12 +103,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="108" />
+          <entry key="py" value="120" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="108" />
+          <entry key="Python" value="120" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -125,19 +126,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_multiproc.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/liveSpectogram.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1674">
-              <caret line="96" selection-start-line="96" selection-end-line="96" />
+            <state>
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -148,8 +140,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/recordAudio.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+            <state relative-caret-position="-90">
+              <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -178,11 +173,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="26" column="57" lean-forward="true" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
+            <state relative-caret-position="149">
+              <caret line="35" column="57" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-                <marker date="1554115556252" expanded="true" signature="975:983" ph="..." />
+                <marker date="1554116536844" expanded="true" signature="858:863" ph="..." />
               </folding>
             </state>
           </provider>
@@ -226,8 +221,8 @@
         <option value="$PROJECT_DIR$/test_multiproc.py" />
         <option value="$PROJECT_DIR$/liveSpectogram.py" />
         <option value="$PROJECT_DIR$/guiGO.py" />
-        <option value="$PROJECT_DIR$/recordAudio.py" />
         <option value="$PROJECT_DIR$/mainui.py" />
+        <option value="$PROJECT_DIR$/recordAudio.py" />
         <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
@@ -426,13 +421,6 @@
       <updated>1545721510857</updated>
       <workItem from="1551851170094" duration="21000" />
       <workItem from="1551851323204" duration="597000" />
-    </task>
-    <task id="LOCAL-00038" summary="Created audio backend and GUI changes">
-      <created>1550074765167</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1550074765167</updated>
     </task>
     <task id="LOCAL-00039" summary="Created audio backend and GUI changes">
       <created>1550416294840</created>
@@ -770,7 +758,14 @@
       <option name="project" value="LOCAL" />
       <updated>1554114792500</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="Changes to Main and GUI">
+      <created>1554115652675</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1554115652675</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -787,6 +782,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="63" y="-4" width="1303" height="772" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4984472" visible="true" weight="0.35003978" />
       <window_info id="Structure" order="1" sideWeight="0.5015528" side_tool="true" weight="0.35075757" />
@@ -983,23 +979,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/liveSpectogram.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1674">
-          <caret line="96" selection-start-line="96" selection-end-line="96" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recordAudio.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GUI.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -1031,13 +1010,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/liveSpectogram.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recordAudio.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-90">
+          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="26" column="57" lean-forward="true" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
+        <state relative-caret-position="149">
+          <caret line="35" column="57" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <marker date="1554115556252" expanded="true" signature="975:983" ph="..." />
+            <marker date="1554116536844" expanded="true" signature="858:863" ph="..." />
           </folding>
         </state>
       </provider>

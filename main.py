@@ -17,15 +17,11 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
             process.setArguments(['-c', 'python3 {}'.format(script)])
             self._processes.append(process)
 
-        self.texteditformat()
+        self.status.setFont(QtGui.QFont("Purisa", 10))
+
         self.startApp()
         self.stopApp()
         self.exitapp()
-
-    def texteditformat(self):
-        self.status.setFont(QtGui.QFont("Purisa", 10))
-        self.status.setTextColor(QtGui.QColor(0, 250, 0))
-
 
     def on_readyReadStandardOutput(self):
         self.output = self.sender().readAllStandardOutput()
@@ -37,6 +33,7 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
             self.start.clicked.connect(self.onstartclicked)
 
     def onstartclicked(self):
+        self.status.setTextColor(QtGui.QColor(0, 250, 0))
         self.text = "Recording Started"
         self.status.setText(self.text)
 
