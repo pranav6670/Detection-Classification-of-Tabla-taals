@@ -1,6 +1,5 @@
 import mainui
 from PyQt5 import QtGui, QtCore, QtWidgets
-import sys
 
 
 class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
@@ -29,7 +28,7 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
     def startApp(self):
         for process in self._processes:
             self.start.clicked.connect(process.start)
-            # self.start.clicked.connect(self.onstartclicked)
+            self.start.clicked.connect(self.onstartclicked)
 
     def onstartclicked(self):
         self.text = "Recording Started"
@@ -38,6 +37,12 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
     def stopApp(self):
         for process in self._processes:
             self.stop.clicked.connect(process.kill)
+            self.stop.clicked.connect(self.onstopclicked)
+
+    def onstopclicked(self):
+        self.text = "Recording Stopped"
+        self.showOP.setText(self.text)
+
 
     def exitapp(self):
         self.exit.clicked.connect(self.close)
