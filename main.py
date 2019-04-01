@@ -1,6 +1,7 @@
 import mainui
 from PyQt5 import QtGui, QtCore, QtWidgets
 
+
 class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
     def __init__(self, parent=None):
         super(MainApp, self).__init__(parent)
@@ -47,4 +48,5 @@ if __name__ == "__main__":
     w = MainApp()
     w.show()
     sys.exit(app.exec_())
+    print("Done")
 
