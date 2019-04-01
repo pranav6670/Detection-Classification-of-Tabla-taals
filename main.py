@@ -17,9 +17,15 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
             process.setArguments(['-c', 'python3 {}'.format(script)])
             self._processes.append(process)
 
-        self.exitapp()
+        self.texteditformat()
         self.startApp()
         self.stopApp()
+        self.exitapp()
+
+    def texteditformat(self):
+        self.status.setFont(QtGui.QFont("Purisa", 10))
+        self.status.setTextColor(QtGui.QColor(0, 250, 0))
+
 
     def on_readyReadStandardOutput(self):
         self.output = self.sender().readAllStandardOutput()
@@ -40,6 +46,7 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
             self.stop.clicked.connect(self.onstopclicked)
 
     def onstopclicked(self):
+        self.status.setTextColor(QtGui.QColor(250, 0, 0))
         self.text = "Recording Stopped"
         self.status.setText(self.text)
 
