@@ -33,7 +33,7 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
             self.start.clicked.connect(self.onstartclicked)
 
     def onstartclicked(self):
-        self.status.setTextColor( QtGui.QColor(0, 250, 0))
+        self.status.setTextColor(QtGui.QColor(0, 250, 0))
         self.text = "Recording Started"
         self.status.setText(self.text)
 
@@ -48,7 +48,7 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
         self.status.setText(self.text)
 
     def exitapp(self):
-        self.exit.clicked.connect(self.close )
+        self.exit.clicked.connect(self.close)
 
     def closeEvent(self, event):
         for script in self._scripts:
@@ -62,4 +62,3 @@ if __name__ == "__main__":
     w = MainApp()
     w.show()
     sys.exit(app.exec_())
-    print("Done")

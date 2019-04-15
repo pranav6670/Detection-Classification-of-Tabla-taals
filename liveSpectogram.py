@@ -7,8 +7,7 @@ FS = 44100  # Hz
 
 CHUNKSZ = 512   # samples
 
-
-class MicrophoneRecorder():
+class MicrophoneRecorder:
     def __init__(self, signal):
         self.signal = signal
         self.p = pyaudio.PyAudio()

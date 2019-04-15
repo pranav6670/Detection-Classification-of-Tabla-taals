@@ -197,7 +197,7 @@ selection-color: rgb(255, 0, 0);</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true"/>
+     <string notr="true">color:rgb(200, 14, 7)</string>
     </property>
     <property name="text">
      <string>Status :-</string>
