@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>453</width>
+    <width>454</width>
     <height>455</height>
    </rect>
   </property>
@@ -39,7 +39,7 @@
     </property>
     <property name="font">
      <font>
-      <family>Purisa</family>
+      <family>Trebuchet MS</family>
       <pointsize>14</pointsize>
      </font>
     </property>
@@ -61,8 +61,11 @@
     </property>
     <property name="font">
      <font>
-      <family>Purisa</family>
+      <family>Trebuchet MS</family>
       <pointsize>14</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -85,7 +88,7 @@
     </property>
     <property name="font">
      <font>
-      <family>Purisa</family>
+      <family>Trebuchet MS</family>
       <pointsize>14</pointsize>
      </font>
     </property>
@@ -112,7 +115,9 @@ gridline-color: rgb(255, 170, 0);
     </property>
     <property name="font">
      <font>
-      <family>Purisa</family>
+      <family>Trebuchet MS</family>
+      <weight>75</weight>
+      <bold>true</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -134,7 +139,7 @@ selection-color: rgb(255, 0, 0);</string>
     </property>
     <property name="font">
      <font>
-      <family>Purisa</family>
+      <family>Courier 10 Pitch</family>
       <pointsize>12</pointsize>
       <weight>75</weight>
       <italic>false</italic>
@@ -160,7 +165,7 @@ selection-color: rgb(255, 0, 0);</string>
     </property>
     <property name="font">
      <font>
-      <family>Purisa</family>
+      <family>Courier 10 Pitch</family>
       <pointsize>12</pointsize>
       <weight>75</weight>
       <bold>true</bold>
@@ -185,7 +190,7 @@ selection-color: rgb(255, 0, 0);</string>
     </property>
     <property name="font">
      <font>
-      <family>Purisa</family>
+      <family>Ubuntu</family>
       <pointsize>12</pointsize>
       <weight>75</weight>
       <bold>true</bold>
@@ -209,7 +214,7 @@ selection-color: rgb(255, 0, 0);</string>
     </property>
     <property name="font">
      <font>
-      <family>Purisa</family>
+      <family>Trebuchet MS</family>
       <pointsize>12</pointsize>
       <weight>75</weight>
       <bold>true</bold>
@@ -275,7 +280,7 @@ selection-color: rgb(255, 0, 0);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>453</width>
+     <width>454</width>
      <height>26</height>
     </rect>
    </property>
