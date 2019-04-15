@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73955db2-7166-448b-a020-900152631ce8" name="Default Changelist" comment="Changes to Main and GUI">
+    <list default="true" id="73955db2-7166-448b-a020-900152631ce8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_1.ui" beforeDir="false" afterPath="$PROJECT_DIR$/main_1.ui" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mainui.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainui.py" afterDir="false" />
     </list>
@@ -87,8 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mainui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="121" column="25" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="25" />
+            <state relative-caret-position="130">
+              <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -96,11 +95,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+            <state>
+              <caret column="11" selection-start-column="11" selection-end-column="11" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
-                <marker date="1555328283731" expanded="true" signature="858:863" ph="..." />
+                <marker date="1555328550656" expanded="true" signature="864:869" ph="..." />
               </folding>
             </state>
           </provider>
@@ -339,21 +337,7 @@
       <updated>1545721510857</updated>
       <workItem from="1551851170094" duration="21000" />
       <workItem from="1551851323204" duration="597000" />
-      <workItem from="1555327550597" duration="734000" />
-    </task>
-    <task id="LOCAL-00040" summary="Created audio backend and GUI changes">
-      <created>1550416957505</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1550416957505</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Created audio backend and GUI changes">
-      <created>1550420119526</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1550420119526</updated>
+      <workItem from="1555327550597" duration="2066000" />
     </task>
     <task id="LOCAL-00042" summary="Added audio recording stuff">
       <created>1550552449826</created>
@@ -684,11 +668,25 @@
       <option name="project" value="LOCAL" />
       <updated>1554116672389</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="Changes to Main and GUI">
+      <created>1555328316069</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1555328316070</updated>
+    </task>
+    <task id="LOCAL-00090" summary="Changes to Main and GUI">
+      <created>1555328554246</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1555328554246</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1352000" />
+    <option name="totallyTimeSpent" value="2684000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -701,7 +699,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="63" y="-4" width="1303" height="772" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4984472" visible="true" weight="0.37549722" />
       <window_info id="Structure" order="1" sideWeight="0.5015528" side_tool="true" weight="0.35075757" />
@@ -792,7 +789,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/myrepo$main.coverage" NAME="main Coverage Results" MODIFIED="1555328283801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/myrepo$main.coverage" NAME="main Coverage Results" MODIFIED="1555329433018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/realtimeVisual.py" />
@@ -941,18 +938,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mainui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="121" column="25" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="25" />
+        <state relative-caret-position="130">
+          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1555328283731" expanded="true" signature="858:863" ph="..." />
+            <marker date="1555328550656" expanded="true" signature="864:869" ph="..." />
           </folding>
         </state>
       </provider>

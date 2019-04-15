@@ -11,7 +11,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(454, 455)
+        MainWindow.resize(437, 455)
         font = QtGui.QFont()
         font.setFamily("Tlwg Typo")
         MainWindow.setFont(font)
@@ -93,7 +93,7 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.label_4.setFont(font)
-        self.label_4.setStyleSheet("color: rgb(170, 85, 255);")
+        self.label_4.setStyleSheet("")
         self.label_4.setObjectName("label_4")
         self.label_5 = QtWidgets.QLabel(self.centralwidget)
         self.label_5.setGeometry(QtCore.QRect(20, 310, 241, 31))
@@ -129,7 +129,7 @@ class Ui_MainWindow(object):
         self.label.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 454, 26))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 437, 26))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
@@ -146,10 +146,10 @@ class Ui_MainWindow(object):
         self.stop.setText(_translate("MainWindow", "Stop"))
         self.start.setText(_translate("MainWindow", "Start"))
         self.exit.setText(_translate("MainWindow", "Quit"))
-        self.title1.setText(_translate("MainWindow", "* Automatic Detection and Classification"))
-        self.title2.setText(_translate("MainWindow", "of Tabla taalas from Indian Classical Music *"))
-        self.label_4.setText(_translate("MainWindow", "* Status :-"))
-        self.label_5.setText(_translate("MainWindow", "* Classified Tabla taal :-"))
+        self.title1.setText(_translate("MainWindow", " Automatic Detection and Classification"))
+        self.title2.setText(_translate("MainWindow", "of Tabla taalas from Indian Classical Music "))
+        self.label_4.setText(_translate("MainWindow", "Status :-"))
+        self.label_5.setText(_translate("MainWindow", "Classified Tabla taal :-"))
 
 
 if __name__ == "__main__":

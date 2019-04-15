@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>454</width>
+    <width>437</width>
     <height>455</height>
    </rect>
   </property>
@@ -151,7 +151,7 @@ selection-color: rgb(255, 0, 0);</string>
      <string notr="true">color: rgb(0, 0, 127);</string>
     </property>
     <property name="text">
-     <string>* Automatic Detection and Classification</string>
+     <string> Automatic Detection and Classification</string>
     </property>
    </widget>
    <widget class="QLabel" name="title2">
@@ -176,7 +176,7 @@ selection-color: rgb(255, 0, 0);</string>
      <string notr="true">color: rgb(0, 0, 127);</string>
     </property>
     <property name="text">
-     <string>of Tabla taalas from Indian Classical Music *</string>
+     <string>of Tabla taalas from Indian Classical Music </string>
     </property>
    </widget>
    <widget class="QLabel" name="label_4">
@@ -197,10 +197,10 @@ selection-color: rgb(255, 0, 0);</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(170, 85, 255);</string>
+     <string notr="true"/>
     </property>
     <property name="text">
-     <string>* Status :-</string>
+     <string>Status :-</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_5">
@@ -224,7 +224,7 @@ selection-color: rgb(255, 0, 0);</string>
      <string notr="true">color: rgb(255, 85, 0);</string>
     </property>
     <property name="text">
-     <string>* Classified Tabla taal :-</string>
+     <string>Classified Tabla taal :-</string>
     </property>
    </widget>
    <widget class="QTextEdit" name="status">
@@ -280,7 +280,7 @@ selection-color: rgb(255, 0, 0);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>454</width>
+     <width>437</width>
      <height>26</height>
     </rect>
    </property>
