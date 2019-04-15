@@ -17,7 +17,7 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
             process.setArguments(['-c', 'python3 {}'.format(script)])
             self._processes.append(process)
 
-        self.status.setFont(QtGui.QFont("Purisa", 10))
+        self.status.setFont(QtGui.QFont("Trebuchet MS", 10))
 
         self.startApp()
         self.stopApp()
@@ -58,7 +58,6 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
 
 if __name__ == "__main__":
     import sys
-
     app = QtWidgets.QApplication(sys.argv)
     w = MainApp()
     w.show()
