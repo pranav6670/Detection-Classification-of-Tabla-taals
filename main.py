@@ -29,23 +29,31 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
         print(self.output)
 
     def margincalc(self):
-        self.margin.setMinimum(0)
-        self.margin.setMaximum(10)
-        self.margin.valueChanged.connect(self.valuechange)
+        self.margin_per.setMinimum(1)
+        self.margin_per.setMaximum(10)
+        self.margin_har.setMinimum(1)
+        self.margin_har.setMaximum(10)
+        self.margin_per.valueChanged.connect(self.valuechange)
+        self.margin_har.valueChanged.connect(self.valuechange)
 
     def valuechange(self):
-        self.marginvalue.setTextColor(QtGui.QColor(255, 0, 0))
+        self.marginvalue_har.setTextColor(QtGui.QColor(255, 0, 0))
+        self.marginvalue_per.setTextColor(QtGui.QColor(255, 0, 0))
         self.font = QtGui.QFont()
         self.font.setFamily("Trebuchet MS")
         self.font.setPointSize(18)
-        self.marginvalue.setFont(self.font)
-        self.marginvalue.setText(str(self.margin.value()))
+        self.marginvalue_har.setFont(self.font)
+        self.marginvalue_per.setFont(self.font)
+        self.marginvalue_har.setText(str(self.margin_har.value()))
+        self.marginvalue_per.setText(str(self.margin_per.value()))
 
     def hpssop(self):
         self.file = "file.wav"
         self.y, self.sr = librosa.load(self.file)
-        self.margin_hpss = self.margin.value()
-        self.harmonic, self.percussive = librosa.effects.hpss(self.y, margin=self.margin_hpss)
+        self.margin_harms = self.margin_har.value()
+        self.margin_pers = self.margin_per.value()
+        self.harmonic, self.percussive = librosa.effects.hpss(self.y,
+                                                              margin=(self.margin_harms, self.margin_pers))
         librosa.output.write_wav("harmonic.wav", self.harmonic, self.sr)
         librosa.output.write_wav("percussive.wav", self.percussive, self.sr)
 
