@@ -1,6 +1,6 @@
 import mainui
 from PyQt5 import QtGui, QtCore, QtWidgets
-
+import librosa
 
 class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
     def __init__(self, parent=None):
@@ -22,6 +22,7 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
         self.stopApp()
         self.exitapp()
         self.margincalc()
+        self.onseparateclick()
 
     def on_readyReadStandardOutput(self):
         self.output = self.sender().readAllStandardOutput()
@@ -39,6 +40,17 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
         self.font.setPointSize(18)
         self.marginvalue.setFont(self.font)
         self.marginvalue.setText(str(self.margin.value()))
+
+    def hpssop(self):
+        self.file = "file.wav"
+        self.y, self.sr = librosa.load(self.file)
+        self.margin_hpss = self.margin.value()
+        self.harmonic, self.percussive = librosa.effects.hpss(self.y, margin=self.margin_hpss)
+        librosa.output.write_wav("harmonic.wav", self.harmonic, self.sr)
+        librosa.output.write_wav("percussive.wav", self.percussive, self.sr)
+
+    def onseparateclick(self):
+        self.hpss.clicked.connect(self.hpssop)
 
     def startApp(self):
         for process in self._processes:
