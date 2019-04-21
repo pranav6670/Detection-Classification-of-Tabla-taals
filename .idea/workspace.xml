@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73955db2-7166-448b-a020-900152631ce8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_1.ui" beforeDir="false" afterPath="$PROJECT_DIR$/main_1.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainui.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainui.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,8 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/guiGO.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="936">
-              <caret line="58" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="180">
+              <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -87,8 +84,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mainui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2934">
-              <caret line="213" selection-start-line="213" selection-end-line="213" />
+            <state relative-caret-position="112">
+              <caret line="88" column="53" selection-start-line="88" selection-start-column="53" selection-end-line="88" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -96,11 +93,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="64" selection-start-line="64" selection-end-line="64" />
+            <state relative-caret-position="972">
+              <caret line="88" column="46" lean-forward="true" selection-start-line="88" selection-start-column="46" selection-end-line="88" selection-end-column="46" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-                <marker date="1555331068231" expanded="true" signature="864:869" ph="..." />
+                <marker date="1555831078421" expanded="true" signature="934:939" ph="..." />
               </folding>
             </state>
           </provider>
@@ -144,8 +141,8 @@
         <option value="$PROJECT_DIR$/test_multiproc.py" />
         <option value="$PROJECT_DIR$/guiGO.py" />
         <option value="$PROJECT_DIR$/mainui.py" />
-        <option value="$PROJECT_DIR$/recordAudio.py" />
         <option value="$PROJECT_DIR$/liveSpectogram.py" />
+        <option value="$PROJECT_DIR$/recordAudio.py" />
         <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
@@ -166,6 +163,10 @@
       <pane id="ProjectPane">
         <subPane>
           <expand>
+            <path>
+              <item name="myrepo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myrepo" type="462c0819:PsiDirectoryNode" />
+            </path>
             <path>
               <item name="myrepo" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
@@ -317,10 +318,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.guiGO" />
         <item itemvalue="Python.mainui" />
         <item itemvalue="Python.GUI" />
         <item itemvalue="Python.recordAudio" />
-        <item itemvalue="Python.guiGO" />
       </list>
     </recent_temporary>
   </component>
@@ -344,56 +345,7 @@
       <workItem from="1555394024073" duration="596000" />
       <workItem from="1555417096588" duration="2265000" />
       <workItem from="1555587315179" duration="599000" />
-      <workItem from="1555833429300" duration="608000" />
-    </task>
-    <task id="LOCAL-00044" summary="Added audio recording stuff">
-      <created>1550553497403</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1550553497403</updated>
-    </task>
-    <task id="LOCAL-00045" summary="Added audio recording stuff">
-      <created>1550553569082</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1550553569083</updated>
-    </task>
-    <task id="LOCAL-00046" summary="Added live spectogram">
-      <created>1550659859116</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1550659859117</updated>
-    </task>
-    <task id="LOCAL-00047" summary="Added live spectogram">
-      <created>1550659920920</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1550659920920</updated>
-    </task>
-    <task id="LOCAL-00048" summary="Added live spectogram">
-      <created>1550660473961</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1550660473961</updated>
-    </task>
-    <task id="LOCAL-00049" summary="Improving audio backend">
-      <created>1551506878267</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1551506878267</updated>
-    </task>
-    <task id="LOCAL-00050" summary="Improving audio backend">
-      <created>1551507700819</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1551507700822</updated>
+      <workItem from="1555833429300" duration="12834000" />
     </task>
     <task id="LOCAL-00051" summary="Improving GUI">
       <created>1551509567271</created>
@@ -689,11 +641,60 @@
       <option name="project" value="LOCAL" />
       <updated>1555331256101</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="Changes to Main and GUI">
+      <created>1555818303646</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1555818303647</updated>
+    </task>
+    <task id="LOCAL-00094" summary="Changes to Main and GUI">
+      <created>1555818704374</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1555818704374</updated>
+    </task>
+    <task id="LOCAL-00095" summary="Changes to Main and GUI">
+      <created>1555818792660</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1555818792660</updated>
+    </task>
+    <task id="LOCAL-00096" summary="Changes to Main and GUI">
+      <created>1555824825538</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1555824825538</updated>
+    </task>
+    <task id="LOCAL-00097" summary="Changes to Main and GUI">
+      <created>1555824892737</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1555824892737</updated>
+    </task>
+    <task id="LOCAL-00098" summary="Changes to Main and GUI">
+      <created>1555826262556</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1555826262556</updated>
+    </task>
+    <task id="LOCAL-00099" summary="Changes to Main and GUI">
+      <created>1555828400067</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1555828400067</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10774000" />
+    <option name="totallyTimeSpent" value="23000000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -713,7 +714,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49801114" visible="true" weight="0.35724962" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4969697" visible="true" weight="0.35724962" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.39906833" />
@@ -721,7 +722,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5019889" side_tool="true" weight="0.35724962" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5030303" side_tool="true" weight="0.35724962" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32919255" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32972136" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -797,7 +798,8 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/myrepo$main.coverage" NAME="main Coverage Results" MODIFIED="1555828120360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/myrepo$guiGO.coverage" NAME="guiGO Coverage Results" MODIFIED="1555866799971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/myrepo$main.coverage" NAME="main Coverage Results" MODIFIED="1555866805630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/myrepo$mainui.coverage" NAME="mainui Coverage Results" MODIFIED="1555826796667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
@@ -863,13 +865,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hprss.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="124" column="10" selection-start-line="124" selection-start-column="10" selection-end-line="124" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/audioBackend.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -925,6 +920,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hprss.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="88" column="53" selection-start-line="88" selection-start-column="53" selection-end-line="88" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/recordAudio.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -937,28 +946,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/guiGO.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="180">
+          <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mainui.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2934">
-          <caret line="213" selection-start-line="213" selection-end-line="213" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        <state relative-caret-position="972">
+          <caret line="88" column="46" lean-forward="true" selection-start-line="88" selection-start-column="46" selection-end-line="88" selection-end-column="46" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <marker date="1555331068231" expanded="true" signature="864:869" ph="..." />
+            <marker date="1555831078421" expanded="true" signature="934:939" ph="..." />
           </folding>
         </state>
       </provider>
