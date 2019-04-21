@@ -328,7 +328,7 @@ gridline-color: rgb(255, 170, 0);
       <string>Separate</string>
      </property>
     </widget>
-    <widget class="QSpinBox" name="spinBox">
+    <widget class="QSpinBox" name="margin">
      <property name="geometry">
       <rect>
        <x>20</x>
@@ -390,7 +390,7 @@ gridline-color: rgb(255, 170, 0);
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>80</y>
+       <y>74</y>
        <width>171</width>
        <height>31</height>
       </rect>
@@ -413,8 +413,8 @@ gridline-color: rgb(255, 170, 0);
     <widget class="QPushButton" name="analyze">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>40</y>
+       <x>10</x>
+       <y>20</y>
        <width>111</width>
        <height>41</height>
       </rect>
