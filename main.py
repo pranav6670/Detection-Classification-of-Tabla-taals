@@ -18,7 +18,6 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
             self._processes.append(process)
 
         self.status.setFont(QtGui.QFont("Trebuchet MS", 10))
-
         self.startApp()
         self.stopApp()
         self.exitapp()
