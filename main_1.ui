@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>437</width>
-    <height>455</height>
+    <width>690</width>
+    <height>603</height>
    </rect>
   </property>
   <property name="font">
@@ -28,87 +28,11 @@
    <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="analyze">
-    <property name="geometry">
-     <rect>
-      <x>310</x>
-      <y>260</y>
-      <width>111</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Trebuchet MS</family>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(85, 0, 127);</string>
-    </property>
-    <property name="text">
-     <string>Analyze</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="stop">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>170</y>
-      <width>161</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Trebuchet MS</family>
-      <pointsize>14</pointsize>
-      <weight>75</weight>
-      <italic>false</italic>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(150, 0, 0);
-
-</string>
-    </property>
-    <property name="text">
-     <string>Stop</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="start">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>100</y>
-      <width>161</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Trebuchet MS</family>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-    <property name="autoFillBackground">
-     <bool>true</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(0, 150, 0);
-gridline-color: rgb(255, 170, 0);
-</string>
-    </property>
-    <property name="text">
-     <string>Start</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="exit">
     <property name="geometry">
      <rect>
-      <x>310</x>
-      <y>350</y>
+      <x>550</x>
+      <y>480</y>
       <width>111</width>
       <height>41</height>
      </rect>
@@ -131,18 +55,17 @@ selection-color: rgb(255, 0, 0);</string>
    <widget class="QLabel" name="title1">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>0</x>
       <y>10</y>
-      <width>421</width>
+      <width>641</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Courier 10 Pitch</family>
-      <pointsize>12</pointsize>
+      <pointsize>16</pointsize>
       <weight>75</weight>
-      <italic>false</italic>
       <bold>true</bold>
       <underline>false</underline>
      </font>
@@ -151,7 +74,7 @@ selection-color: rgb(255, 0, 0);</string>
      <string notr="true">color: rgb(0, 0, 127);</string>
     </property>
     <property name="text">
-     <string> Automatic Detection and Classification</string>
+     <string> Automatic Detection and Classification of Tabla</string>
     </property>
    </widget>
    <widget class="QLabel" name="title2">
@@ -159,14 +82,14 @@ selection-color: rgb(255, 0, 0);</string>
      <rect>
       <x>10</x>
       <y>40</y>
-      <width>461</width>
+      <width>551</width>
       <height>51</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Courier 10 Pitch</family>
-      <pointsize>12</pointsize>
+      <pointsize>16</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -176,15 +99,41 @@ selection-color: rgb(255, 0, 0);</string>
      <string notr="true">color: rgb(0, 0, 127);</string>
     </property>
     <property name="text">
-     <string>of Tabla taalas from Indian Classical Music </string>
+     <string> taalas from Indian Classical Music </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>50</y>
+      <width>201</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../Tabla_2_200x130.jpg</pixmap>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="status">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>310</y>
+      <width>201</width>
+      <height>51</height>
+     </rect>
     </property>
    </widget>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>230</y>
-      <width>131</width>
+      <x>470</x>
+      <y>280</y>
+      <width>61</width>
       <height>17</height>
      </rect>
     </property>
@@ -203,12 +152,113 @@ selection-color: rgb(255, 0, 0);</string>
      <string>Status :-</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="per">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>320</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Trebuchet MS</family>
+      <pointsize>12</pointsize>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(170, 85, 255);</string>
+    </property>
+    <property name="text">
+     <string>Play Percussive</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="har">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>320</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Trebuchet MS</family>
+      <pointsize>12</pointsize>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 85, 0);</string>
+    </property>
+    <property name="text">
+     <string>Play Harmonic </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="hpss">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>260</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Trebuchet MS</family>
+      <pointsize>14</pointsize>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Separate</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="analyze">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>480</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Trebuchet MS</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(85, 0, 127);</string>
+    </property>
+    <property name="text">
+     <string>Analyze</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="optaala">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>430</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>310</y>
-      <width>241</width>
+      <y>430</y>
+      <width>171</width>
       <height>31</height>
      </rect>
     </property>
@@ -227,60 +277,126 @@ selection-color: rgb(255, 0, 0);</string>
      <string>Classified Tabla taal :-</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="status">
+   <widget class="QSpinBox" name="spinBox">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>50</x>
       <y>260</y>
-      <width>231</width>
+      <width>161</width>
       <height>41</height>
      </rect>
     </property>
    </widget>
-   <widget class="QTextEdit" name="optaala">
+   <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>350</y>
-      <width>231</width>
-      <height>41</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>210</x>
+      <x>40</x>
       <y>100</y>
-      <width>201</width>
-      <height>131</height>
+      <width>391</width>
+      <height>101</height>
      </rect>
     </property>
-    <property name="text">
-     <string/>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
     </property>
-    <property name="pixmap">
-     <pixmap>../Tabla_2_200x130.jpg</pixmap>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
     </property>
+    <widget class="QPushButton" name="start">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>161</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Trebuchet MS</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 150, 0);
+gridline-color: rgb(255, 170, 0);
+</string>
+     </property>
+     <property name="text">
+      <string>Start</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="stop">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>40</y>
+       <width>161</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Trebuchet MS</family>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(150, 0, 0);
+
+</string>
+     </property>
+     <property name="text">
+      <string>Stop</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="recordlabel">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>101</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Trebuchet MS</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Recording</string>
+     </property>
+    </widget>
    </widget>
-   <zorder>analyze</zorder>
-   <zorder>start</zorder>
-   <zorder>stop</zorder>
+   <zorder>frame</zorder>
    <zorder>exit</zorder>
    <zorder>title1</zorder>
    <zorder>title2</zorder>
-   <zorder>label_4</zorder>
-   <zorder>label_5</zorder>
-   <zorder>status</zorder>
-   <zorder>optaala</zorder>
    <zorder>label</zorder>
+   <zorder>status</zorder>
+   <zorder>label_4</zorder>
+   <zorder>per</zorder>
+   <zorder>har</zorder>
+   <zorder>hpss</zorder>
+   <zorder>analyze</zorder>
+   <zorder>optaala</zorder>
+   <zorder>label_5</zorder>
+   <zorder>spinBox</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>437</width>
+     <width>690</width>
      <height>26</height>
     </rect>
    </property>
