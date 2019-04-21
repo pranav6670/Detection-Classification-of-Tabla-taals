@@ -106,7 +106,7 @@ selection-color: rgb(255, 0, 0);</string>
     <property name="geometry">
      <rect>
       <x>470</x>
-      <y>110</y>
+      <y>80</y>
       <width>201</width>
       <height>131</height>
      </rect>
@@ -122,7 +122,7 @@ selection-color: rgb(255, 0, 0);</string>
     <property name="geometry">
      <rect>
       <x>470</x>
-      <y>300</y>
+      <y>340</y>
       <width>201</width>
       <height>51</height>
      </rect>
@@ -132,7 +132,7 @@ selection-color: rgb(255, 0, 0);</string>
     <property name="geometry">
      <rect>
       <x>470</x>
-      <y>270</y>
+      <y>320</y>
       <width>61</width>
       <height>17</height>
      </rect>
@@ -262,8 +262,8 @@ gridline-color: rgb(255, 170, 0);
     <widget class="QPushButton" name="har">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>120</y>
+       <x>230</x>
+       <y>50</y>
        <width>161</width>
        <height>41</height>
       </rect>
@@ -308,8 +308,8 @@ gridline-color: rgb(255, 170, 0);
     <widget class="QPushButton" name="hpss">
      <property name="geometry">
       <rect>
-       <x>230</x>
-       <y>60</y>
+       <x>20</x>
+       <y>120</y>
        <width>161</width>
        <height>41</height>
       </rect>
@@ -326,16 +326,6 @@ gridline-color: rgb(255, 170, 0);
      </property>
      <property name="text">
       <string>Separate</string>
-     </property>
-    </widget>
-    <widget class="QSpinBox" name="margin">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>60</y>
-       <width>161</width>
-       <height>41</height>
-      </rect>
      </property>
     </widget>
     <widget class="QLabel" name="label_2">
@@ -358,6 +348,16 @@ gridline-color: rgb(255, 170, 0);
      </property>
      <property name="text">
       <string>Harmonic &amp; Percussive Separation</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="margin">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>161</width>
+       <height>41</height>
+      </rect>
      </property>
     </widget>
    </widget>
@@ -455,6 +455,38 @@ gridline-color: rgb(255, 170, 0);
      </property>
     </widget>
    </widget>
+   <widget class="QTextEdit" name="marginvalue">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>249</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_margin">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>260</y>
+      <width>67</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Trebuchet MS</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 85, 127);</string>
+    </property>
+    <property name="text">
+     <string>Margin :-</string>
+    </property>
+   </widget>
    <zorder>frame_3</zorder>
    <zorder>frame_2</zorder>
    <zorder>frame</zorder>
@@ -464,6 +496,8 @@ gridline-color: rgb(255, 170, 0);
    <zorder>label</zorder>
    <zorder>status</zorder>
    <zorder>label_4</zorder>
+   <zorder>marginvalue</zorder>
+   <zorder>text_margin</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

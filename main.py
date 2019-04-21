@@ -22,10 +22,24 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
         self.startApp()
         self.stopApp()
         self.exitapp()
+        self.margincalc()
 
     def on_readyReadStandardOutput(self):
         self.output = self.sender().readAllStandardOutput()
         print(self.output)
+
+    def margincalc(self):
+        self.margin.setMinimum(0)
+        self.margin.setMaximum(10)
+        self.margin.valueChanged.connect(self.valuechange)
+
+    def valuechange(self):
+        self.marginvalue.setTextColor(QtGui.QColor(255, 0, 0))
+        self.font = QtGui.QFont()
+        self.font.setFamily("Trebuchet MS")
+        self.font.setPointSize(18)
+        self.marginvalue.setFont(self.font)
+        self.marginvalue.setText(str(self.margin.value()))
 
     def startApp(self):
         for process in self._processes:
