@@ -2,7 +2,6 @@ import mainui
 from PyQt5 import QtGui, QtCore, QtWidgets
 import librosa
 import sys
-from tqdm import tqdm
 
 class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
     def __init__(self, parent=None):
