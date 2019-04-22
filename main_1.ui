@@ -259,57 +259,11 @@ gridline-color: rgb(255, 170, 0);
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QPushButton" name="har">
-     <property name="geometry">
-      <rect>
-       <x>230</x>
-       <y>50</y>
-       <width>161</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Trebuchet MS</family>
-       <pointsize>12</pointsize>
-       <underline>false</underline>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(255, 85, 0);</string>
-     </property>
-     <property name="text">
-      <string>Play Harmonic </string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="per">
-     <property name="geometry">
-      <rect>
-       <x>230</x>
-       <y>120</y>
-       <width>161</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Trebuchet MS</family>
-       <pointsize>12</pointsize>
-       <underline>false</underline>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(170, 85, 255);</string>
-     </property>
-     <property name="text">
-      <string>Play Percussive</string>
-     </property>
-    </widget>
     <widget class="QPushButton" name="hpss">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>120</y>
+       <x>220</x>
+       <y>50</y>
        <width>161</width>
        <height>41</height>
       </rect>
@@ -354,7 +308,7 @@ gridline-color: rgb(255, 170, 0);
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>66</y>
+       <y>50</y>
        <width>60</width>
        <height>41</height>
       </rect>
@@ -364,7 +318,7 @@ gridline-color: rgb(255, 170, 0);
      <property name="geometry">
       <rect>
        <x>120</x>
-       <y>66</y>
+       <y>50</y>
        <width>60</width>
        <height>41</height>
       </rect>
@@ -408,10 +362,42 @@ gridline-color: rgb(255, 170, 0);
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">color: rgb(255, 170, 255);</string>
+      <string notr="true">color: rgb(85, 170, 127);</string>
      </property>
      <property name="text">
       <string>Har</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEdit">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>130</y>
+       <width>381</width>
+       <height>41</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>100</y>
+       <width>121</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Trebuchet MS</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 170, 127);</string>
+     </property>
+     <property name="text">
+      <string>Separating :-</string>
      </property>
     </widget>
    </widget>

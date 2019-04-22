@@ -2,6 +2,7 @@ import mainui
 from PyQt5 import QtGui, QtCore, QtWidgets
 import librosa
 
+
 class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
     def __init__(self, parent=None):
         super(MainApp, self).__init__(parent)
@@ -77,7 +78,7 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
 
     def onstopclicked(self):
         self.status.setTextColor(QtGui.QColor(250, 0, 0))
-        self.text = "Recording Stopped"
+        self.text = "Stopped"
         self.status.setText(self.text)
 
     def exitapp(self):
