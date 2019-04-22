@@ -2,7 +2,6 @@ import mainui
 from PyQt5 import QtGui, QtCore, QtWidgets
 import librosa
 
-
 class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
     def __init__(self, parent=None):
         super(MainApp, self).__init__(parent)
@@ -17,7 +16,6 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
             process.setProgram('bash')
             process.setArguments(['-c', 'python3 {}'.format(script)])
             self._processes.append(process)
-
         self.status.setFont(QtGui.QFont("Trebuchet MS", 10))
         self.startApp()
         self.stopApp()
