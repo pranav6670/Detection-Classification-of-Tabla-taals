@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="73955db2-7166-448b-a020-900152631ce8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_1.ui" beforeDir="false" afterPath="$PROJECT_DIR$/main_1.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainui.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainui.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,8 +93,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="54" column="69" lean-forward="true" selection-start-line="54" selection-start-column="69" selection-end-line="54" selection-end-column="69" />
+            <state relative-caret-position="224">
+              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
                 <marker date="1556003603087" expanded="true" signature="944:949" ph="..." />
@@ -170,24 +167,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="myrepo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myrepo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myrepo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -359,14 +339,7 @@
       <workItem from="1555587315179" duration="599000" />
       <workItem from="1555833429300" duration="12886000" />
       <workItem from="1555936846723" duration="8960000" />
-      <workItem from="1556002547746" duration="2815000" />
-    </task>
-    <task id="LOCAL-00056" summary="Improving GUI">
-      <created>1551514324625</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1551514324625</updated>
+      <workItem from="1556002547746" duration="3438000" />
     </task>
     <task id="LOCAL-00057" summary="Improving GUI">
       <created>1551514835158</created>
@@ -704,11 +677,18 @@
       <option name="project" value="LOCAL" />
       <updated>1555954654213</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="Changes to Main and GUI">
+      <created>1556005697830</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1556005697831</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34827000" />
+    <option name="totallyTimeSpent" value="35450000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -813,7 +793,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/myrepo$guiGO.coverage" NAME="guiGO Coverage Results" MODIFIED="1555866799971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/myrepo$main.coverage" NAME="main Coverage Results" MODIFIED="1556005677974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/myrepo$main.coverage" NAME="main Coverage Results" MODIFIED="1556031242193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/myrepo$mainui.coverage" NAME="mainui Coverage Results" MODIFIED="1555826796667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
@@ -970,8 +950,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="54" column="69" lean-forward="true" selection-start-line="54" selection-start-column="69" selection-end-line="54" selection-end-column="69" />
+        <state relative-caret-position="224">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
             <marker date="1556003603087" expanded="true" signature="944:949" ph="..." />
