@@ -56,6 +56,10 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
                                                               margin=(self.margin_harms, self.margin_pers))
         librosa.output.write_wav("harmonic.wav", self.harmonic, self.sr)
         librosa.output.write_wav("percussive.wav", self.percussive, self.sr)
+        self.status.setTextColor(QtGui.QColor(0, 0, 255))
+        self.text = "Done Separating"
+        self.status.setText(self.text)
+
 
     def onseparateclick(self):
         self.hpss.clicked.connect(self.hpssop)

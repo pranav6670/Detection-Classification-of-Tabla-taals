@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>690</width>
-    <height>603</height>
+    <height>617</height>
    </rect>
   </property>
   <property name="font">
@@ -46,7 +46,12 @@
     </property>
     <property name="styleSheet">
      <string notr="true">color: rgb(170, 0, 0);
-selection-color: rgb(255, 0, 0);</string>
+border-style: outset;
+border-width: 2px;
+border-radius: 13px;
+background-color: rgb(255, 51, 51);
+border-color: black;
+</string>
     </property>
     <property name="text">
      <string>Quit</string>
@@ -124,8 +129,16 @@ selection-color: rgb(255, 0, 0);</string>
       <x>470</x>
       <y>363</y>
       <width>201</width>
-      <height>51</height>
+      <height>41</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-style: outset;
+border-width: 1px;
+background-color: rgb(255, 255, 255);
+border-radius: 1px;
+border-color: black;
+</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_4">
@@ -156,10 +169,17 @@ selection-color: rgb(255, 0, 0);</string>
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>90</y>
+      <y>130</y>
       <width>421</width>
-      <height>111</height>
+      <height>81</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-style: outset;
+border-width: 2px;
+border-radius: 13px;
+border-color: gray;
+</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -170,8 +190,8 @@ selection-color: rgb(255, 0, 0);</string>
     <widget class="QPushButton" name="start">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>40</y>
+       <x>34</x>
+       <y>20</y>
        <width>161</width>
        <height>41</height>
       </rect>
@@ -183,11 +203,15 @@ selection-color: rgb(255, 0, 0);</string>
       </font>
      </property>
      <property name="autoFillBackground">
-      <bool>true</bool>
+      <bool>false</bool>
      </property>
      <property name="styleSheet">
       <string notr="true">color: rgb(0, 150, 0);
-gridline-color: rgb(255, 170, 0);
+border-style: outset;
+border-width: 2px;
+background-color: rgb(187, 255, 176);
+border-radius: 13px;
+border-color: black;
 </string>
      </property>
      <property name="text">
@@ -197,8 +221,8 @@ gridline-color: rgb(255, 170, 0);
     <widget class="QPushButton" name="stop">
      <property name="geometry">
       <rect>
-       <x>200</x>
-       <y>40</y>
+       <x>226</x>
+       <y>20</y>
        <width>161</width>
        <height>41</height>
       </rect>
@@ -214,6 +238,11 @@ gridline-color: rgb(255, 170, 0);
      </property>
      <property name="styleSheet">
       <string notr="true">color: rgb(150, 0, 0);
+border-style: outset;
+border-width: 2px;
+background-color: rgb(255, 119, 121);
+border-radius: 13px;
+border-color: black;
 
 </string>
      </property>
@@ -221,37 +250,22 @@ gridline-color: rgb(255, 170, 0);
       <string>Stop</string>
      </property>
     </widget>
-    <widget class="QLabel" name="recordlabel">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>10</y>
-       <width>101</width>
-       <height>17</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Trebuchet MS</family>
-       <pointsize>12</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(255, 0, 0);</string>
-     </property>
-     <property name="text">
-      <string>Recording</string>
-     </property>
-    </widget>
    </widget>
    <widget class="QFrame" name="frame_2">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>210</y>
+      <y>253</y>
       <width>421</width>
-      <height>181</height>
+      <height>101</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-style: outset;
+border-width: 2px;
+border-radius: 13px;
+border-color: gray;
+</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -263,7 +277,7 @@ gridline-color: rgb(255, 170, 0);
      <property name="geometry">
       <rect>
        <x>220</x>
-       <y>50</y>
+       <y>20</y>
        <width>161</width>
        <height>41</height>
       </rect>
@@ -276,139 +290,131 @@ gridline-color: rgb(255, 170, 0);
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">color: rgb(255, 0, 0);</string>
+      <string notr="true">border-style: outset;
+color: rgb(170, 85, 255);
+border-width: 2px;
+border-radius: 13px;
+background-color: rgb(170, 170, 255);
+border-color: black;
+</string>
      </property>
      <property name="text">
       <string>Separate</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_2">
-     <property name="geometry">
-      <rect>
-       <x>80</x>
-       <y>10</y>
-       <width>311</width>
-       <height>17</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Trebuchet MS</family>
-       <pointsize>12</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(170, 0, 255);</string>
-     </property>
-     <property name="text">
-      <string>Harmonic &amp; Percussive Separation</string>
      </property>
     </widget>
     <widget class="QSpinBox" name="margin_per">
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>50</y>
+       <y>20</y>
        <width>60</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-style: outset;
+border-width: 1px;
+border-radius: 0px;
+border-color: black;
+</string>
      </property>
     </widget>
     <widget class="QSpinBox" name="margin_har">
      <property name="geometry">
       <rect>
        <x>120</x>
-       <y>50</y>
+       <y>20</y>
        <width>60</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-style: outset;
+border-width: 1px;
+border-radius: 0px;
+border-color: black;
+</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_7">
      <property name="geometry">
       <rect>
-       <x>21</x>
-       <y>34</y>
-       <width>67</width>
+       <x>10</x>
+       <y>64</y>
+       <width>91</width>
        <height>17</height>
       </rect>
      </property>
      <property name="font">
       <font>
        <family>Trebuchet MS</family>
-       <pointsize>12</pointsize>
+       <pointsize>8</pointsize>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">color: rgb(255, 85, 255);</string>
+      <string notr="true">color: rgb(255, 85, 255);
+border-style: outset;
+border-width: 0px;
+border-radius: 1px;
+border-color: black;
+</string>
      </property>
      <property name="text">
-      <string>Per</string>
+      <string>Percussive margin</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_8">
      <property name="geometry">
       <rect>
-       <x>123</x>
-       <y>34</y>
-       <width>67</width>
+       <x>110</x>
+       <y>64</y>
+       <width>141</width>
        <height>17</height>
       </rect>
      </property>
      <property name="font">
       <font>
        <family>Trebuchet MS</family>
-       <pointsize>12</pointsize>
+       <pointsize>8</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">color: rgb(85, 170, 127);</string>
+      <string notr="true">color: rgb(85, 170, 127);
+border-style: outset;
+border-width: 0px;
+border-radius: 2px;
+border-color: black;
+</string>
      </property>
      <property name="text">
-      <string>Har</string>
+      <string>Harmonic margin</string>
      </property>
     </widget>
-    <widget class="QTextEdit" name="textEdit">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>130</y>
-       <width>381</width>
-       <height>41</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_9">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>100</y>
-       <width>121</width>
-       <height>17</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Trebuchet MS</family>
-       <pointsize>12</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(255, 170, 127);</string>
-     </property>
-     <property name="text">
-      <string>Separating :-</string>
-     </property>
-    </widget>
+    <zorder>hpss</zorder>
+    <zorder>margin_per</zorder>
+    <zorder>margin_har</zorder>
+    <zorder>label_7</zorder>
+    <zorder>label_8</zorder>
+    <zorder>verticalSpacer</zorder>
    </widget>
    <widget class="QFrame" name="frame_3">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>410</y>
+      <y>398</y>
       <width>421</width>
       <height>131</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-style: outset;
+border-width: 2px;
+border-radius: 13px;
+border-color: gray;
+</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -424,6 +430,13 @@ gridline-color: rgb(255, 170, 0);
        <width>231</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-style: outset;
+border-width: 1px;
+border-radius: 2px;
+border-color: black;
+</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_5">
@@ -444,7 +457,12 @@ gridline-color: rgb(255, 170, 0);
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">color: rgb(255, 85, 0);</string>
+      <string notr="true">color: rgb(255, 85, 0);
+border-style: outset;
+border-width: 0px;
+border-radius: 2px;
+border-color: black;
+</string>
      </property>
      <property name="text">
       <string>Classified Tabla taal :-</string>
@@ -466,32 +484,15 @@ gridline-color: rgb(255, 170, 0);
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">color: rgb(85, 0, 127);</string>
+      <string notr="true">border-style: outset;
+color: rgb(0, 0, 0);
+border-width: 2px;
+border-radius: 13px;
+border-color: black;
+background-color: rgb(0, 170, 127);</string>
      </property>
      <property name="text">
       <string>Analyze</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_3">
-     <property name="geometry">
-      <rect>
-       <x>160</x>
-       <y>10</y>
-       <width>101</width>
-       <height>17</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Trebuchet MS</family>
-       <pointsize>12</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(170, 85, 127);</string>
-     </property>
-     <property name="text">
-      <string>Prediction</string>
      </property>
     </widget>
    </widget>
@@ -559,6 +560,72 @@ gridline-color: rgb(255, 170, 0);
      </rect>
     </property>
    </widget>
+   <widget class="QLabel" name="recordlabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>101</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Trebuchet MS</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Recording</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>225</y>
+      <width>311</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Trebuchet MS</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(170, 0, 255);</string>
+    </property>
+    <property name="text">
+     <string>Harmonic &amp; Percussive Separation</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>364</y>
+      <width>101</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Trebuchet MS</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(170, 85, 127);</string>
+    </property>
+    <property name="text">
+     <string>Prediction</string>
+    </property>
+   </widget>
    <zorder>frame_3</zorder>
    <zorder>frame_2</zorder>
    <zorder>frame</zorder>
@@ -572,6 +639,10 @@ gridline-color: rgb(255, 170, 0);
    <zorder>text_margin</zorder>
    <zorder>label_6</zorder>
    <zorder>marginvalue_per</zorder>
+   <zorder>recordlabel</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_3</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -579,7 +650,7 @@ gridline-color: rgb(255, 170, 0);
      <x>0</x>
      <y>0</y>
      <width>690</width>
-     <height>26</height>
+     <height>25</height>
     </rect>
    </property>
   </widget>
