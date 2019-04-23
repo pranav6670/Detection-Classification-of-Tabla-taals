@@ -2,6 +2,7 @@ import mainui
 from PyQt5 import QtGui, QtCore, QtWidgets
 import librosa
 import sys
+import time
 
 class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
     def __init__(self, parent=None):
