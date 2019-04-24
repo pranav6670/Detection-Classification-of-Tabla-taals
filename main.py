@@ -1,8 +1,11 @@
 import mainui
 from PyQt5 import QtGui, QtCore, QtWidgets
 import librosa
+import librosa.display
 import sys
 import time
+import numpy as np
+import matplotlib.pyplot as plt
 
 class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
     def __init__(self, parent=None):
@@ -24,6 +27,7 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
         self.exitapp()
         self.margincalc()
         self.onseparateclick()
+        self.onshowclicked()
 
     def on_readyReadStandardOutput(self):
         self.output = self.sender().readAllStandardOutput()
@@ -61,9 +65,39 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
         self.text = "Done Separating"
         self.status.setText(self.text)
 
-
     def onseparateclick(self):
         self.hpss.clicked.connect(self.hpssop)
+
+    def onshowclicked(self):
+        self.plot_hpss.clicked.connect(self.plots)
+
+    def plots(self):
+        self.file = "file.wav"
+        self.y, self.sr = librosa.load(self.file)
+        self.stft = librosa.stft(self.y)
+        self.stft_harmonic, self.stft_percussive = librosa.decompose.hpss(self.stft)
+        self.ref = np.max(np.abs(self.y))
+        plt.figure(figsize=(12, 8))
+
+        plt.subplot(3, 1, 1)
+        librosa.display.specshow(librosa.amplitude_to_db(self.stft, ref=self.ref), y_axis='log')
+        plt.colorbar()
+        plt.title('Full spectrogram')
+
+        plt.subplot(3, 1, 2 )
+        librosa.display.specshow(librosa.amplitude_to_db(self.stft_harmonic, ref=self.ref), y_axis='log')
+        plt.colorbar()
+        plt.title('Harmonic spectrogram')
+
+        plt.subplot(3, 1, 3)
+        librosa.display.specshow(librosa.amplitude_to_db(self.stft_percussive, ref=self.ref), y_axis='log', x_axis='time')
+        plt.colorbar()
+        plt.title('Percussive spectrogram')
+        plt.tight_layout()
+        self.status.setTextColor(QtGui.QColor(255, 100, 255))
+        self.text = "Plotting Done"
+        self.status.setText(self.text)
+        plt.show()
 
     def startApp(self):
         for process in self._processes:

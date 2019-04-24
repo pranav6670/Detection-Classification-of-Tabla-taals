@@ -11,7 +11,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(690, 617)
+        MainWindow.resize(677, 625)
         font = QtGui.QFont()
         font.setFamily("Tlwg Typo")
         MainWindow.setFont(font)
@@ -21,7 +21,7 @@ class Ui_MainWindow(object):
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.exit = QtWidgets.QPushButton(self.centralwidget)
-        self.exit.setGeometry(QtCore.QRect(480, 440, 171, 81))
+        self.exit.setGeometry(QtCore.QRect(470, 453, 171, 81))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setBold(True)
@@ -58,12 +58,12 @@ class Ui_MainWindow(object):
         self.title2.setStyleSheet("color: rgb(0, 0, 127);")
         self.title2.setObjectName("title2")
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(470, 80, 201, 131))
+        self.label.setGeometry(QtCore.QRect(460, 48, 201, 131))
         self.label.setText("")
         self.label.setPixmap(QtGui.QPixmap("../Tabla_2_200x130.jpg"))
         self.label.setObjectName("label")
         self.status = QtWidgets.QTextEdit(self.centralwidget)
-        self.status.setGeometry(QtCore.QRect(470, 363, 201, 41))
+        self.status.setGeometry(QtCore.QRect(460, 206, 201, 41))
         self.status.setStyleSheet("border-style: outset;\n"
 "border-width: 1px;\n"
 "background-color: rgb(255, 255, 255);\n"
@@ -72,7 +72,7 @@ class Ui_MainWindow(object):
 "")
         self.status.setObjectName("status")
         self.label_4 = QtWidgets.QLabel(self.centralwidget)
-        self.label_4.setGeometry(QtCore.QRect(470, 331, 61, 17))
+        self.label_4.setGeometry(QtCore.QRect(380, 220, 61, 17))
         font = QtGui.QFont()
         font.setFamily("Ubuntu")
         font.setPointSize(12)
@@ -86,8 +86,7 @@ class Ui_MainWindow(object):
         self.frame.setStyleSheet("border-style: outset;\n"
 "border-width: 2px;\n"
 "border-radius: 13px;\n"
-"border-color: gray;\n"
-"")
+"border-color: rgb(0, 0, 0);")
         self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame.setObjectName("frame")
@@ -125,12 +124,11 @@ class Ui_MainWindow(object):
 "")
         self.stop.setObjectName("stop")
         self.frame_2 = QtWidgets.QFrame(self.centralwidget)
-        self.frame_2.setGeometry(QtCore.QRect(10, 253, 421, 101))
+        self.frame_2.setGeometry(QtCore.QRect(10, 255, 651, 131))
         self.frame_2.setStyleSheet("border-style: outset;\n"
 "border-width: 2px;\n"
 "border-radius: 13px;\n"
-"border-color: gray;\n"
-"")
+"border-color: rgb(0, 0, 0);")
         self.frame_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_2.setObjectName("frame_2")
@@ -150,7 +148,7 @@ class Ui_MainWindow(object):
 "")
         self.hpss.setObjectName("hpss")
         self.margin_per = QtWidgets.QSpinBox(self.frame_2)
-        self.margin_per.setGeometry(QtCore.QRect(20, 20, 60, 41))
+        self.margin_per.setGeometry(QtCore.QRect(20, 10, 60, 41))
         self.margin_per.setStyleSheet("border-style: outset;\n"
 "border-width: 1px;\n"
 "border-radius: 0px;\n"
@@ -158,7 +156,7 @@ class Ui_MainWindow(object):
 "")
         self.margin_per.setObjectName("margin_per")
         self.margin_har = QtWidgets.QSpinBox(self.frame_2)
-        self.margin_har.setGeometry(QtCore.QRect(120, 20, 60, 41))
+        self.margin_har.setGeometry(QtCore.QRect(20, 80, 60, 41))
         self.margin_har.setStyleSheet("border-style: outset;\n"
 "border-width: 1px;\n"
 "border-radius: 0px;\n"
@@ -166,7 +164,7 @@ class Ui_MainWindow(object):
 "")
         self.margin_har.setObjectName("margin_har")
         self.label_7 = QtWidgets.QLabel(self.frame_2)
-        self.label_7.setGeometry(QtCore.QRect(10, 64, 91, 17))
+        self.label_7.setGeometry(QtCore.QRect(90, 20, 91, 17))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setPointSize(8)
@@ -179,7 +177,7 @@ class Ui_MainWindow(object):
 "")
         self.label_7.setObjectName("label_7")
         self.label_8 = QtWidgets.QLabel(self.frame_2)
-        self.label_8.setGeometry(QtCore.QRect(110, 64, 141, 17))
+        self.label_8.setGeometry(QtCore.QRect(90, 90, 141, 17))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setPointSize(8)
@@ -194,17 +192,66 @@ class Ui_MainWindow(object):
 "border-color: black;\n"
 "")
         self.label_8.setObjectName("label_8")
-        self.hpss.raise_()
-        self.margin_per.raise_()
-        self.margin_har.raise_()
-        self.label_7.raise_()
-        self.label_8.raise_()
+        self.marginvalue_per = QtWidgets.QTextBrowser(self.frame_2)
+        self.marginvalue_per.setGeometry(QtCore.QRect(580, 10, 61, 41))
+        self.marginvalue_per.setStyleSheet("border-style: outset;\n"
+"border-width: 1px;\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-radius: 1px;\n"
+"border-color: black;\n"
+"")
+        self.marginvalue_per.setObjectName("marginvalue_per")
+        self.marginvalue_har = QtWidgets.QTextEdit(self.frame_2)
+        self.marginvalue_har.setGeometry(QtCore.QRect(580, 80, 61, 41))
+        self.marginvalue_har.setStyleSheet("border-style: outset;\n"
+"border-width: 1px;\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-radius: 1px;\n"
+"border-color: black;\n"
+"")
+        self.marginvalue_har.setObjectName("marginvalue_har")
+        self.text_margin = QtWidgets.QLabel(self.frame_2)
+        self.text_margin.setGeometry(QtCore.QRect(465, 90, 111, 17))
+        font = QtGui.QFont()
+        font.setFamily("Trebuchet MS")
+        font.setPointSize(12)
+        self.text_margin.setFont(font)
+        self.text_margin.setStyleSheet("color: rgb(255, 85, 127);\n"
+"border-style: outset;\n"
+"border-width: 0px;\n"
+"border-radius: 1px;\n"
+"border-color: black;\n"
+"")
+        self.text_margin.setObjectName("text_margin")
+        self.label_6 = QtWidgets.QLabel(self.frame_2)
+        self.label_6.setGeometry(QtCore.QRect(465, 20, 131, 17))
+        font = QtGui.QFont()
+        font.setFamily("Trebuchet MS")
+        font.setPointSize(12)
+        self.label_6.setFont(font)
+        self.label_6.setStyleSheet("color: rgb(255, 0, 127);\n"
+"border-style: outset;\n"
+"border-width: 0px;\n"
+"border-radius: 1px;\n"
+"border-color: black;\n"
+"")
+        self.label_6.setObjectName("label_6")
+        self.plot_hpss = QtWidgets.QPushButton(self.frame_2)
+        self.plot_hpss.setGeometry(QtCore.QRect(220, 74, 161, 41))
+        self.plot_hpss.setStyleSheet("border-style: outset;\n"
+"border-width: 2px;\n"
+"color: rgb(255, 85, 0);\n"
+"border-radius: 13px;\n"
+"border-color: black;\n"
+"background-color: rgb(255, 170, 127);\n"
+"")
+        self.plot_hpss.setObjectName("plot_hpss")
         self.frame_3 = QtWidgets.QFrame(self.centralwidget)
-        self.frame_3.setGeometry(QtCore.QRect(10, 398, 421, 131))
+        self.frame_3.setGeometry(QtCore.QRect(10, 429, 421, 131))
         self.frame_3.setStyleSheet("border-style: outset;\n"
 "border-width: 2px;\n"
 "border-radius: 13px;\n"
-"border-color: gray;\n"
+"border-color: black;\n"
 "")
         self.frame_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_3.setFrameShadow(QtWidgets.QFrame.Raised)
@@ -245,28 +292,6 @@ class Ui_MainWindow(object):
 "border-color: black;\n"
 "background-color: rgb(0, 170, 127);")
         self.analyze.setObjectName("analyze")
-        self.marginvalue_har = QtWidgets.QTextEdit(self.centralwidget)
-        self.marginvalue_har.setGeometry(QtCore.QRect(606, 234, 61, 41))
-        self.marginvalue_har.setObjectName("marginvalue_har")
-        self.text_margin = QtWidgets.QLabel(self.centralwidget)
-        self.text_margin.setGeometry(QtCore.QRect(470, 244, 111, 17))
-        font = QtGui.QFont()
-        font.setFamily("Trebuchet MS")
-        font.setPointSize(12)
-        self.text_margin.setFont(font)
-        self.text_margin.setStyleSheet("color: rgb(255, 85, 127);")
-        self.text_margin.setObjectName("text_margin")
-        self.label_6 = QtWidgets.QLabel(self.centralwidget)
-        self.label_6.setGeometry(QtCore.QRect(470, 290, 131, 17))
-        font = QtGui.QFont()
-        font.setFamily("Trebuchet MS")
-        font.setPointSize(12)
-        self.label_6.setFont(font)
-        self.label_6.setStyleSheet("color: rgb(255, 0, 127);")
-        self.label_6.setObjectName("label_6")
-        self.marginvalue_per = QtWidgets.QTextBrowser(self.centralwidget)
-        self.marginvalue_per.setGeometry(QtCore.QRect(606, 280, 61, 41))
-        self.marginvalue_per.setObjectName("marginvalue_per")
         self.recordlabel = QtWidgets.QLabel(self.centralwidget)
         self.recordlabel.setGeometry(QtCore.QRect(20, 100, 101, 17))
         font = QtGui.QFont()
@@ -284,7 +309,7 @@ class Ui_MainWindow(object):
         self.label_2.setStyleSheet("color: rgb(170, 0, 255);")
         self.label_2.setObjectName("label_2")
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
-        self.label_3.setGeometry(QtCore.QRect(20, 364, 101, 17))
+        self.label_3.setGeometry(QtCore.QRect(20, 402, 101, 17))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setPointSize(12)
@@ -300,17 +325,12 @@ class Ui_MainWindow(object):
         self.label.raise_()
         self.status.raise_()
         self.label_4.raise_()
-        self.marginvalue_har.raise_()
-        self.text_margin.raise_()
-        self.label_6.raise_()
-        self.marginvalue_per.raise_()
         self.recordlabel.raise_()
-        self.label_2.raise_()
         self.label_2.raise_()
         self.label_3.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 690, 25))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 677, 26))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
@@ -332,10 +352,11 @@ class Ui_MainWindow(object):
         self.hpss.setText(_translate("MainWindow", "Separate"))
         self.label_7.setText(_translate("MainWindow", "Percussive margin"))
         self.label_8.setText(_translate("MainWindow", "Harmonic margin"))
-        self.label_5.setText(_translate("MainWindow", "Classified Tabla taal :-"))
-        self.analyze.setText(_translate("MainWindow", "Analyze"))
         self.text_margin.setText(_translate("MainWindow", "Margin @Har:-"))
         self.label_6.setText(_translate("MainWindow", "Margin @Per :-"))
+        self.plot_hpss.setText(_translate("MainWindow", "Show plots"))
+        self.label_5.setText(_translate("MainWindow", "Classified Tabla taal :-"))
+        self.analyze.setText(_translate("MainWindow", "Analyze"))
         self.recordlabel.setText(_translate("MainWindow", "Recording"))
         self.label_2.setText(_translate("MainWindow", "Harmonic & Percussive Separation"))
         self.label_3.setText(_translate("MainWindow", "Prediction"))
