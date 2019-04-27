@@ -8,6 +8,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pyaudio
 
+
 class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
     def __init__(self, parent=None):
         super(MainApp, self).__init__(parent)
@@ -86,7 +87,6 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
         self.ip_rec.setMinimum(15)
         self.ip_rec.setMaximum(30)
         self.RECORD_SECONDS = self.ip_rec.value()
-
 
     def margincalc(self):
         self.margin_per.setMinimum(1)
