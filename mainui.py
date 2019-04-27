@@ -359,7 +359,7 @@ class Ui_MainWindow(object):
         self.ip_rec.setGeometry(QtCore.QRect(178, 2, 51, 61))
         self.ip_rec.setObjectName("ip_rec")
         self.recop = QtWidgets.QTextEdit(self.frame_4)
-        self.recop.setGeometry(QtCore.QRect(250, 10, 71, 41))
+        self.recop.setGeometry(QtCore.QRect(250, 18, 71, 31))
         self.recop.setStyleSheet("border-style: outset;\n"
 "border-width: 1px;\n"
 "background-color: rgb(255, 255, 255);\n"

@@ -37,8 +37,11 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
         self.onseparateclick()
         self.onshowclicked()
         self.onrecordclicked()
-        self.RECORD_SECONDS = self.ip_rec.value()
+        # self.RECORD_SECONDS = self.ip_rec.value()
+        # print(self.RECORD_SECONDS)
+
     def record(self):
+        self.RECORD_SECONDS = self.ip_rec.value()
         self.audio = pyaudio.PyAudio()
 
         # start Recording
@@ -57,7 +60,6 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
         self.status.clear()
         self.texxtt = "Done recording"
         self.status.setText(self.texxtt)
-        self.status.show()
         print("finished recording")
 
         # stop Recording
@@ -80,9 +82,11 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
         print(self.output)
 
     def seccals(self):
+        self.ip_rec.valueChanged.connect(self.value_dialchange)
         self.ip_rec.setMinimum(15)
         self.ip_rec.setMaximum(30)
-        self.ip_rec.valueChanged.connect(self.value_dialchange)
+        self.RECORD_SECONDS = self.ip_rec.value()
+
 
     def margincalc(self):
         self.margin_per.setMinimum(1)
@@ -91,10 +95,11 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
         self.margin_har.setMaximum(10)
         self.margin_per.valueChanged.connect(self.valuechange)
         self.margin_har.valueChanged.connect(self.valuechange)
+        self.RECORD_SECONDS = self.ip_rec.value()
 
     def value_dialchange(self):
         self.recop.setTextColor(QtGui.QColor(0, 0, 255))
-        self.recop.setText(str(self.ip_rec.value()))
+        self.recop.setText(str(self.ip_rec.value()) + " secs")
 
     def valuechange(self):
         self.marginvalue_har.setTextColor(QtGui.QColor(255, 0, 0))
@@ -118,7 +123,6 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
         librosa.output.write_wav("percussive.wav", self.percussive, self.sr)
         self.status.setTextColor(QtGui.QColor(0, 0, 255))
         self.text = "Done Separating"
-        self.status.show()
 
     def onseparateclick(self):
         self.hpss.clicked.connect(self.hpssop)
@@ -152,8 +156,6 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
         self.status.setTextColor(QtGui.QColor(255, 100, 255))
         self.text = "Plotting Done"
         self.status.setText(self.text)
-        self.status.show()
-
         plt.show()
 
     def startApp(self):
@@ -162,10 +164,9 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
             self.start.clicked.connect(self.onstartclicked)
 
     def onstartclicked(self):
-        self.status.setTextColor(QtGui.QColor(0, 250, 0))
+        self.status.setTextColor(QtGui.QColor(0, 170, 127))
         self.text = "Started Visuals"
         self.status.setText(self.text)
-        self.status.show()
 
     def stopApp(self):
         for process in self._processes:
@@ -176,7 +177,6 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
         self.status.setTextColor(QtGui.QColor(250, 0, 0))
         self.text = "Stopped Visuals"
         self.status.setText(self.text)
-        self.status.show()
 
     def exitapp(self):
         self.exit.clicked.connect(self.close)
