@@ -123,6 +123,7 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
         librosa.output.write_wav("percussive.wav", self.percussive, self.sr)
         self.status.setTextColor(QtGui.QColor(0, 0, 255))
         self.text = "Done Separating"
+        self.status.setText(self.text)
 
     def onseparateclick(self):
         self.hpss.clicked.connect(self.hpssop)

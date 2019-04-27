@@ -62,14 +62,14 @@ border-color: black;
      <rect>
       <x>0</x>
       <y>10</y>
-      <width>641</width>
+      <width>711</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Courier 10 Pitch</family>
-      <pointsize>16</pointsize>
+      <pointsize>18</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -94,7 +94,7 @@ border-color: black;
     <property name="font">
      <font>
       <family>Courier 10 Pitch</family>
-      <pointsize>16</pointsize>
+      <pointsize>18</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
@@ -110,8 +110,8 @@ border-color: black;
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>510</x>
-      <y>50</y>
+      <x>520</x>
+      <y>40</y>
       <width>201</width>
       <height>121</height>
      </rect>
@@ -127,9 +127,9 @@ border-color: black;
     <property name="geometry">
      <rect>
       <x>520</x>
-      <y>190</y>
+      <y>200</y>
       <width>201</width>
-      <height>41</height>
+      <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -144,8 +144,8 @@ border-color: black;
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>440</x>
-      <y>200</y>
+      <x>442</x>
+      <y>205</y>
       <width>61</width>
       <height>17</height>
      </rect>
