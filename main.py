@@ -59,7 +59,7 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
             self.frames.append(self.data)
 
         self.status.clear()
-        self.texxtt = "Done recording"
+        self.texxtt = "Done recording for {} secs".format(self.ip_rec.value)
         self.status.setText(self.texxtt)
         print("finished recording")
 

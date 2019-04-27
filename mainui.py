@@ -17,7 +17,7 @@ class Ui_MainWindow(object):
         MainWindow.setFont(font)
         MainWindow.setMouseTracking(False)
         MainWindow.setAutoFillBackground(False)
-        MainWindow.setStyleSheet("")
+        MainWindow.setStyleSheet("background-color: rgb(235, 255, 230);")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.exit = QtWidgets.QPushButton(self.centralwidget)
@@ -36,7 +36,7 @@ class Ui_MainWindow(object):
 "")
         self.exit.setObjectName("exit")
         self.title1 = QtWidgets.QLabel(self.centralwidget)
-        self.title1.setGeometry(QtCore.QRect(0, 10, 711, 31))
+        self.title1.setGeometry(QtCore.QRect(0, 0, 711, 31))
         font = QtGui.QFont()
         font.setFamily("Courier 10 Pitch")
         font.setPointSize(18)
@@ -47,7 +47,7 @@ class Ui_MainWindow(object):
         self.title1.setStyleSheet("color: rgb(0, 0, 127);")
         self.title1.setObjectName("title1")
         self.title2 = QtWidgets.QLabel(self.centralwidget)
-        self.title2.setGeometry(QtCore.QRect(0, 30, 551, 51))
+        self.title2.setGeometry(QtCore.QRect(0, 22, 551, 41))
         font = QtGui.QFont()
         font.setFamily("Courier 10 Pitch")
         font.setPointSize(18)
@@ -58,7 +58,8 @@ class Ui_MainWindow(object):
         self.title2.setStyleSheet("color: rgb(0, 0, 127);")
         self.title2.setObjectName("title2")
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(520, 40, 201, 121))
+        self.label.setGeometry(QtCore.QRect(520, 30, 201, 131))
+        self.label.setStyleSheet("background-color: rgb(255, 255, 183);")
         self.label.setText("")
         self.label.setPixmap(QtGui.QPixmap("../Tabla_2_200x130.jpg"))
         self.label.setObjectName("label")
@@ -148,23 +149,25 @@ class Ui_MainWindow(object):
 "")
         self.hpss.setObjectName("hpss")
         self.margin_per = QtWidgets.QSpinBox(self.frame_2)
-        self.margin_per.setGeometry(QtCore.QRect(20, 10, 60, 41))
+        self.margin_per.setGeometry(QtCore.QRect(20, 16, 60, 31))
         self.margin_per.setStyleSheet("border-style: outset;\n"
+"background-color: rgb(255, 255, 255);\n"
 "border-width: 1px;\n"
 "border-radius: 0px;\n"
 "border-color: black;\n"
 "")
         self.margin_per.setObjectName("margin_per")
         self.margin_har = QtWidgets.QSpinBox(self.frame_2)
-        self.margin_har.setGeometry(QtCore.QRect(20, 71, 60, 41))
+        self.margin_har.setGeometry(QtCore.QRect(20, 79, 60, 31))
         self.margin_har.setStyleSheet("border-style: outset;\n"
+"background-color: rgb(255, 255, 255);\n"
 "border-width: 1px;\n"
 "border-radius: 0px;\n"
 "border-color: black;\n"
 "")
         self.margin_har.setObjectName("margin_har")
         self.label_7 = QtWidgets.QLabel(self.frame_2)
-        self.label_7.setGeometry(QtCore.QRect(11, 49, 91, 17))
+        self.label_7.setGeometry(QtCore.QRect(11, 52, 91, 17))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setPointSize(8)
@@ -224,7 +227,7 @@ class Ui_MainWindow(object):
 "")
         self.text_margin.setObjectName("text_margin")
         self.label_6 = QtWidgets.QLabel(self.frame_2)
-        self.label_6.setGeometry(QtCore.QRect(280, 20, 131, 17))
+        self.label_6.setGeometry(QtCore.QRect(280, 20, 111, 17))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setPointSize(12)
@@ -257,7 +260,7 @@ class Ui_MainWindow(object):
         self.frame_3.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_3.setObjectName("frame_3")
         self.optaala = QtWidgets.QTextEdit(self.frame_3)
-        self.optaala.setGeometry(QtCore.QRect(180, 70, 231, 41))
+        self.optaala.setGeometry(QtCore.QRect(190, 70, 221, 41))
         self.optaala.setStyleSheet("border-style: outset;\n"
 "border-width: 1px;\n"
 "border-radius: 2px;\n"
@@ -357,6 +360,7 @@ class Ui_MainWindow(object):
         self.rec_start.setObjectName("rec_start")
         self.ip_rec = QtWidgets.QDial(self.frame_4)
         self.ip_rec.setGeometry(QtCore.QRect(178, 2, 51, 61))
+        self.ip_rec.setStyleSheet("background-color: rgb(15, 47, 255);")
         self.ip_rec.setObjectName("ip_rec")
         self.recop = QtWidgets.QTextEdit(self.frame_4)
         self.recop.setGeometry(QtCore.QRect(250, 18, 71, 31))
@@ -383,7 +387,7 @@ class Ui_MainWindow(object):
         self.label_9.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 733, 26))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 733, 25))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)

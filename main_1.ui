@@ -25,7 +25,7 @@
    <bool>false</bool>
   </property>
   <property name="styleSheet">
-   <string notr="true"/>
+   <string notr="true">background-color: rgb(235, 255, 230);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="exit">
@@ -61,7 +61,7 @@ border-color: black;
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>10</y>
+      <y>0</y>
       <width>711</width>
       <height>31</height>
      </rect>
@@ -86,9 +86,9 @@ border-color: black;
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>30</y>
+      <y>22</y>
       <width>551</width>
-      <height>51</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="font">
@@ -111,10 +111,13 @@ border-color: black;
     <property name="geometry">
      <rect>
       <x>520</x>
-      <y>40</y>
+      <y>30</y>
       <width>201</width>
-      <height>121</height>
+      <height>131</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 183);</string>
     </property>
     <property name="text">
      <string/>
@@ -304,13 +307,14 @@ border-color: black;
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>10</y>
+       <y>16</y>
        <width>60</width>
-       <height>41</height>
+       <height>31</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">border-style: outset;
+background-color: rgb(255, 255, 255);
 border-width: 1px;
 border-radius: 0px;
 border-color: black;
@@ -321,13 +325,14 @@ border-color: black;
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>71</y>
+       <y>79</y>
        <width>60</width>
-       <height>41</height>
+       <height>31</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">border-style: outset;
+background-color: rgb(255, 255, 255);
 border-width: 1px;
 border-radius: 0px;
 border-color: black;
@@ -338,7 +343,7 @@ border-color: black;
      <property name="geometry">
       <rect>
        <x>11</x>
-       <y>49</y>
+       <y>52</y>
        <width>91</width>
        <height>17</height>
       </rect>
@@ -459,7 +464,7 @@ border-color: black;
       <rect>
        <x>280</x>
        <y>20</y>
-       <width>131</width>
+       <width>111</width>
        <height>17</height>
       </rect>
      </property>
@@ -529,9 +534,9 @@ border-color: black;
     <widget class="QTextEdit" name="optaala">
      <property name="geometry">
       <rect>
-       <x>180</x>
+       <x>190</x>
        <y>70</y>
-       <width>231</width>
+       <width>221</width>
        <height>41</height>
       </rect>
      </property>
@@ -766,6 +771,9 @@ color: rgb(0, 170, 0);
        <height>61</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(15, 47, 255);</string>
+     </property>
     </widget>
     <widget class="QTextEdit" name="recop">
      <property name="geometry">
@@ -807,7 +815,7 @@ border-color: black;
      <x>0</x>
      <y>0</y>
      <width>733</width>
-     <height>26</height>
+     <height>25</height>
     </rect>
    </property>
   </widget>
