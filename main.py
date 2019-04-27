@@ -6,13 +6,13 @@ import sys
 import time
 import numpy as np
 import matplotlib.pyplot as plt
+import pyaudio
 
 class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
     def __init__(self, parent=None):
         super(MainApp, self).__init__(parent)
         self.setupUi(self)
-
-        self._scripts = ("guiGO.py", "liveSpectogram.py", "recordAudio.py")
+        self._scripts = ("guiGO.py", "liveSpectogram.py")
         self._processes = []
         for script in self._scripts:
             process = QtCore.QProcess(self)
@@ -21,6 +21,14 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
             process.setProgram('bash')
             process.setArguments(['-c', 'python3 {}'.format(script)])
             self._processes.append(process)
+
+        self.FORMAT = pyaudio.paInt16
+        self.CHANNELS = 2
+        self.RATE = 44100
+        self.CHUNK = 1024
+        self.RECORD_SECONDS = 30
+        self.WAVE_OUTPUT_FILENAME = "file.wav"
+
         self.status.setFont(QtGui.QFont("Trebuchet MS", 10))
         self.startApp()
         self.stopApp()
