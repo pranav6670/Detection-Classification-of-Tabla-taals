@@ -3,7 +3,7 @@ from PyQt5 import QtGui, QtCore, QtWidgets
 import librosa
 import librosa.display
 import sys
-import time
+import wave
 import numpy as np
 import matplotlib.pyplot as plt
 import pyaudio
@@ -26,7 +26,6 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
         self.CHANNELS = 2
         self.RATE = 44100
         self.CHUNK = 1024
-        self.RECORD_SECONDS = 30
         self.WAVE_OUTPUT_FILENAME = "file.wav"
 
         self.status.setFont(QtGui.QFont("Trebuchet MS", 10))
@@ -34,12 +33,56 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
         self.stopApp()
         self.exitapp()
         self.margincalc()
+        self.seccals()
         self.onseparateclick()
         self.onshowclicked()
+        self.onrecordclicked()
+        self.RECORD_SECONDS = self.ip_rec.value()
+    def record(self):
+        self.audio = pyaudio.PyAudio()
+
+        # start Recording
+        self.stream = self.audio.open(format=self.FORMAT, channels=self.CHANNELS,
+                                      rate=self.RATE, input=True, frames_per_buffer=self.CHUNK)
+        print("recording...")
+        self.texts = "Recording started"
+        self.status.setText(self.texts)
+        self.status.show()
+        self.frames = []
+
+        for i in range(0, int(self.RATE / self.CHUNK * self.RECORD_SECONDS)):
+            self.data = self.stream.read(self.CHUNK)
+            self.frames.append(self.data)
+
+        self.status.clear()
+        self.texxtt = "Done recording"
+        self.status.setText(self.texxtt)
+        self.status.show()
+        print("finished recording")
+
+        # stop Recording
+        self.stream.stop_stream()
+        self.stream.close()
+        self.audio.terminate()
+
+        self.waveFile = wave.open(self.WAVE_OUTPUT_FILENAME, 'wb')
+        self.waveFile.setnchannels(self.CHANNELS)
+        self.waveFile.setsampwidth(self.audio.get_sample_size(self.FORMAT))
+        self.waveFile.setframerate(self.RATE)
+        self.waveFile.writeframes(b''.join(self.frames))
+        self.waveFile.close()
+
+    def onrecordclicked(self):
+        self.rec_start.clicked.connect(self.record)
 
     def on_readyReadStandardOutput(self):
         self.output = self.sender().readAllStandardOutput()
         print(self.output)
+
+    def seccals(self):
+        self.ip_rec.setMinimum(15)
+        self.ip_rec.setMaximum(30)
+        self.ip_rec.valueChanged.connect(self.value_dialchange)
 
     def margincalc(self):
         self.margin_per.setMinimum(1)
@@ -48,6 +91,10 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
         self.margin_har.setMaximum(10)
         self.margin_per.valueChanged.connect(self.valuechange)
         self.margin_har.valueChanged.connect(self.valuechange)
+
+    def value_dialchange(self):
+        self.recop.setTextColor(QtGui.QColor(0, 0, 255))
+        self.recop.setText(str(self.ip_rec.value()))
 
     def valuechange(self):
         self.marginvalue_har.setTextColor(QtGui.QColor(255, 0, 0))
@@ -71,7 +118,7 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
         librosa.output.write_wav("percussive.wav", self.percussive, self.sr)
         self.status.setTextColor(QtGui.QColor(0, 0, 255))
         self.text = "Done Separating"
-        self.status.setText(self.text)
+        self.status.show()
 
     def onseparateclick(self):
         self.hpss.clicked.connect(self.hpssop)
@@ -92,7 +139,7 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
         plt.colorbar()
         plt.title('Full spectrogram')
 
-        plt.subplot(3, 1, 2 )
+        plt.subplot(3, 1, 2)
         librosa.display.specshow(librosa.amplitude_to_db(self.stft_harmonic, ref=self.ref), y_axis='log')
         plt.colorbar()
         plt.title('Harmonic spectrogram')
@@ -105,6 +152,8 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
         self.status.setTextColor(QtGui.QColor(255, 100, 255))
         self.text = "Plotting Done"
         self.status.setText(self.text)
+        self.status.show()
+
         plt.show()
 
     def startApp(self):
@@ -114,8 +163,9 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
 
     def onstartclicked(self):
         self.status.setTextColor(QtGui.QColor(0, 250, 0))
-        self.text = "Recording Started"
+        self.text = "Started Visuals"
         self.status.setText(self.text)
+        self.status.show()
 
     def stopApp(self):
         for process in self._processes:
@@ -124,8 +174,9 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
 
     def onstopclicked(self):
         self.status.setTextColor(QtGui.QColor(250, 0, 0))
-        self.text = "Stopped"
+        self.text = "Stopped Visuals"
         self.status.setText(self.text)
+        self.status.show()
 
     def exitapp(self):
         self.exit.clicked.connect(self.close)

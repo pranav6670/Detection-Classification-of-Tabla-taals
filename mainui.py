@@ -325,7 +325,7 @@ class Ui_MainWindow(object):
         self.label_9.setStyleSheet("color: rgb(0, 170, 0);")
         self.label_9.setObjectName("label_9")
         self.frame_4 = QtWidgets.QFrame(self.centralwidget)
-        self.frame_4.setGeometry(QtCore.QRect(10, 114, 381, 121))
+        self.frame_4.setGeometry(QtCore.QRect(10, 114, 341, 121))
         self.frame_4.setStyleSheet("border-style: outset;\n"
 "border-width: 2px;\n"
 "border-radius: 13px;\n"
@@ -333,18 +333,8 @@ class Ui_MainWindow(object):
         self.frame_4.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_4.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_4.setObjectName("frame_4")
-        self.recip = QtWidgets.QLineEdit(self.frame_4)
-        self.recip.setGeometry(QtCore.QRect(238, 14, 113, 41))
-        self.recip.setStyleSheet("border-style: outset;\n"
-"border-width: 1px;\n"
-"border-radius: 2px;\n"
-"border-color: black;\n"
-"\n"
-"")
-        self.recip.setText("")
-        self.recip.setObjectName("recip")
         self.label_10 = QtWidgets.QLabel(self.frame_4)
-        self.label_10.setGeometry(QtCore.QRect(20, 26, 221, 17))
+        self.label_10.setGeometry(QtCore.QRect(20, 26, 151, 17))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setPointSize(12)
@@ -356,15 +346,27 @@ class Ui_MainWindow(object):
 "border-color: rgb(0, 0, 0);")
         self.label_10.setObjectName("label_10")
         self.rec_start = QtWidgets.QPushButton(self.frame_4)
-        self.rec_start.setGeometry(QtCore.QRect(110, 70, 161, 41))
+        self.rec_start.setGeometry(QtCore.QRect(83, 68, 161, 41))
         self.rec_start.setStyleSheet("border-style: outset;\n"
 "border-width: 2px;\n"
 "border-radius: 13px;\n"
 "border-color: black;\n"
-"color: rgb(34, 255, 0);\n"
 "background-color: rgb(187, 255, 176);\n"
+"color: rgb(0, 170, 0);\n"
 "")
         self.rec_start.setObjectName("rec_start")
+        self.ip_rec = QtWidgets.QDial(self.frame_4)
+        self.ip_rec.setGeometry(QtCore.QRect(178, 2, 51, 61))
+        self.ip_rec.setObjectName("ip_rec")
+        self.recop = QtWidgets.QTextEdit(self.frame_4)
+        self.recop.setGeometry(QtCore.QRect(250, 10, 71, 41))
+        self.recop.setStyleSheet("border-style: outset;\n"
+"border-width: 1px;\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-radius: 1px;\n"
+"border-color: black;\n"
+"")
+        self.recop.setObjectName("recop")
         self.frame_4.raise_()
         self.frame_3.raise_()
         self.frame_2.raise_()
@@ -412,7 +414,7 @@ class Ui_MainWindow(object):
         self.label_2.setText(_translate("MainWindow", "Harmonic & Percussive Separation"))
         self.label_3.setText(_translate("MainWindow", "Prediction"))
         self.label_9.setText(_translate("MainWindow", "Visualizations"))
-        self.label_10.setText(_translate("MainWindow", "Enter the number of seconds"))
+        self.label_10.setText(_translate("MainWindow", "Number of seconds"))
         self.rec_start.setText(_translate("MainWindow", "Start"))
 
 
