@@ -104,7 +104,10 @@ class Ui_MainWindow(object):
 "background-color: rgb(187, 255, 176);\n"
 "border-radius: 13px;\n"
 "border-color: black;\n"
-"")
+"hover:\n"
+"{\n"
+"   background-color:white;\n"
+"}")
         self.start.setObjectName("start")
         self.stop = QtWidgets.QPushButton(self.frame)
         self.stop.setGeometry(QtCore.QRect(30, 73, 161, 41))
@@ -247,7 +250,7 @@ class Ui_MainWindow(object):
 "border-radius: 13px;\n"
 "border-color: black;\n"
 "background-color: rgb(255, 170, 127);\n"
-"")
+"hover:rgb(0,0,255);")
         self.plot_hpss.setObjectName("plot_hpss")
         self.frame_3 = QtWidgets.QFrame(self.centralwidget)
         self.frame_3.setGeometry(QtCore.QRect(10, 429, 421, 131))

@@ -214,7 +214,10 @@ border-width: 2px;
 background-color: rgb(187, 255, 176);
 border-radius: 13px;
 border-color: black;
-</string>
+hover:
+{
+   background-color:white;
+}</string>
      </property>
      <property name="text">
       <string>Start</string>
@@ -502,7 +505,7 @@ color: rgb(255, 85, 0);
 border-radius: 13px;
 border-color: black;
 background-color: rgb(255, 170, 127);
-</string>
+hover:rgb(0,0,255);</string>
      </property>
      <property name="text">
       <string>Show plots</string>
