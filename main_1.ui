@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>733</width>
-    <height>625</height>
+    <height>585</height>
    </rect>
   </property>
   <property name="font">
@@ -25,7 +25,7 @@
    <bool>false</bool>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(207, 255, 245);</string>
+   <string notr="true">background-color: rgb(215, 215, 255);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="exit">
@@ -773,7 +773,7 @@ color: rgb(0, 170, 0);
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(15, 47, 255);</string>
+      <string notr="true">background-color: rgb(255, 92, 92);</string>
      </property>
     </widget>
     <widget class="QTextEdit" name="recop">
@@ -809,16 +809,6 @@ border-color: black;
    <zorder>label_2</zorder>
    <zorder>label_3</zorder>
    <zorder>label_9</zorder>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>733</width>
-     <height>25</height>
-    </rect>
-   </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
