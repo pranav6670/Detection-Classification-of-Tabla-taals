@@ -25,14 +25,14 @@
    <bool>false</bool>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(235, 255, 230);</string>
+   <string notr="true">background-color: rgb(207, 255, 245);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="exit">
     <property name="geometry">
      <rect>
-      <x>530</x>
-      <y>440</y>
+      <x>510</x>
+      <y>460</y>
       <width>171</width>
       <height>81</height>
      </rect>
@@ -131,7 +131,7 @@ border-color: black;
      <rect>
       <x>520</x>
       <y>200</y>
-      <width>201</width>
+      <width>171</width>
       <height>31</height>
      </rect>
     </property>
@@ -734,7 +734,8 @@ border-color: rgb(0, 0, 0);</string>
 border-style: outset;
 border-width: 0px;
 border-radius: 0px;
-border-color: rgb(0, 0, 0);</string>
+border-color: rgb(0, 0, 0);
+hover :{ background-color:white; }</string>
      </property>
      <property name="text">
       <string>Number of seconds</string>

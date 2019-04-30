@@ -98,7 +98,7 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
         self.RECORD_SECONDS = self.ip_rec.value()
 
     def value_dialchange(self):
-        self.recop.setTextColor(QtGui.QColor(0, 0, 255))
+        self.recop.setTextColor(QtGui.QColor(154, 0, 255))
         self.recop.setText(str(self.ip_rec.value()) + " secs")
 
     def valuechange(self):

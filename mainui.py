@@ -17,11 +17,11 @@ class Ui_MainWindow(object):
         MainWindow.setFont(font)
         MainWindow.setMouseTracking(False)
         MainWindow.setAutoFillBackground(False)
-        MainWindow.setStyleSheet("background-color: rgb(235, 255, 230);")
+        MainWindow.setStyleSheet("background-color: rgb(207, 255, 245);")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.exit = QtWidgets.QPushButton(self.centralwidget)
-        self.exit.setGeometry(QtCore.QRect(530, 440, 171, 81))
+        self.exit.setGeometry(QtCore.QRect(510, 460, 171, 81))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setBold(True)
@@ -31,9 +31,9 @@ class Ui_MainWindow(object):
 "border-style: outset;\n"
 "border-width: 2px;\n"
 "border-radius: 13px;\n"
-"border-color: black;\n"
 "background-color: rgb(255, 51, 51);\n"
-)
+"border-color: black;\n"
+"")
         self.exit.setObjectName("exit")
         self.title1 = QtWidgets.QLabel(self.centralwidget)
         self.title1.setGeometry(QtCore.QRect(0, 0, 711, 31))
@@ -64,7 +64,7 @@ class Ui_MainWindow(object):
         self.label.setPixmap(QtGui.QPixmap("../Tabla_2_200x130.jpg"))
         self.label.setObjectName("label")
         self.status = QtWidgets.QTextEdit(self.centralwidget)
-        self.status.setGeometry(QtCore.QRect(520, 200, 201, 31))
+        self.status.setGeometry(QtCore.QRect(520, 200, 171, 31))
         self.status.setStyleSheet("border-style: outset;\n"
 "border-width: 1px;\n"
 "background-color: rgb(255, 255, 255);\n"
@@ -346,7 +346,8 @@ class Ui_MainWindow(object):
 "border-style: outset;\n"
 "border-width: 0px;\n"
 "border-radius: 0px;\n"
-"border-color: rgb(0, 0, 0);")
+"border-color: rgb(0, 0, 0);\n"
+"hover :{ background-color:white; }")
         self.label_10.setObjectName("label_10")
         self.rec_start = QtWidgets.QPushButton(self.frame_4)
         self.rec_start.setGeometry(QtCore.QRect(83, 68, 161, 41))
