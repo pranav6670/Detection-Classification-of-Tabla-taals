@@ -7,9 +7,7 @@ import wave
 import numpy as np
 import matplotlib.pyplot as plt
 import pyaudio
-import warnings
 
-warnings.filterwarnings('ignore')
 
 class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
     def __init__(self, parent=None):
