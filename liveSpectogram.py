@@ -2,6 +2,9 @@ import numpy as np
 import pyqtgraph as pg
 import pyaudio
 from PyQt4 import QtCore, QtGui
+import warnings
+
+warnings.filterwarnings('ignore')
 
 FS = 44100  # Hz
 

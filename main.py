@@ -7,7 +7,9 @@ import wave
 import numpy as np
 import matplotlib.pyplot as plt
 import pyaudio
+import warnings
 
+warnings.filterwarnings('ignore')
 
 class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
     def __init__(self, parent=None):
@@ -165,7 +167,7 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
             self.start.clicked.connect(self.onstartclicked)
 
     def onstartclicked(self):
-        self.status.setTextColor(QtGui.QColor(0, 170, 127))
+        self.status.setTextColor(QtGui.QColor(0, 255, 0))
         self.text = "Started Visuals"
         self.status.setText(self.text)
 

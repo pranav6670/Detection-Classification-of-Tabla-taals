@@ -5,6 +5,9 @@ import sys
 import numpy as np
 import pyqtgraph
 import time
+import warnings
+
+warnings.filterwarnings('ignore')
 
 
 class ExampleApp(QtWidgets.QMainWindow, GUI.Ui_MainWindow):
