@@ -17,7 +17,7 @@ class Ui_MainWindow(object):
         MainWindow.setFont(font)
         MainWindow.setMouseTracking(False)
         MainWindow.setAutoFillBackground(False)
-        MainWindow.setStyleSheet("background-color: rgb(215, 215, 255);")
+        MainWindow.setStyleSheet("background-color: rgb(255, 234, 234);")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.exit = QtWidgets.QPushButton(self.centralwidget)
@@ -86,13 +86,14 @@ class Ui_MainWindow(object):
         self.frame.setGeometry(QtCore.QRect(360, 114, 141, 121))
         self.frame.setStyleSheet("border-style: outset;\n"
 "border-width: 2px;\n"
+"background-color: rgb(205, 255, 193);\n"
 "border-radius: 13px;\n"
 "border-color: rgb(0, 0, 0);")
         self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame.setObjectName("frame")
         self.start = QtWidgets.QPushButton(self.frame)
-        self.start.setGeometry(QtCore.QRect(30, 16, 81, 41))
+        self.start.setGeometry(QtCore.QRect(30, 13, 81, 41))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setPointSize(14)
@@ -128,6 +129,7 @@ class Ui_MainWindow(object):
         self.frame_2.setGeometry(QtCore.QRect(10, 270, 311, 131))
         self.frame_2.setStyleSheet("border-style: outset;\n"
 "border-width: 2px;\n"
+"background-color: rgb(167, 254, 255);\n"
 "border-radius: 13px;\n"
 "border-color: rgb(0, 0, 0);")
         self.frame_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -255,6 +257,7 @@ class Ui_MainWindow(object):
         self.frame_3 = QtWidgets.QFrame(self.centralwidget)
         self.frame_3.setGeometry(QtCore.QRect(10, 429, 311, 131))
         self.frame_3.setStyleSheet("border-style: outset;\n"
+"background-color: rgb(253, 174, 255);\n"
 "border-width: 2px;\n"
 "border-radius: 13px;\n"
 "border-color: black;\n"
@@ -263,10 +266,13 @@ class Ui_MainWindow(object):
         self.frame_3.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_3.setObjectName("frame_3")
         self.optaala = QtWidgets.QTextEdit(self.frame_3)
-        self.optaala.setGeometry(QtCore.QRect(190, 70, 71, 41))
-        self.optaala.setStyleSheet("border-style: outset;\n"
+        self.optaala.setGeometry(QtCore.QRect(190, 70, 111, 41))
+        self.optaala.setStyleSheet("\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-radius: 1px;\n"
+"border-color: black;\n"
+"border-style: outset;\n"
 "border-width: 1px;\n"
-"border-radius: 2px;\n"
 "border-color: black;\n"
 "")
         self.optaala.setObjectName("optaala")
@@ -333,6 +339,7 @@ class Ui_MainWindow(object):
         self.frame_4 = QtWidgets.QFrame(self.centralwidget)
         self.frame_4.setGeometry(QtCore.QRect(10, 114, 341, 121))
         self.frame_4.setStyleSheet("border-style: outset;\n"
+"background-color: rgb(255, 203, 193);\n"
 "border-width: 2px;\n"
 "border-radius: 13px;\n"
 "border-color: rgb(0, 0, 0);")
@@ -375,6 +382,16 @@ class Ui_MainWindow(object):
 "border-color: black;\n"
 "")
         self.recop.setObjectName("recop")
+        self.label_11 = QtWidgets.QLabel(self.centralwidget)
+        self.label_11.setGeometry(QtCore.QRect(380, 360, 281, 51))
+        self.label_11.setStyleSheet("border-style: outset;\n"
+"color: rgb(0, 0, 0);\n"
+"border-width: 1px;\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-radius: 1px;\n"
+"border-color: black;\n"
+"")
+        self.label_11.setObjectName("label_11")
         self.frame_4.raise_()
         self.frame_3.raise_()
         self.frame_2.raise_()
@@ -389,6 +406,7 @@ class Ui_MainWindow(object):
         self.label_2.raise_()
         self.label_3.raise_()
         self.label_9.raise_()
+        self.label_11.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
@@ -420,6 +438,7 @@ class Ui_MainWindow(object):
         self.label_9.setText(_translate("MainWindow", "Visualizations"))
         self.label_10.setText(_translate("MainWindow", "Number of seconds"))
         self.rec_start.setText(_translate("MainWindow", "Start"))
+        self.label_11.setText(_translate("MainWindow", "This space is intentionally left blank"))
 
 
 if __name__ == "__main__":

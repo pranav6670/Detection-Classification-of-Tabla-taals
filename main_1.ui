@@ -25,7 +25,7 @@
    <bool>false</bool>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(215, 215, 255);</string>
+   <string notr="true">background-color: rgb(255, 234, 234);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="exit">
@@ -180,6 +180,7 @@ border-color: black;
     <property name="styleSheet">
      <string notr="true">border-style: outset;
 border-width: 2px;
+background-color: rgb(205, 255, 193);
 border-radius: 13px;
 border-color: rgb(0, 0, 0);</string>
     </property>
@@ -193,7 +194,7 @@ border-color: rgb(0, 0, 0);</string>
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>16</y>
+       <y>13</y>
        <width>81</width>
        <height>41</height>
       </rect>
@@ -265,6 +266,7 @@ border-color: black;
     <property name="styleSheet">
      <string notr="true">border-style: outset;
 border-width: 2px;
+background-color: rgb(167, 254, 255);
 border-radius: 13px;
 border-color: rgb(0, 0, 0);</string>
     </property>
@@ -523,6 +525,7 @@ border-color: black;
     </property>
     <property name="styleSheet">
      <string notr="true">border-style: outset;
+background-color: rgb(253, 174, 255);
 border-width: 2px;
 border-radius: 13px;
 border-color: black;
@@ -539,14 +542,17 @@ border-color: black;
       <rect>
        <x>190</x>
        <y>70</y>
-       <width>71</width>
+       <width>111</width>
        <height>41</height>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">border-style: outset;
+      <string notr="true">
+background-color: rgb(255, 255, 255);
+border-radius: 1px;
+border-color: black;
+border-style: outset;
 border-width: 1px;
-border-radius: 2px;
 border-color: black;
 </string>
      </property>
@@ -707,6 +713,7 @@ background-color: rgb(0, 170, 127);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">border-style: outset;
+background-color: rgb(255, 203, 193);
 border-width: 2px;
 border-radius: 13px;
 border-color: rgb(0, 0, 0);</string>
@@ -798,6 +805,28 @@ border-color: black;
      </property>
     </widget>
    </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>360</y>
+      <width>281</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-style: outset;
+color: rgb(0, 0, 0);
+border-width: 1px;
+background-color: rgb(255, 255, 255);
+border-radius: 1px;
+border-color: black;
+</string>
+    </property>
+    <property name="text">
+     <string>This space is intentionally left blank</string>
+    </property>
+   </widget>
    <zorder>frame_4</zorder>
    <zorder>frame_3</zorder>
    <zorder>frame_2</zorder>
@@ -812,6 +841,7 @@ border-color: black;
    <zorder>label_2</zorder>
    <zorder>label_3</zorder>
    <zorder>label_9</zorder>
+   <zorder>label_11</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
