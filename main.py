@@ -29,7 +29,10 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
         self.CHUNK = 1024
         self.WAVE_OUTPUT_FILENAME = "file.wav"
 
-        self.status.setFont(QtGui.QFont("Trebuchet MS", 10))
+        self.font = QtGui.QFont()
+        self.font.setFamily("Trebuchet MS")
+        self.font.setPointSize(15)
+        self.status.setFont(self.font)
         self.startApp()
         self.stopApp()
         self.exitapp()
@@ -44,7 +47,6 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
     def record(self):
         self.RECORD_SECONDS = self.ip_rec.value()
         self.audio = pyaudio.PyAudio()
-
         # start Recording
         self.stream = self.audio.open(format=self.FORMAT, channels=self.CHANNELS,
                                       rate=self.RATE, input=True, frames_per_buffer=self.CHUNK)
@@ -53,16 +55,13 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
         self.status.setText(self.texts)
         self.status.show()
         self.frames = []
-
         for i in range(0, int(self.RATE / self.CHUNK * self.RECORD_SECONDS)):
             self.data = self.stream.read(self.CHUNK)
             self.frames.append(self.data)
-
         self.status.clear()
         self.texxtt = "Done recording for {} secs".format(self.ip_rec.value)
         self.status.setText(self.texxtt)
         print("finished recording")
-
         # stop Recording
         self.stream.stop_stream()
         self.stream.close()
@@ -165,7 +164,7 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
             self.start.clicked.connect(self.onstartclicked)
 
     def onstartclicked(self):
-        self.status.setTextColor(QtGui.QColor(0, 255, 0))
+        self.status.setTextColor(QtGui.QColor(75, 25, 0))
         self.text = "Started Visuals"
         self.status.setText(self.text)
 

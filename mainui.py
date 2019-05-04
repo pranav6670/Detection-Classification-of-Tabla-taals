@@ -2,11 +2,12 @@
 
 # Form implementation generated from reading ui file 'main_1.ui'
 #
-# Created by: PyQt5 UI code generator 5.11.3
+# Created by: PyQt5 UI code generator 5.12.1
 #
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -21,7 +22,7 @@ class Ui_MainWindow(object):
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.exit = QtWidgets.QPushButton(self.centralwidget)
-        self.exit.setGeometry(QtCore.QRect(630, 520, 111, 41))
+        self.exit.setGeometry(QtCore.QRect(460, 460, 111, 41))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setBold(True)
@@ -33,7 +34,10 @@ class Ui_MainWindow(object):
 "border-radius: 13px;\n"
 "background-color: rgb(255, 51, 51);\n"
 "border-color: black;\n"
-"")
+"QPushButton#exit:hover\n"
+"{\n"
+"   background-color:white;\n"
+"}")
         self.exit.setObjectName("exit")
         self.title1 = QtWidgets.QLabel(self.centralwidget)
         self.title1.setGeometry(QtCore.QRect(0, 0, 711, 31))
@@ -64,16 +68,17 @@ class Ui_MainWindow(object):
         self.label.setPixmap(QtGui.QPixmap("../Tabla_2_200x130.jpg"))
         self.label.setObjectName("label")
         self.status = QtWidgets.QTextEdit(self.centralwidget)
-        self.status.setGeometry(QtCore.QRect(580, 190, 151, 31))
-        self.status.setStyleSheet("border-style: outset;\n"
-"border-width: 1px;\n"
-"background-color: rgb(255, 255, 255);\n"
-"border-radius: 1px;\n"
+        self.status.setGeometry(QtCore.QRect(580, 190, 161, 40))
+        self.status.setStyleSheet("color: rgb(0, 150, 0);\n"
+"border-style: outset;\n"
+"background-color: rgb(255, 245, 193);\n"
+"border-width: 2px;\n"
+"border-radius: 13px;\n"
 "border-color: black;\n"
 "")
         self.status.setObjectName("status")
         self.label_4 = QtWidgets.QLabel(self.centralwidget)
-        self.label_4.setGeometry(QtCore.QRect(510, 195, 61, 17))
+        self.label_4.setGeometry(QtCore.QRect(510, 202, 61, 17))
         font = QtGui.QFont()
         font.setFamily("Ubuntu")
         font.setPointSize(12)
@@ -304,6 +309,11 @@ class Ui_MainWindow(object):
 "border-color: black;\n"
 "background-color: rgb(0, 170, 127);")
         self.analyze.setObjectName("analyze")
+        self.optaala.raise_()
+        self.label_5.raise_()
+        self.analyze.raise_()
+        self.exit.raise_()
+        self.exit.raise_()
         self.recordlabel = QtWidgets.QLabel(self.centralwidget)
         self.recordlabel.setGeometry(QtCore.QRect(10, 88, 71, 17))
         font = QtGui.QFont()
@@ -371,7 +381,7 @@ class Ui_MainWindow(object):
         self.rec_start.setObjectName("rec_start")
         self.ip_rec = QtWidgets.QDial(self.frame_4)
         self.ip_rec.setGeometry(QtCore.QRect(178, 2, 51, 61))
-        self.ip_rec.setStyleSheet("background-color: rgb(255, 92, 92);")
+        self.ip_rec.setStyleSheet("background-color: rgb(46, 255, 221);")
         self.ip_rec.setObjectName("ip_rec")
         self.recop = QtWidgets.QTextEdit(self.frame_4)
         self.recop.setGeometry(QtCore.QRect(250, 18, 71, 31))
@@ -383,7 +393,7 @@ class Ui_MainWindow(object):
 "")
         self.recop.setObjectName("recop")
         self.label_11 = QtWidgets.QLabel(self.centralwidget)
-        self.label_11.setGeometry(QtCore.QRect(420, 360, 281, 51))
+        self.label_11.setGeometry(QtCore.QRect(410, 360, 281, 51))
         self.label_11.setStyleSheet("border-style: outset;\n"
 "color: rgb(0, 0, 0);\n"
 "border-width: 1px;\n"
@@ -441,6 +451,8 @@ class Ui_MainWindow(object):
         self.label_11.setText(_translate("MainWindow", "This space is left blank for further usage"))
 
 
+
+
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
@@ -449,4 +461,3 @@ if __name__ == "__main__":
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())
-
