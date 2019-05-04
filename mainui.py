@@ -22,7 +22,7 @@ class Ui_MainWindow(object):
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.exit = QtWidgets.QPushButton(self.centralwidget)
-        self.exit.setGeometry(QtCore.QRect(460, 460, 111, 41))
+        self.exit.setGeometry(QtCore.QRect(620, 510, 111, 41))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setBold(True)
@@ -88,32 +88,41 @@ class Ui_MainWindow(object):
         self.label_4.setStyleSheet("color:rgb(200, 14, 7)")
         self.label_4.setObjectName("label_4")
         self.frame = QtWidgets.QFrame(self.centralwidget)
-        self.frame.setGeometry(QtCore.QRect(360, 114, 141, 121))
-        self.frame.setStyleSheet("border-style: outset;\n"
+        self.frame.setGeometry(QtCore.QRect(260, 114, 111, 121))
+        self.frame.setStyleSheet(".QFrame#frame{\n"
+"border-style: outset;\n"
 "border-width: 2px;\n"
 "background-color: rgb(205, 255, 193);\n"
 "border-radius: 13px;\n"
-"border-color: rgb(0, 0, 0);")
+"border-color: rgb(0, 0, 0);\n"
+"}")
         self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame.setObjectName("frame")
         self.start = QtWidgets.QPushButton(self.frame)
-        self.start.setGeometry(QtCore.QRect(30, 13, 81, 41))
+        self.start.setGeometry(QtCore.QRect(15, 18, 81, 41))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setPointSize(14)
         self.start.setFont(font)
         self.start.setAutoFillBackground(False)
-        self.start.setStyleSheet("color: rgb(0, 150, 0);\n"
-"border-style: outset;\n"
-"border-width: 2px;\n"
-"background-color: rgb(187, 255, 176);\n"
-"border-radius: 13px;\n"
-"border-color: black;\n"
-"")
+        self.start.setStyleSheet("QPushButton {\n"
+"    background-color: rgb(187, 255, 176); \n"
+"    color: rgb(0, 170, 0); \n"
+"        border-style: outset;\n"
+"    border-width: 2px;\n"
+"    border-radius: 13px;\n"
+"    border-color: black;\n"
+"}\n"
+"QPushButton:hover {\n"
+"background-color: rgb(151, 255, 128);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"background-color: rgb(85, 255, 0);\n"
+"}    ")
         self.start.setObjectName("start")
         self.stop = QtWidgets.QPushButton(self.frame)
-        self.stop.setGeometry(QtCore.QRect(30, 66, 81, 41))
+        self.stop.setGeometry(QtCore.QRect(15, 68, 81, 41))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setPointSize(14)
@@ -121,12 +130,28 @@ class Ui_MainWindow(object):
         font.setItalic(False)
         font.setWeight(75)
         self.stop.setFont(font)
-        self.stop.setStyleSheet("color: rgb(150, 0, 0);\n"
+        self.stop.setStyleSheet("QPushButton {\n"
+"color: rgb(150, 0, 0);\n"
 "border-style: outset;\n"
 "border-width: 2px;\n"
-"background-color: rgb(255, 119, 121);\n"
 "border-radius: 13px;\n"
 "border-color: black;\n"
+"background-color: rgb(255, 119, 121);\n"
+"}\n"
+"QPushButton:hover {\n"
+"background-color: rgb(255, 99, 78);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"background-color: rgb(255, 52, 52);\n"
+"}    \n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
 "\n"
 "")
         self.stop.setObjectName("stop")
@@ -309,13 +334,8 @@ class Ui_MainWindow(object):
 "border-color: black;\n"
 "background-color: rgb(0, 170, 127);")
         self.analyze.setObjectName("analyze")
-        self.optaala.raise_()
-        self.label_5.raise_()
-        self.analyze.raise_()
-        self.exit.raise_()
-        self.exit.raise_()
         self.recordlabel = QtWidgets.QLabel(self.centralwidget)
-        self.recordlabel.setGeometry(QtCore.QRect(10, 88, 71, 17))
+        self.recordlabel.setGeometry(QtCore.QRect(20, 89, 71, 17))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setPointSize(12)
@@ -339,7 +359,7 @@ class Ui_MainWindow(object):
         self.label_3.setStyleSheet("color: rgb(170, 85, 127);")
         self.label_3.setObjectName("label_3")
         self.label_9 = QtWidgets.QLabel(self.centralwidget)
-        self.label_9.setGeometry(QtCore.QRect(370, 90, 121, 17))
+        self.label_9.setGeometry(QtCore.QRect(260, 90, 121, 17))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setPointSize(12)
@@ -347,17 +367,19 @@ class Ui_MainWindow(object):
         self.label_9.setStyleSheet("color: rgb(0, 170, 0);")
         self.label_9.setObjectName("label_9")
         self.frame_4 = QtWidgets.QFrame(self.centralwidget)
-        self.frame_4.setGeometry(QtCore.QRect(10, 114, 341, 121))
-        self.frame_4.setStyleSheet("border-style: outset;\n"
-"background-color: rgb(255, 203, 193);\n"
-"border-width: 2px;\n"
-"border-radius: 13px;\n"
-"border-color: rgb(0, 0, 0);")
+        self.frame_4.setGeometry(QtCore.QRect(10, 114, 241, 121))
+        self.frame_4.setStyleSheet(".QFrame#frame_4{\n"
+" border-style: outset;\n"
+" background-color: rgb(255, 203, 193);\n"
+" border-width: 2px;\n"
+" border-radius: 13px;\n"
+" border-color: rgb(0, 0, 0);\n"
+"}")
         self.frame_4.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_4.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_4.setObjectName("frame_4")
         self.label_10 = QtWidgets.QLabel(self.frame_4)
-        self.label_10.setGeometry(QtCore.QRect(20, 26, 151, 17))
+        self.label_10.setGeometry(QtCore.QRect(10, 20, 151, 17))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setPointSize(12)
@@ -367,31 +389,40 @@ class Ui_MainWindow(object):
 "border-width: 0px;\n"
 "border-radius: 0px;\n"
 "border-color: rgb(0, 0, 0);\n"
-"hover :{ background-color:white; }")
-        self.label_10.setObjectName("label_10")
-        self.rec_start = QtWidgets.QPushButton(self.frame_4)
-        self.rec_start.setGeometry(QtCore.QRect(83, 68, 161, 41))
-        self.rec_start.setStyleSheet("border-style: outset;\n"
-"border-width: 2px;\n"
-"border-radius: 13px;\n"
-"border-color: black;\n"
-"background-color: rgb(187, 255, 176);\n"
-"color: rgb(0, 170, 0);\n"
+" background-color: rgb(255, 203, 193);\n"
 "")
-        self.rec_start.setObjectName("rec_start")
+        self.label_10.setObjectName("label_10")
         self.ip_rec = QtWidgets.QDial(self.frame_4)
-        self.ip_rec.setGeometry(QtCore.QRect(178, 2, 51, 61))
+        self.ip_rec.setGeometry(QtCore.QRect(20, 50, 51, 61))
         self.ip_rec.setStyleSheet("background-color: rgb(46, 255, 221);")
         self.ip_rec.setObjectName("ip_rec")
         self.recop = QtWidgets.QTextEdit(self.frame_4)
-        self.recop.setGeometry(QtCore.QRect(250, 18, 71, 31))
-        self.recop.setStyleSheet("border-style: outset;\n"
-"border-width: 1px;\n"
-"background-color: rgb(255, 255, 255);\n"
+        self.recop.setGeometry(QtCore.QRect(160, 16, 61, 31))
+        self.recop.setStyleSheet("color: rgb(170, 0, 0);\n"
+"border-style: outset;\n"
+"border-width: 0px;\n"
+"background-color: rgb(255, 203, 193);\n"
 "border-radius: 1px;\n"
 "border-color: black;\n"
 "")
         self.recop.setObjectName("recop")
+        self.rec_start = QtWidgets.QPushButton(self.frame_4)
+        self.rec_start.setGeometry(QtCore.QRect(93, 57, 131, 51))
+        self.rec_start.setStyleSheet("QPushButton {\n"
+"    background-color: rgb(187, 255, 176); \n"
+"    color: rgb(0, 170, 0); \n"
+"        border-style: outset;\n"
+"    border-width: 2px;\n"
+"    border-radius: 13px;\n"
+"    border-color: black;\n"
+"}\n"
+"QPushButton:hover {\n"
+"background-color: rgb(151, 255, 128);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"background-color: rgb(85, 255, 0);\n"
+"}    ")
+        self.rec_start.setObjectName("rec_start")
         self.label_11 = QtWidgets.QLabel(self.centralwidget)
         self.label_11.setGeometry(QtCore.QRect(410, 360, 281, 51))
         self.label_11.setStyleSheet("border-style: outset;\n"
