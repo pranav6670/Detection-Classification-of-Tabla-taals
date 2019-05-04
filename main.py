@@ -164,7 +164,7 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
             self.start.clicked.connect(self.onstartclicked)
 
     def onstartclicked(self):
-        self.status.setTextColor(QtGui.QColor(75, 25, 0))
+        self.status.setTextColor(QtGui.QColor(0, 255, 0))
         self.text = "Started Visuals"
         self.status.setText(self.text)
 
