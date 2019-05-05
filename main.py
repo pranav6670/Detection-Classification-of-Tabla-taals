@@ -101,11 +101,11 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
         self.recop.setText(str(self.ip_rec.value()) + " secs")
 
     def valuechange(self):
-        self.marginvalue_har.setTextColor(QtGui.QColor(255, 0, 0))
-        self.marginvalue_per.setTextColor(QtGui.QColor(255, 0, 0))
+        self.marginvalue_har.setTextColor(QtGui.QColor(255, 150, 0))
+        self.marginvalue_per.setTextColor(QtGui.QColor(255, 150, 0))
         self.font = QtGui.QFont()
         self.font.setFamily("Trebuchet MS")
-        self.font.setPointSize(18)
+        self.font.setPointSize(15)
         self.marginvalue_har.setFont(self.font)
         self.marginvalue_per.setFont(self.font)
         self.marginvalue_har.setText(str(self.margin_har.value()))
