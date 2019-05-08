@@ -22,7 +22,7 @@ class Ui_MainWindow(object):
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.exit = QtWidgets.QPushButton(self.centralwidget)
-        self.exit.setGeometry(QtCore.QRect(580, 330, 111, 41))
+        self.exit.setGeometry(QtCore.QRect(590, 340, 111, 41))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setBold(True)
@@ -392,7 +392,7 @@ class Ui_MainWindow(object):
 "")
         self.label_11.setObjectName("label_11")
         self.frame_5 = QtWidgets.QFrame(self.centralwidget)
-        self.frame_5.setGeometry(QtCore.QRect(500, 170, 251, 131))
+        self.frame_5.setGeometry(QtCore.QRect(490, 170, 251, 131))
         self.frame_5.setStyleSheet(".QFrame#frame_5{\n"
 "border-style: outset;\n"
 "border-width: 2px;\n"
@@ -416,10 +416,10 @@ class Ui_MainWindow(object):
         self.status.setGeometry(QtCore.QRect(81, 10, 161, 40))
         self.status.setStyleSheet("color: rgb(0, 150, 0);\n"
 "border-style: outset;\n"
-"background-color: rgb(255, 245, 193);\n"
 "border-width: 2px;\n"
 "border-radius: 13px;\n"
 "border-color: black;\n"
+"background-color: rgb(162, 167, 255);\n"
 "")
         self.status.setObjectName("status")
         self.marginvalue_per = QtWidgets.QTextBrowser(self.frame_5)

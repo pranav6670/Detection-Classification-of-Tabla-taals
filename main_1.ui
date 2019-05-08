@@ -31,8 +31,8 @@
    <widget class="QPushButton" name="exit">
     <property name="geometry">
      <rect>
-      <x>580</x>
-      <y>330</y>
+      <x>590</x>
+      <y>340</y>
       <width>111</width>
       <height>41</height>
      </rect>
@@ -731,7 +731,7 @@ border-color: black;
    <widget class="QFrame" name="frame_5">
     <property name="geometry">
      <rect>
-      <x>500</x>
+      <x>490</x>
       <y>170</y>
       <width>251</width>
       <height>131</height>
@@ -787,11 +787,10 @@ border-color: rgb(0, 0, 0);
      <property name="styleSheet">
       <string notr="true">color: rgb(0, 150, 0);
 border-style: outset;
-background-color: rgb(255, 245, 193);
 border-width: 2px;
 border-radius: 13px;
 border-color: black;
-</string>
+background-color: rgb(170, 170, 255);</string>
      </property>
     </widget>
     <widget class="QTextBrowser" name="marginvalue_per">
