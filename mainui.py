@@ -12,7 +12,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(760, 585)
+        MainWindow.resize(757, 585)
         font = QtGui.QFont()
         font.setFamily("Tlwg Typo")
         MainWindow.setFont(font)
@@ -140,7 +140,7 @@ class Ui_MainWindow(object):
 "")
         self.stop.setObjectName("stop")
         self.frame_2 = QtWidgets.QFrame(self.centralwidget)
-        self.frame_2.setGeometry(QtCore.QRect(20, 270, 221, 111))
+        self.frame_2.setGeometry(QtCore.QRect(10, 270, 221, 111))
         self.frame_2.setStyleSheet(".QFrame#frame_2{\n"
 "border-style: outset;\n"
 "border-width: 2px;\n"
@@ -301,10 +301,13 @@ class Ui_MainWindow(object):
         self.recordlabel.setStyleSheet("color: rgb(255, 0, 0);")
         self.recordlabel.setObjectName("recordlabel")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(20, 245, 251, 17))
+        self.label_2.setGeometry(QtCore.QRect(13, 245, 251, 17))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
-        font.setPointSize(12)
+        font.setPointSize(11)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
         self.label_2.setFont(font)
         self.label_2.setStyleSheet("color: rgb(170, 0, 255);")
         self.label_2.setObjectName("label_2")
@@ -392,7 +395,7 @@ class Ui_MainWindow(object):
 "")
         self.label_11.setObjectName("label_11")
         self.frame_5 = QtWidgets.QFrame(self.centralwidget)
-        self.frame_5.setGeometry(QtCore.QRect(490, 170, 251, 131))
+        self.frame_5.setGeometry(QtCore.QRect(260, 250, 251, 131))
         self.frame_5.setStyleSheet(".QFrame#frame_5{\n"
 "border-style: outset;\n"
 "border-width: 2px;\n"
@@ -493,6 +496,7 @@ class Ui_MainWindow(object):
         self.frame_5.raise_()
         self.line.raise_()
         self.label_7.raise_()
+        self.label_4.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")

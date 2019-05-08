@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>760</width>
+    <width>757</width>
     <height>585</height>
    </rect>
   </property>
@@ -247,7 +247,7 @@ background-color: rgb(255, 52, 52);
    <widget class="QFrame" name="frame_2">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>10</x>
       <y>270</y>
       <width>221</width>
       <height>111</height>
@@ -529,7 +529,7 @@ background-color: rgb(0, 170, 127);</string>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>13</x>
       <y>245</y>
       <width>251</width>
       <height>17</height>
@@ -538,7 +538,10 @@ background-color: rgb(0, 170, 127);</string>
     <property name="font">
      <font>
       <family>Trebuchet MS</family>
-      <pointsize>12</pointsize>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -731,8 +734,8 @@ border-color: black;
    <widget class="QFrame" name="frame_5">
     <property name="geometry">
      <rect>
-      <x>490</x>
-      <y>170</y>
+      <x>260</x>
+      <y>250</y>
       <width>251</width>
       <height>131</height>
      </rect>
@@ -790,7 +793,8 @@ border-style: outset;
 border-width: 2px;
 border-radius: 13px;
 border-color: black;
-background-color: rgb(170, 170, 255);</string>
+background-color: rgb(162, 167, 255);
+</string>
      </property>
     </widget>
     <widget class="QTextBrowser" name="marginvalue_per">
@@ -929,6 +933,7 @@ border-color: black;
    <zorder>frame_5</zorder>
    <zorder>line</zorder>
    <zorder>label_7</zorder>
+   <zorder>label_4</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
