@@ -12,17 +12,21 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(757, 585)
+        MainWindow.resize(757, 621)
         font = QtGui.QFont()
         font.setFamily("Tlwg Typo")
         MainWindow.setFont(font)
         MainWindow.setMouseTracking(False)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("../50211-200_24x24.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        MainWindow.setWindowIcon(icon)
         MainWindow.setAutoFillBackground(False)
-        MainWindow.setStyleSheet("background-color: rgb(219, 231, 255);")
+        MainWindow.setStyleSheet("background-color: rgb(255, 240, 237);")
+        MainWindow.setTabShape(QtWidgets.QTabWidget.Rounded)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.exit = QtWidgets.QPushButton(self.centralwidget)
-        self.exit.setGeometry(QtCore.QRect(590, 340, 111, 41))
+        self.exit.setGeometry(QtCore.QRect(600, 340, 111, 41))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setBold(True)
@@ -65,12 +69,6 @@ class Ui_MainWindow(object):
         self.title2.setFont(font)
         self.title2.setStyleSheet("color: rgb(0, 0, 127);")
         self.title2.setObjectName("title2")
-        self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(530, 30, 201, 131))
-        self.label.setStyleSheet("background-color: rgb(255, 255, 183);")
-        self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("../Tabla_2_200x130.jpg"))
-        self.label.setObjectName("label")
         self.frame = QtWidgets.QFrame(self.centralwidget)
         self.frame.setGeometry(QtCore.QRect(260, 114, 111, 121))
         self.frame.setStyleSheet(".QFrame#frame{\n"
@@ -395,7 +393,7 @@ class Ui_MainWindow(object):
 "")
         self.label_11.setObjectName("label_11")
         self.frame_5 = QtWidgets.QFrame(self.centralwidget)
-        self.frame_5.setGeometry(QtCore.QRect(260, 250, 251, 131))
+        self.frame_5.setGeometry(QtCore.QRect(250, 250, 241, 131))
         self.frame_5.setStyleSheet(".QFrame#frame_5{\n"
 "border-style: outset;\n"
 "border-width: 2px;\n"
@@ -416,14 +414,13 @@ class Ui_MainWindow(object):
         self.label_4.setStyleSheet("color:rgb(200, 14, 7)")
         self.label_4.setObjectName("label_4")
         self.status = QtWidgets.QTextEdit(self.frame_5)
-        self.status.setGeometry(QtCore.QRect(81, 10, 161, 40))
+        self.status.setGeometry(QtCore.QRect(81, 10, 151, 38))
         self.status.setStyleSheet("color: rgb(0, 150, 0);\n"
 "border-style: outset;\n"
 "border-width: 2px;\n"
 "border-radius: 13px;\n"
 "border-color: black;\n"
-"background-color: rgb(162, 167, 255);\n"
-"")
+"background-color: rgb(255, 217, 212);")
         self.status.setObjectName("status")
         self.marginvalue_per = QtWidgets.QTextBrowser(self.frame_5)
         self.marginvalue_per.setGeometry(QtCore.QRect(10, 60, 61, 31))
@@ -480,6 +477,12 @@ class Ui_MainWindow(object):
         self.label_7 = QtWidgets.QLabel(self.centralwidget)
         self.label_7.setGeometry(QtCore.QRect(370, 400, 221, 31))
         self.label_7.setObjectName("label_7")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(510, 22, 201, 121))
+        self.label.setText("")
+        self.label.setPixmap(QtGui.QPixmap("50211-200.png"))
+        self.label.setObjectName("label")
+        self.label.raise_()
         self.frame_4.raise_()
         self.frame_3.raise_()
         self.frame_2.raise_()
@@ -487,7 +490,6 @@ class Ui_MainWindow(object):
         self.exit.raise_()
         self.title1.raise_()
         self.title2.raise_()
-        self.label.raise_()
         self.recordlabel.raise_()
         self.label_2.raise_()
         self.label_3.raise_()
@@ -496,11 +498,14 @@ class Ui_MainWindow(object):
         self.frame_5.raise_()
         self.line.raise_()
         self.label_7.raise_()
-        self.label_4.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
+        self.menuBar = QtWidgets.QMenuBar(MainWindow)
+        self.menuBar.setGeometry(QtCore.QRect(0, 0, 757, 25))
+        self.menuBar.setObjectName("menuBar")
+        MainWindow.setMenuBar(self.menuBar)
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)

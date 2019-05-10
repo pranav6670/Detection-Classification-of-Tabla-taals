@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>757</width>
-    <height>585</height>
+    <height>621</height>
    </rect>
   </property>
   <property name="font">
@@ -21,17 +21,24 @@
   <property name="windowTitle">
    <string>AD&amp;C</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../50211-200_24x24.png</normaloff>../50211-200_24x24.png</iconset>
+  </property>
   <property name="autoFillBackground">
    <bool>false</bool>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(219, 231, 255);</string>
+   <string notr="true">background-color: rgb(255, 240, 237);</string>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="exit">
     <property name="geometry">
      <rect>
-      <x>590</x>
+      <x>600</x>
       <y>340</y>
       <width>111</width>
       <height>41</height>
@@ -112,25 +119,6 @@ background-color: rgb(255, 138, 138);
     </property>
     <property name="text">
      <string> taalas from Indian Classical Music </string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>530</x>
-      <y>30</y>
-      <width>201</width>
-      <height>131</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 183);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../Tabla_2_200x130.jpg</pixmap>
     </property>
    </widget>
    <widget class="QFrame" name="frame">
@@ -734,9 +722,9 @@ border-color: black;
    <widget class="QFrame" name="frame_5">
     <property name="geometry">
      <rect>
-      <x>260</x>
+      <x>250</x>
       <y>250</y>
-      <width>251</width>
+      <width>241</width>
       <height>131</height>
      </rect>
     </property>
@@ -783,8 +771,8 @@ border-color: rgb(0, 0, 0);
       <rect>
        <x>81</x>
        <y>10</y>
-       <width>161</width>
-       <height>40</height>
+       <width>151</width>
+       <height>38</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -793,8 +781,7 @@ border-style: outset;
 border-width: 2px;
 border-radius: 13px;
 border-color: black;
-background-color: rgb(162, 167, 255);
-</string>
+background-color: rgb(255, 217, 212);</string>
      </property>
     </widget>
     <widget class="QTextBrowser" name="marginvalue_per">
@@ -917,6 +904,23 @@ border-color: black;
      <string>Area under devlopment</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>22</y>
+      <width>201</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>50211-200.png</pixmap>
+    </property>
+   </widget>
+   <zorder>label</zorder>
    <zorder>frame_4</zorder>
    <zorder>frame_3</zorder>
    <zorder>frame_2</zorder>
@@ -924,7 +928,6 @@ border-color: black;
    <zorder>exit</zorder>
    <zorder>title1</zorder>
    <zorder>title2</zorder>
-   <zorder>label</zorder>
    <zorder>recordlabel</zorder>
    <zorder>label_2</zorder>
    <zorder>label_3</zorder>
@@ -933,9 +936,18 @@ border-color: black;
    <zorder>frame_5</zorder>
    <zorder>line</zorder>
    <zorder>label_7</zorder>
-   <zorder>label_4</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>757</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>
