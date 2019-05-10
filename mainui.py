@@ -26,7 +26,7 @@ class Ui_MainWindow(object):
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.exit = QtWidgets.QPushButton(self.centralwidget)
-        self.exit.setGeometry(QtCore.QRect(640, 240, 111, 41))
+        self.exit.setGeometry(QtCore.QRect(620, 340, 111, 41))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setBold(True)
@@ -357,16 +357,6 @@ class Ui_MainWindow(object):
         self.ip_rec.setGeometry(QtCore.QRect(20, 50, 51, 61))
         self.ip_rec.setStyleSheet("background-color: rgb(255, 98, 101);")
         self.ip_rec.setObjectName("ip_rec")
-        self.recop = QtWidgets.QTextEdit(self.frame_4)
-        self.recop.setGeometry(QtCore.QRect(150, 10, 61, 31))
-        self.recop.setStyleSheet("color: rgb(170, 0, 0);\n"
-"border-style: outset;\n"
-"border-width: 0px;\n"
-"background-color: rgb(255, 203, 193);\n"
-"border-radius: 1px;\n"
-"border-color: black;\n"
-"")
-        self.recop.setObjectName("recop")
         self.rec_start = QtWidgets.QPushButton(self.frame_4)
         self.rec_start.setGeometry(QtCore.QRect(93, 57, 131, 51))
         self.rec_start.setStyleSheet("QPushButton {\n"
@@ -384,10 +374,15 @@ class Ui_MainWindow(object):
 "background-color: rgb(85, 255, 0);\n"
 "}    ")
         self.rec_start.setObjectName("rec_start")
-        self.recop.raise_()
-        self.label_10.raise_()
-        self.ip_rec.raise_()
-        self.rec_start.raise_()
+        self.recop = QtWidgets.QTextEdit(self.frame_4)
+        self.recop.setGeometry(QtCore.QRect(151, 16, 71, 31))
+        self.recop.setStyleSheet("border-style: outset;\n"
+"color: rgb(170, 0, 0);\n"
+"background-color: rgb(255, 203, 193);\n"
+"border-width: 0px;\n"
+"border-radius: 13px;\n"
+"border-color: rgb(0, 0, 0);")
+        self.recop.setObjectName("recop")
         self.label_11 = QtWidgets.QLabel(self.centralwidget)
         self.label_11.setGeometry(QtCore.QRect(470, 490, 281, 51))
         self.label_11.setStyleSheet("border-style: outset;\n"
@@ -399,7 +394,7 @@ class Ui_MainWindow(object):
 "")
         self.label_11.setObjectName("label_11")
         self.frame_5 = QtWidgets.QFrame(self.centralwidget)
-        self.frame_5.setGeometry(QtCore.QRect(380, 190, 241, 121))
+        self.frame_5.setGeometry(QtCore.QRect(380, 190, 271, 121))
         self.frame_5.setStyleSheet(".QFrame#frame_5{\n"
 "border-style: outset;\n"
 "border-width: 2px;\n"
@@ -420,7 +415,7 @@ class Ui_MainWindow(object):
         self.label_4.setStyleSheet("color:rgb(200, 14, 7)")
         self.label_4.setObjectName("label_4")
         self.status = QtWidgets.QTextEdit(self.frame_5)
-        self.status.setGeometry(QtCore.QRect(81, 10, 151, 38))
+        self.status.setGeometry(QtCore.QRect(81, 10, 171, 40))
         self.status.setStyleSheet("color: rgb(0, 150, 0);\n"
 "border-style: outset;\n"
 "border-width: 2px;\n"
@@ -503,9 +498,6 @@ class Ui_MainWindow(object):
         self.frame_5.raise_()
         self.label_7.raise_()
         self.frame_4.raise_()
-        self.text_margin.raise_()
-        self.start.raise_()
-        self.recop.raise_()
         self.line.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
