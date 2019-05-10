@@ -12,7 +12,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(757, 621)
+        MainWindow.resize(800, 623)
         font = QtGui.QFont()
         font.setFamily("Tlwg Typo")
         MainWindow.setFont(font)
@@ -26,7 +26,7 @@ class Ui_MainWindow(object):
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.exit = QtWidgets.QPushButton(self.centralwidget)
-        self.exit.setGeometry(QtCore.QRect(600, 340, 111, 41))
+        self.exit.setGeometry(QtCore.QRect(640, 240, 111, 41))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setBold(True)
@@ -48,29 +48,31 @@ class Ui_MainWindow(object):
 "}    ")
         self.exit.setObjectName("exit")
         self.title1 = QtWidgets.QLabel(self.centralwidget)
-        self.title1.setGeometry(QtCore.QRect(0, 0, 711, 31))
+        self.title1.setGeometry(QtCore.QRect(0, 10, 741, 31))
         font = QtGui.QFont()
-        font.setFamily("Courier 10 Pitch")
-        font.setPointSize(18)
-        font.setBold(True)
-        font.setUnderline(False)
-        font.setWeight(75)
+        font.setFamily("Comfortaa")
+        font.setPointSize(12)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
         self.title1.setFont(font)
-        self.title1.setStyleSheet("color: rgb(0, 0, 127);")
+        self.title1.setStyleSheet("color: rgb(0, 0, 127);\n"
+"font: 12pt \"Comfortaa\";")
         self.title1.setObjectName("title1")
         self.title2 = QtWidgets.QLabel(self.centralwidget)
-        self.title2.setGeometry(QtCore.QRect(0, 32, 511, 31))
+        self.title2.setGeometry(QtCore.QRect(7, 50, 541, 31))
         font = QtGui.QFont()
-        font.setFamily("Courier 10 Pitch")
-        font.setPointSize(18)
-        font.setBold(True)
-        font.setUnderline(False)
-        font.setWeight(75)
+        font.setFamily("Comfortaa")
+        font.setPointSize(12)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
         self.title2.setFont(font)
-        self.title2.setStyleSheet("color: rgb(0, 0, 127);")
+        self.title2.setStyleSheet("color: rgb(0, 0, 127);\n"
+"font: 12pt \"Comfortaa\";")
         self.title2.setObjectName("title2")
         self.frame = QtWidgets.QFrame(self.centralwidget)
-        self.frame.setGeometry(QtCore.QRect(260, 114, 111, 121))
+        self.frame.setGeometry(QtCore.QRect(260, 130, 111, 121))
         self.frame.setStyleSheet(".QFrame#frame{\n"
 "border-style: outset;\n"
 "border-width: 2px;\n"
@@ -138,7 +140,7 @@ class Ui_MainWindow(object):
 "")
         self.stop.setObjectName("stop")
         self.frame_2 = QtWidgets.QFrame(self.centralwidget)
-        self.frame_2.setGeometry(QtCore.QRect(10, 270, 221, 111))
+        self.frame_2.setGeometry(QtCore.QRect(140, 300, 221, 111))
         self.frame_2.setStyleSheet(".QFrame#frame_2{\n"
 "border-style: outset;\n"
 "border-width: 2px;\n"
@@ -241,7 +243,7 @@ class Ui_MainWindow(object):
 "}    ")
         self.plot_hpss.setObjectName("plot_hpss")
         self.frame_3 = QtWidgets.QFrame(self.centralwidget)
-        self.frame_3.setGeometry(QtCore.QRect(10, 429, 311, 131))
+        self.frame_3.setGeometry(QtCore.QRect(50, 450, 311, 131))
         self.frame_3.setStyleSheet("border-style: outset;\n"
 "border-width: 2px;\n"
 "border-radius: 13px;\n"
@@ -291,7 +293,7 @@ class Ui_MainWindow(object):
 "background-color: rgb(0, 170, 127);")
         self.analyze.setObjectName("analyze")
         self.recordlabel = QtWidgets.QLabel(self.centralwidget)
-        self.recordlabel.setGeometry(QtCore.QRect(40, 90, 71, 17))
+        self.recordlabel.setGeometry(QtCore.QRect(20, 110, 71, 17))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setPointSize(12)
@@ -299,7 +301,7 @@ class Ui_MainWindow(object):
         self.recordlabel.setStyleSheet("color: rgb(255, 0, 0);")
         self.recordlabel.setObjectName("recordlabel")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(13, 245, 251, 17))
+        self.label_2.setGeometry(QtCore.QRect(120, 270, 251, 17))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setPointSize(11)
@@ -310,7 +312,7 @@ class Ui_MainWindow(object):
         self.label_2.setStyleSheet("color: rgb(170, 0, 255);")
         self.label_2.setObjectName("label_2")
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
-        self.label_3.setGeometry(QtCore.QRect(20, 408, 81, 17))
+        self.label_3.setGeometry(QtCore.QRect(410, 560, 81, 17))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setPointSize(12)
@@ -318,7 +320,7 @@ class Ui_MainWindow(object):
         self.label_3.setStyleSheet("color: rgb(170, 85, 127);")
         self.label_3.setObjectName("label_3")
         self.label_9 = QtWidgets.QLabel(self.centralwidget)
-        self.label_9.setGeometry(QtCore.QRect(260, 90, 121, 17))
+        self.label_9.setGeometry(QtCore.QRect(260, 110, 121, 17))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setPointSize(12)
@@ -326,7 +328,7 @@ class Ui_MainWindow(object):
         self.label_9.setStyleSheet("color: rgb(0, 170, 0);")
         self.label_9.setObjectName("label_9")
         self.frame_4 = QtWidgets.QFrame(self.centralwidget)
-        self.frame_4.setGeometry(QtCore.QRect(10, 114, 241, 121))
+        self.frame_4.setGeometry(QtCore.QRect(10, 130, 241, 121))
         self.frame_4.setStyleSheet(".QFrame#frame_4{\n"
 " border-style: outset;\n"
 " background-color: rgb(255, 203, 193);\n"
@@ -356,7 +358,7 @@ class Ui_MainWindow(object):
         self.ip_rec.setStyleSheet("background-color: rgb(255, 98, 101);")
         self.ip_rec.setObjectName("ip_rec")
         self.recop = QtWidgets.QTextEdit(self.frame_4)
-        self.recop.setGeometry(QtCore.QRect(160, 16, 61, 31))
+        self.recop.setGeometry(QtCore.QRect(150, 10, 61, 31))
         self.recop.setStyleSheet("color: rgb(170, 0, 0);\n"
 "border-style: outset;\n"
 "border-width: 0px;\n"
@@ -382,8 +384,12 @@ class Ui_MainWindow(object):
 "background-color: rgb(85, 255, 0);\n"
 "}    ")
         self.rec_start.setObjectName("rec_start")
+        self.recop.raise_()
+        self.label_10.raise_()
+        self.ip_rec.raise_()
+        self.rec_start.raise_()
         self.label_11 = QtWidgets.QLabel(self.centralwidget)
-        self.label_11.setGeometry(QtCore.QRect(330, 510, 281, 51))
+        self.label_11.setGeometry(QtCore.QRect(470, 490, 281, 51))
         self.label_11.setStyleSheet("border-style: outset;\n"
 "color: rgb(0, 0, 0);\n"
 "border-width: 1px;\n"
@@ -393,7 +399,7 @@ class Ui_MainWindow(object):
 "")
         self.label_11.setObjectName("label_11")
         self.frame_5 = QtWidgets.QFrame(self.centralwidget)
-        self.frame_5.setGeometry(QtCore.QRect(250, 250, 241, 131))
+        self.frame_5.setGeometry(QtCore.QRect(380, 190, 241, 121))
         self.frame_5.setStyleSheet(".QFrame#frame_5{\n"
 "border-style: outset;\n"
 "border-width: 2px;\n"
@@ -469,21 +475,20 @@ class Ui_MainWindow(object):
 "border-color: black;\n"
 "")
         self.label_6.setObjectName("label_6")
+        self.label_7 = QtWidgets.QLabel(self.centralwidget)
+        self.label_7.setGeometry(QtCore.QRect(500, 450, 221, 31))
+        self.label_7.setObjectName("label_7")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(570, 42, 191, 151))
+        self.label.setText("")
+        self.label.setPixmap(QtGui.QPixmap("final_tabla.png"))
+        self.label.setObjectName("label")
         self.line = QtWidgets.QFrame(self.centralwidget)
-        self.line.setGeometry(QtCore.QRect(20, 386, 701, 16))
+        self.line.setGeometry(QtCore.QRect(30, 430, 731, 20))
         self.line.setFrameShape(QtWidgets.QFrame.HLine)
         self.line.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line.setObjectName("line")
-        self.label_7 = QtWidgets.QLabel(self.centralwidget)
-        self.label_7.setGeometry(QtCore.QRect(370, 400, 221, 31))
-        self.label_7.setObjectName("label_7")
-        self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(510, 22, 201, 121))
-        self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("50211-200.png"))
-        self.label.setObjectName("label")
         self.label.raise_()
-        self.frame_4.raise_()
         self.frame_3.raise_()
         self.frame_2.raise_()
         self.frame.raise_()
@@ -496,16 +501,16 @@ class Ui_MainWindow(object):
         self.label_9.raise_()
         self.label_11.raise_()
         self.frame_5.raise_()
-        self.line.raise_()
         self.label_7.raise_()
+        self.frame_4.raise_()
+        self.text_margin.raise_()
+        self.start.raise_()
+        self.recop.raise_()
+        self.line.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
-        self.menuBar = QtWidgets.QMenuBar(MainWindow)
-        self.menuBar.setGeometry(QtCore.QRect(0, 0, 757, 25))
-        self.menuBar.setObjectName("menuBar")
-        MainWindow.setMenuBar(self.menuBar)
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -514,8 +519,8 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "AD&C"))
         self.exit.setText(_translate("MainWindow", "Quit"))
-        self.title1.setText(_translate("MainWindow", " Automatic Detection and Classification of Tabla"))
-        self.title2.setText(_translate("MainWindow", " taalas from Indian Classical Music "))
+        self.title1.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:24pt;\">Automatic Detection and Classification of tabla</span></p></body></html>"))
+        self.title2.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:24pt;\">taalas from Indian Classical Music </span></p></body></html>"))
         self.start.setText(_translate("MainWindow", "Start"))
         self.stop.setText(_translate("MainWindow", "Stop"))
         self.hpss.setText(_translate("MainWindow", "Separate"))
