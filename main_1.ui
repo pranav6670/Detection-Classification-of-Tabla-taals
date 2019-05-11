@@ -734,7 +734,7 @@ border-color: black;
      <rect>
       <x>390</x>
       <y>220</y>
-      <width>271</width>
+      <width>261</width>
       <height>121</height>
      </rect>
     </property>
@@ -773,14 +773,14 @@ border-color: rgb(0, 0, 0);
       <string notr="true">color:rgb(200, 14, 7)</string>
      </property>
      <property name="text">
-      <string>Status </string>
+      <string>Status :-</string>
      </property>
     </widget>
     <widget class="QTextEdit" name="status">
      <property name="geometry">
       <rect>
        <x>81</x>
-       <y>10</y>
+       <y>14</y>
        <width>171</width>
        <height>40</height>
       </rect>

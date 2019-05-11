@@ -401,7 +401,7 @@ class Ui_MainWindow(object):
 "")
         self.label_11.setObjectName("label_11")
         self.frame_5 = QtWidgets.QFrame(self.centralwidget)
-        self.frame_5.setGeometry(QtCore.QRect(390, 220, 271, 121))
+        self.frame_5.setGeometry(QtCore.QRect(390, 220, 261, 121))
         self.frame_5.setStyleSheet(".QFrame#frame_5{\n"
 "border-style: outset;\n"
 "border-width: 2px;\n"
@@ -422,7 +422,7 @@ class Ui_MainWindow(object):
         self.label_4.setStyleSheet("color:rgb(200, 14, 7)")
         self.label_4.setObjectName("label_4")
         self.status = QtWidgets.QTextEdit(self.frame_5)
-        self.status.setGeometry(QtCore.QRect(81, 10, 171, 40))
+        self.status.setGeometry(QtCore.QRect(81, 14, 171, 40))
         self.status.setStyleSheet("color: rgb(0, 150, 0);\n"
 "border-style: outset;\n"
 "border-width: 0px;\n"
@@ -534,7 +534,7 @@ class Ui_MainWindow(object):
         self.label_10.setText(_translate("MainWindow", "Number of seconds"))
         self.rec_start.setText(_translate("MainWindow", "Start"))
         self.label_11.setText(_translate("MainWindow", "This space is left blank for further usage"))
-        self.label_4.setText(_translate("MainWindow", "Status "))
+        self.label_4.setText(_translate("MainWindow", "Status :-"))
         self.text_margin.setText(_translate("MainWindow", "Margin @Har"))
         self.label_6.setText(_translate("MainWindow", "Margin @Per "))
         self.label_7.setText(_translate("MainWindow", "Area under devlopment"))
