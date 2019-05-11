@@ -26,7 +26,7 @@ class Ui_MainWindow(object):
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.exit = QtWidgets.QPushButton(self.centralwidget)
-        self.exit.setGeometry(QtCore.QRect(620, 340, 111, 41))
+        self.exit.setGeometry(QtCore.QRect(640, 380, 111, 41))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setBold(True)
@@ -100,9 +100,11 @@ class Ui_MainWindow(object):
 "}\n"
 "QPushButton:hover {\n"
 "background-color: rgb(151, 255, 128);\n"
+"\n"
 "}\n"
 "QPushButton:pressed {\n"
 "background-color: rgb(85, 255, 0);\n"
+"\n"
 "}    ")
         self.start.setObjectName("start")
         self.stop = QtWidgets.QPushButton(self.frame)
@@ -124,9 +126,11 @@ class Ui_MainWindow(object):
 "}\n"
 "QPushButton:hover {\n"
 "background-color: rgb(255, 99, 78);\n"
+"\n"
 "}\n"
 "QPushButton:pressed {\n"
 "background-color: rgb(255, 52, 52);\n"
+"\n"
 "}    \n"
 "\n"
 "\n"
@@ -140,7 +144,7 @@ class Ui_MainWindow(object):
 "")
         self.stop.setObjectName("stop")
         self.frame_2 = QtWidgets.QFrame(self.centralwidget)
-        self.frame_2.setGeometry(QtCore.QRect(140, 300, 221, 111))
+        self.frame_2.setGeometry(QtCore.QRect(120, 290, 221, 111))
         self.frame_2.setStyleSheet(".QFrame#frame_2{\n"
 "border-style: outset;\n"
 "border-width: 2px;\n"
@@ -176,6 +180,7 @@ class Ui_MainWindow(object):
 "background-color: rgb(255, 26, 29);\n"
 "}\n"
 "")
+        self.margin_har.setSingleStep(1)
         self.margin_har.setObjectName("margin_har")
         self.margin_per = QtWidgets.QSpinBox(self.frame_2)
         self.margin_per.setGeometry(QtCore.QRect(20, 10, 61, 41))
@@ -301,7 +306,7 @@ class Ui_MainWindow(object):
         self.recordlabel.setStyleSheet("color: rgb(255, 0, 0);")
         self.recordlabel.setObjectName("recordlabel")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(120, 270, 251, 17))
+        self.label_2.setGeometry(QtCore.QRect(123, 267, 251, 17))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setPointSize(11)
@@ -312,7 +317,7 @@ class Ui_MainWindow(object):
         self.label_2.setStyleSheet("color: rgb(170, 0, 255);")
         self.label_2.setObjectName("label_2")
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
-        self.label_3.setGeometry(QtCore.QRect(410, 560, 81, 17))
+        self.label_3.setGeometry(QtCore.QRect(370, 490, 81, 17))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setPointSize(12)
@@ -372,6 +377,8 @@ class Ui_MainWindow(object):
 "}\n"
 "QPushButton:pressed {\n"
 "background-color: rgb(85, 255, 0);\n"
+"    border-color: green;\n"
+"\n"
 "}    ")
         self.rec_start.setObjectName("rec_start")
         self.recop = QtWidgets.QTextEdit(self.frame_4)
@@ -394,7 +401,7 @@ class Ui_MainWindow(object):
 "")
         self.label_11.setObjectName("label_11")
         self.frame_5 = QtWidgets.QFrame(self.centralwidget)
-        self.frame_5.setGeometry(QtCore.QRect(380, 190, 271, 121))
+        self.frame_5.setGeometry(QtCore.QRect(390, 220, 271, 121))
         self.frame_5.setStyleSheet(".QFrame#frame_5{\n"
 "border-style: outset;\n"
 "border-width: 2px;\n"
@@ -418,28 +425,29 @@ class Ui_MainWindow(object):
         self.status.setGeometry(QtCore.QRect(81, 10, 171, 40))
         self.status.setStyleSheet("color: rgb(0, 150, 0);\n"
 "border-style: outset;\n"
-"border-width: 2px;\n"
+"border-width: 0px;\n"
 "border-radius: 13px;\n"
 "border-color: black;\n"
-"background-color: rgb(255, 217, 212);")
+"background-color: rgb(255, 240, 237);")
         self.status.setObjectName("status")
         self.marginvalue_per = QtWidgets.QTextBrowser(self.frame_5)
         self.marginvalue_per.setGeometry(QtCore.QRect(10, 60, 61, 31))
         self.marginvalue_per.setStyleSheet("border-style: outset;\n"
-"border-width: 1px;\n"
+"border-width: 0px;\n"
 "background-color: rgb(255, 255, 255);\n"
 "border-radius: 1px;\n"
 "border-color: black;\n"
+"background-color: rgb(255, 240, 237);\n"
 "")
         self.marginvalue_per.setObjectName("marginvalue_per")
         self.marginvalue_har = QtWidgets.QTextEdit(self.frame_5)
         self.marginvalue_har.setGeometry(QtCore.QRect(80, 60, 61, 31))
         self.marginvalue_har.setStyleSheet("border-style: outset;\n"
-"border-width: 1px;\n"
+"border-width: 0px;\n"
 "background-color: rgb(255, 255, 255);\n"
 "border-radius: 1px;\n"
 "border-color: black;\n"
-"")
+"background-color: rgb(255, 240, 237);")
         self.marginvalue_har.setObjectName("marginvalue_har")
         self.text_margin = QtWidgets.QLabel(self.frame_5)
         self.text_margin.setGeometry(QtCore.QRect(80, 93, 71, 17))
@@ -526,7 +534,7 @@ class Ui_MainWindow(object):
         self.label_10.setText(_translate("MainWindow", "Number of seconds"))
         self.rec_start.setText(_translate("MainWindow", "Start"))
         self.label_11.setText(_translate("MainWindow", "This space is left blank for further usage"))
-        self.label_4.setText(_translate("MainWindow", "Status :-"))
+        self.label_4.setText(_translate("MainWindow", "Status "))
         self.text_margin.setText(_translate("MainWindow", "Margin @Har"))
         self.label_6.setText(_translate("MainWindow", "Margin @Per "))
         self.label_7.setText(_translate("MainWindow", "Area under devlopment"))
