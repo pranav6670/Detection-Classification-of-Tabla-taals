@@ -24,7 +24,7 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
             self._processes.append(process)
 
         self.FORMAT = pyaudio.paInt16
-        self.CHANNELS = 2
+        self.CHANNELS = 1
         self.RATE = 44100
         self.CHUNK = 1024
         self.WAVE_OUTPUT_FILENAME = "file.wav"
