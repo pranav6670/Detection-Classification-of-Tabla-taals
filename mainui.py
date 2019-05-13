@@ -72,7 +72,7 @@ class Ui_MainWindow(object):
 "font: 12pt \"Comfortaa\";")
         self.title2.setObjectName("title2")
         self.frame = QtWidgets.QFrame(self.centralwidget)
-        self.frame.setGeometry(QtCore.QRect(260, 130, 111, 121))
+        self.frame.setGeometry(QtCore.QRect(140, 290, 111, 121))
         self.frame.setStyleSheet(".QFrame#frame{\n"
 "border-style: outset;\n"
 "border-width: 2px;\n"
@@ -144,7 +144,7 @@ class Ui_MainWindow(object):
 "")
         self.stop.setObjectName("stop")
         self.frame_2 = QtWidgets.QFrame(self.centralwidget)
-        self.frame_2.setGeometry(QtCore.QRect(120, 290, 221, 111))
+        self.frame_2.setGeometry(QtCore.QRect(260, 190, 221, 111))
         self.frame_2.setStyleSheet(".QFrame#frame_2{\n"
 "border-style: outset;\n"
 "border-width: 2px;\n"
@@ -306,7 +306,7 @@ class Ui_MainWindow(object):
         self.recordlabel.setStyleSheet("color: rgb(255, 0, 0);")
         self.recordlabel.setObjectName("recordlabel")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(123, 267, 251, 17))
+        self.label_2.setGeometry(QtCore.QRect(260, 170, 241, 17))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setPointSize(11)
@@ -325,7 +325,7 @@ class Ui_MainWindow(object):
         self.label_3.setStyleSheet("color: rgb(170, 85, 127);")
         self.label_3.setObjectName("label_3")
         self.label_9 = QtWidgets.QLabel(self.centralwidget)
-        self.label_9.setGeometry(QtCore.QRect(260, 110, 121, 17))
+        self.label_9.setGeometry(QtCore.QRect(147, 268, 101, 17))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setPointSize(12)
@@ -359,11 +359,11 @@ class Ui_MainWindow(object):
 "")
         self.label_10.setObjectName("label_10")
         self.ip_rec = QtWidgets.QDial(self.frame_4)
-        self.ip_rec.setGeometry(QtCore.QRect(20, 50, 51, 61))
+        self.ip_rec.setGeometry(QtCore.QRect(20, 50, 61, 61))
         self.ip_rec.setStyleSheet("background-color: rgb(255, 98, 101);")
         self.ip_rec.setObjectName("ip_rec")
         self.rec_start = QtWidgets.QPushButton(self.frame_4)
-        self.rec_start.setGeometry(QtCore.QRect(93, 57, 131, 51))
+        self.rec_start.setGeometry(QtCore.QRect(93, 67, 131, 41))
         self.rec_start.setStyleSheet("QPushButton {\n"
 "    background-color: rgb(187, 255, 176); \n"
 "    color: rgb(0, 170, 0); \n"
@@ -401,7 +401,7 @@ class Ui_MainWindow(object):
 "")
         self.label_11.setObjectName("label_11")
         self.frame_5 = QtWidgets.QFrame(self.centralwidget)
-        self.frame_5.setGeometry(QtCore.QRect(390, 220, 261, 121))
+        self.frame_5.setGeometry(QtCore.QRect(530, 190, 261, 121))
         self.frame_5.setStyleSheet(".QFrame#frame_5{\n"
 "border-style: outset;\n"
 "border-width: 2px;\n"
@@ -482,15 +482,16 @@ class Ui_MainWindow(object):
         self.label_7.setGeometry(QtCore.QRect(500, 450, 221, 31))
         self.label_7.setObjectName("label_7")
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(570, 42, 191, 151))
+        self.label.setGeometry(QtCore.QRect(560, 50, 191, 151))
         self.label.setText("")
         self.label.setPixmap(QtGui.QPixmap("final_tabla.png"))
         self.label.setObjectName("label")
         self.line = QtWidgets.QFrame(self.centralwidget)
-        self.line.setGeometry(QtCore.QRect(30, 430, 731, 20))
+        self.line.setGeometry(QtCore.QRect(20, 430, 731, 20))
         self.line.setFrameShape(QtWidgets.QFrame.HLine)
         self.line.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line.setObjectName("line")
+        self.label_9.raise_()
         self.label.raise_()
         self.frame_3.raise_()
         self.frame_2.raise_()
@@ -501,12 +502,12 @@ class Ui_MainWindow(object):
         self.recordlabel.raise_()
         self.label_2.raise_()
         self.label_3.raise_()
-        self.label_9.raise_()
         self.label_11.raise_()
         self.frame_5.raise_()
         self.label_7.raise_()
         self.frame_4.raise_()
         self.line.raise_()
+        self.status.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
