@@ -7,6 +7,7 @@ import wave
 import numpy as np
 import matplotlib.pyplot as plt
 import pyaudio
+plt.style.use('ggplot')
 
 
 class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
@@ -59,7 +60,7 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
             self.data = self.stream.read(self.CHUNK)
             self.frames.append(self.data)
         self.status.clear()
-        self.texxtt = "Done recording for {} secs".format(self.ip_rec.value)
+        self.texxtt = "Done recording"
         self.status.setText(self.texxtt)
         print("finished recording")
         # stop Recording
