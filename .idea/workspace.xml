@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="73955db2-7166-448b-a020-900152631ce8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_1.ui" beforeDir="false" afterPath="$PROJECT_DIR$/main_1.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainui.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainui.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +72,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mainui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8640">
+            <state relative-caret-position="8656">
               <caret line="541" selection-start-line="541" selection-end-line="541" />
             </state>
           </provider>
@@ -83,11 +81,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="288">
+              <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-                <marker date="1557644476207" expanded="true" signature="2818:2823" ph="..." />
+                <marker date="1557760299280" expanded="true" signature="2804:2809" ph="..." />
               </folding>
             </state>
           </provider>
@@ -152,9 +150,9 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="461" />
-    <option name="y" value="-4" />
+    <option name="y" value="-2" />
     <option name="width" value="649" />
-    <option name="height" value="772" />
+    <option name="height" value="764" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -162,6 +160,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -173,7 +172,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -395,21 +393,9 @@
       <workItem from="1557499002471" duration="4132000" />
       <workItem from="1557563918326" duration="2161000" />
       <workItem from="1557639491730" duration="2726000" />
-      <workItem from="1557750644594" duration="876000" />
-    </task>
-    <task id="LOCAL-00091" summary="Changes to Main and GUI">
-      <created>1555329626136</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1555329626136</updated>
-    </task>
-    <task id="LOCAL-00092" summary="Changes to Main and GUI">
-      <created>1555331256101</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1555331256101</updated>
+      <workItem from="1557750644594" duration="3223000" />
+      <workItem from="1557809937221" duration="776000" />
+      <workItem from="1557898307465" duration="596000" />
     </task>
     <task id="LOCAL-00093" summary="Changes to Main and GUI">
       <created>1555818303646</created>
@@ -740,11 +726,25 @@
       <option name="project" value="LOCAL" />
       <updated>1557645350724</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="Changes to GUI and main">
+      <created>1557759008456</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1557759008457</updated>
+    </task>
+    <task id="LOCAL-00141" summary="Changes to GUI and main">
+      <created>1557760304562</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1557760304562</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111513000" />
+    <option name="totallyTimeSpent" value="115232000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -761,10 +761,10 @@
     <layout>
       <window_info id="Structure" order="0" sideWeight="0.5037369" side_tool="true" weight="0.2189394" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.4962631" visible="true" weight="0.2780303" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.4962631" visible="true" weight="0.2871212" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49545455" visible="true" weight="0.38565022" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49545455" weight="0.38565022" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.39760837" />
@@ -781,7 +781,7 @@
       <window_info anchor="right" x="63" y="38" width="1303" height="688" id="SciView" order="3" weight="0.3272727" />
       <window_info anchor="right" id="Database" order="4" weight="0.3293556" />
       <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
-      <window_info anchor="right" x="0" y="0" width="292" height="573" id="Documentation" order="6" side_tool="true" weight="0.32954547" />
+      <window_info anchor="right" x="0" y="0" width="292" height="573" id="Documentation" order="6" side_tool="true" visible="true" weight="0.32954547" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4984472" visible="true" weight="0.35003978" />
@@ -852,7 +852,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/myrepo$guiGO.coverage" NAME="guiGO Coverage Results" MODIFIED="1555866799971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/myrepo$main.coverage" NAME="main Coverage Results" MODIFIED="1557758716058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/myrepo$main.coverage" NAME="main Coverage Results" MODIFIED="1557810112746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/myrepo$Vocalseparation.coverage" NAME="Vocalseparation Coverage Results" MODIFIED="1557035972513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/myrepo$mainui.coverage" NAME="mainui Coverage Results" MODIFIED="1555826796667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/myrepo$spectograms.coverage" NAME="spectograms Coverage Results" MODIFIED="1556388679587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -1031,7 +1031,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mainui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8640">
+        <state relative-caret-position="8656">
           <caret line="541" selection-start-line="541" selection-end-line="541" />
         </state>
       </provider>
@@ -1048,11 +1048,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="288">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <marker date="1557644476207" expanded="true" signature="2818:2823" ph="..." />
+            <marker date="1557760299280" expanded="true" signature="2804:2809" ph="..." />
           </folding>
         </state>
       </provider>
