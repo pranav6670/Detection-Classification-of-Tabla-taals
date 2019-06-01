@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>783</width>
     <height>623</height>
    </rect>
   </property>
@@ -38,9 +38,9 @@
    <widget class="QPushButton" name="exit">
     <property name="geometry">
      <rect>
-      <x>680</x>
-      <y>550</y>
-      <width>111</width>
+      <x>560</x>
+      <y>200</y>
+      <width>211</width>
       <height>41</height>
      </rect>
     </property>
@@ -241,7 +241,7 @@ background-color: rgb(255, 52, 52);
    <widget class="QFrame" name="frame_2">
     <property name="geometry">
      <rect>
-      <x>140</x>
+      <x>144</x>
       <y>295</y>
       <width>221</width>
       <height>111</height>
@@ -251,8 +251,8 @@ background-color: rgb(255, 52, 52);
      <string notr="true">.QFrame#frame_2{
 border-style: outset;
 border-width: 2px;
-background-color: rgb(167, 254, 255);
 border-radius: 13px;
+	background-color: rgb(206, 234, 255);
 border-color: rgb(0, 0, 0);
 }</string>
     </property>
@@ -405,7 +405,7 @@ background-color: rgb(255, 76, 241);
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>450</y>
+      <y>454</y>
       <width>311</width>
       <height>131</height>
      </rect>
@@ -435,11 +435,11 @@ border-color: black;
      </property>
      <property name="styleSheet">
       <string notr="true">
-background-color: rgb(255, 255, 255);
+background-color: rgb(249, 255, 181);
 border-radius: 1px;
 border-color: black;
 border-style: outset;
-border-width: 1px;
+border-width: 0px;
 border-color: black;
 </string>
      </property>
@@ -515,7 +515,7 @@ background-color: rgb(255, 76, 241);
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>110</y>
+      <y>108</y>
       <width>71</width>
       <height>17</height>
      </rect>
@@ -536,16 +536,16 @@ background-color: rgb(255, 76, 241);
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>142</x>
+      <x>155</x>
       <y>270</y>
-      <width>241</width>
+      <width>191</width>
       <height>17</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Trebuchet MS</family>
-      <pointsize>11</pointsize>
+      <pointsize>9</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -562,7 +562,7 @@ background-color: rgb(255, 76, 241);
     <property name="geometry">
      <rect>
       <x>18</x>
-      <y>428</y>
+      <y>432</y>
       <width>81</width>
       <height>17</height>
      </rect>
@@ -876,6 +876,14 @@ border-color: black;
       <string>Margin @Per </string>
      </property>
     </widget>
+    <zorder>label_4</zorder>
+    <zorder>status</zorder>
+    <zorder>marginvalue_per</zorder>
+    <zorder>marginvalue_har</zorder>
+    <zorder>text_margin</zorder>
+    <zorder>label_6</zorder>
+    <zorder>label_10</zorder>
+    <zorder>recop</zorder>
    </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
@@ -893,6 +901,354 @@ border-color: black;
      <pixmap>final_tabla.png</pixmap>
     </property>
    </widget>
+   <widget class="QFrame" name="frame_6">
+    <property name="geometry">
+     <rect>
+      <x>392</x>
+      <y>295</y>
+      <width>371</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">.QFrame#frame_6{
+border-style: outset;
+border-width: 2px;
+background-color: rgb(255, 240, 237);
+border-radius: 13px;
+border-color: rgb(0, 0, 0);
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>13</x>
+       <y>20</y>
+       <width>131</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: rgb(187, 255, 176); 
+    color: rgb(0, 170, 0); 
+   	 border-style: outset;
+    border-width: 2px;
+    border-radius: 13px;
+    border-color: black;
+}
+QPushButton:hover {
+background-color: rgb(151, 255, 128);
+}
+QPushButton:pressed {
+background-color: rgb(85, 255, 0);
+    border-color: green;
+
+}    </string>
+     </property>
+     <property name="text">
+      <string>Data Distribution</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>60</y>
+       <width>151</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QPushButton {
+border-style: outset;
+color: rgb(0, 0, 0);
+border-width: 2px;
+border-radius: 13px;
+border-color: black;
+background-color: rgb(0, 170, 127);
+
+}
+QPushButton:hover {
+background-color:rgb(187, 255, 176); 
+}
+QPushButton:pressed {
+background-color: rgb(255, 76, 241);
+}    </string>
+     </property>
+     <property name="text">
+      <string>MFCC Coefficients</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>151</x>
+       <y>20</y>
+       <width>99</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+color: rgb(150, 0, 0);
+border-style: outset;
+border-width: 2px;
+border-radius: 13px;
+border-color: black;
+background-color: rgb(255, 119, 121);
+}
+QPushButton:hover {
+background-color: rgb(255, 99, 78);
+
+}
+QPushButton:pressed {
+background-color: rgb(255, 52, 52);
+
+}    
+
+
+
+
+
+
+
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>FFT</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>20</y>
+       <width>99</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+border-style: outset;
+color: rgb(170, 85, 255);
+border-width: 2px;
+border-radius: 13px;
+background-color: rgb(170, 170, 255);
+border-color: black;
+}
+QPushButton:hover {
+background-color: rgb(85, 170, 255);
+}
+QPushButton:pressed {
+background-color: rgb(255, 76, 241);
+}    </string>
+     </property>
+     <property name="text">
+      <string>Spectogram</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_5">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>60</y>
+       <width>151</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+border-style: outset;
+border-width: 2px;
+color: rgb(255, 85, 0);
+border-radius: 13px;
+border-color: black;
+background-color: rgb(255, 170, 127);
+}
+QPushButton:hover {
+background-color: rgb(255, 170, 0);
+}
+QPushButton:pressed {
+background-color: rgb(255, 76, 241);
+}    </string>
+     </property>
+     <property name="text">
+      <string>Filter Bank Energies</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>396</x>
+      <y>270</y>
+      <width>141</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Trebuchet MS</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 170, 0);</string>
+    </property>
+    <property name="text">
+     <string>Data Visualisations</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>268</y>
+      <width>20</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>268</y>
+      <width>20</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>254</y>
+      <width>781</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>418</y>
+      <width>781</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_3">
+    <property name="geometry">
+     <rect>
+      <x>256</x>
+      <y>110</y>
+      <width>20</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_6">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>50</y>
+      <width>20</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_7">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>90</y>
+      <width>541</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_8">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>40</y>
+      <width>231</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_9">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>50</y>
+      <width>20</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_10">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>430</y>
+      <width>20</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <zorder>line_9</zorder>
+   <zorder>line_10</zorder>
+   <zorder>line_8</zorder>
+   <zorder>line_5</zorder>
+   <zorder>line_6</zorder>
+   <zorder>line</zorder>
+   <zorder>line_2</zorder>
+   <zorder>line_4</zorder>
    <zorder>label_9</zorder>
    <zorder>label</zorder>
    <zorder>frame_3</zorder>
@@ -906,8 +1262,10 @@ border-color: black;
    <zorder>label_3</zorder>
    <zorder>frame_5</zorder>
    <zorder>frame_4</zorder>
-   <zorder>label_4</zorder>
-   <zorder>marginvalue_har</zorder>
+   <zorder>frame_6</zorder>
+   <zorder>label_7</zorder>
+   <zorder>line_3</zorder>
+   <zorder>line_7</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
