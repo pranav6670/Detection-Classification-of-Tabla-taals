@@ -38,8 +38,8 @@
    <widget class="QPushButton" name="exit">
     <property name="geometry">
      <rect>
-      <x>450</x>
-      <y>370</y>
+      <x>680</x>
+      <y>550</y>
       <width>111</width>
       <height>41</height>
      </rect>
@@ -242,7 +242,7 @@ background-color: rgb(255, 52, 52);
     <property name="geometry">
      <rect>
       <x>140</x>
-      <y>296</y>
+      <y>295</y>
       <width>221</width>
       <height>111</height>
      </rect>
@@ -404,7 +404,7 @@ background-color: rgb(255, 76, 241);
    <widget class="QFrame" name="frame_3">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>10</x>
       <y>450</y>
       <width>311</width>
       <height>131</height>
@@ -489,12 +489,22 @@ border-color: black;
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">border-style: outset;
+      <string notr="true">
+QPushButton {
+border-style: outset;
 color: rgb(0, 0, 0);
 border-width: 2px;
 border-radius: 13px;
 border-color: black;
-background-color: rgb(0, 170, 127);</string>
+background-color: rgb(0, 170, 127);
+
+}
+QPushButton:hover {
+background-color:rgb(187, 255, 176); 
+}
+QPushButton:pressed {
+background-color: rgb(255, 76, 241);
+}    </string>
      </property>
      <property name="text">
       <string>Analyze</string>
@@ -551,8 +561,8 @@ background-color: rgb(0, 170, 127);</string>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>370</x>
-      <y>490</y>
+      <x>18</x>
+      <y>428</y>
       <width>81</width>
       <height>17</height>
      </rect>
@@ -707,33 +717,11 @@ border-color: rgb(0, 0, 0);</string>
      </property>
     </widget>
    </widget>
-   <widget class="QLabel" name="label_11">
-    <property name="geometry">
-     <rect>
-      <x>470</x>
-      <y>490</y>
-      <width>281</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-style: outset;
-color: rgb(0, 0, 0);
-border-width: 1px;
-background-color: rgb(255, 255, 255);
-border-radius: 1px;
-border-color: black;
-</string>
-    </property>
-    <property name="text">
-     <string>This space is left blank for further usage</string>
-    </property>
-   </widget>
    <widget class="QFrame" name="frame_5">
     <property name="geometry">
      <rect>
-      <x>530</x>
-      <y>190</y>
+      <x>280</x>
+      <y>130</y>
       <width>261</width>
       <height>121</height>
      </rect>
@@ -889,19 +877,6 @@ border-color: black;
      </property>
     </widget>
    </widget>
-   <widget class="QLabel" name="label_7">
-    <property name="geometry">
-     <rect>
-      <x>500</x>
-      <y>450</y>
-      <width>221</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Area under devlopment</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
@@ -918,19 +893,6 @@ border-color: black;
      <pixmap>final_tabla.png</pixmap>
     </property>
    </widget>
-   <widget class="Line" name="line">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>430</y>
-      <width>731</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
    <zorder>label_9</zorder>
    <zorder>label</zorder>
    <zorder>frame_3</zorder>
@@ -942,11 +904,10 @@ border-color: black;
    <zorder>recordlabel</zorder>
    <zorder>label_2</zorder>
    <zorder>label_3</zorder>
-   <zorder>label_11</zorder>
    <zorder>frame_5</zorder>
-   <zorder>label_7</zorder>
    <zorder>frame_4</zorder>
-   <zorder>line</zorder>
+   <zorder>label_4</zorder>
+   <zorder>marginvalue_har</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
