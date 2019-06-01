@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="73955db2-7166-448b-a020-900152631ce8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_1.ui" beforeDir="false" afterPath="$PROJECT_DIR$/main_1.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainui.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainui.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,8 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mainui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10260">
-              <caret line="540" selection-start-line="540" selection-end-line="540" />
+            <state relative-caret-position="10051">
+              <caret line="529" selection-start-line="529" selection-end-line="529" />
             </state>
           </provider>
         </entry>
@@ -83,23 +81,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="-2413">
+              <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
                 <marker date="1557760299280" expanded="true" signature="2804:2809" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Vocalseparation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1121">
-              <caret line="63" column="33" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
-              <folding>
-                <element signature="e#81#118#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -144,9 +130,9 @@
         <option value="$PROJECT_DIR$/spectograms.py" />
         <option value="$PROJECT_DIR$/guiGO.py" />
         <option value="$PROJECT_DIR$/liveSpectogram.py" />
-        <option value="$PROJECT_DIR$/Vocalseparation.py" />
         <option value="$PROJECT_DIR$/mainui.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/Vocalseparation.py" />
       </list>
     </option>
   </component>
@@ -403,21 +389,7 @@
       <workItem from="1558006252775" duration="618000" />
       <workItem from="1558855243069" duration="604000" />
       <workItem from="1559108061516" duration="4991000" />
-      <workItem from="1559304249987" duration="941000" />
-    </task>
-    <task id="LOCAL-00095" summary="Changes to Main and GUI">
-      <created>1555818792660</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1555818792660</updated>
-    </task>
-    <task id="LOCAL-00096" summary="Changes to Main and GUI">
-      <created>1555824825538</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1555824825538</updated>
+      <workItem from="1559304249987" duration="2684000" />
     </task>
     <task id="LOCAL-00097" summary="Changes to Main and GUI">
       <created>1555824892737</created>
@@ -748,11 +720,25 @@
       <option name="project" value="LOCAL" />
       <updated>1559114305073</updated>
     </task>
-    <option name="localTasksCounter" value="144" />
+    <task id="LOCAL-00144" summary="Changes to GUI and main">
+      <created>1559364346616</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1559364346617</updated>
+    </task>
+    <task id="LOCAL-00145" summary="Changes to GUI and main">
+      <created>1559364772879</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1559364772879</updated>
+    </task>
+    <option name="localTasksCounter" value="146" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123659000" />
+    <option name="totallyTimeSpent" value="125402000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -772,7 +758,7 @@
       <window_info content_ui="combo" id="Project" order="2" sideWeight="0.4962631" weight="0.3159091" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49545455" visible="true" weight="0.38565022" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49545455" weight="0.38565022" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.39760837" />
@@ -1040,15 +1026,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mainui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10260">
-          <caret line="540" selection-start-line="540" selection-end-line="540" />
+        <state relative-caret-position="10051">
+          <caret line="529" selection-start-line="529" selection-end-line="529" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Vocalseparation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1121">
-          <caret line="63" column="33" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
+        <state relative-caret-position="171">
+          <caret line="15" column="49" lean-forward="true" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
           <folding>
             <element signature="e#81#118#0" expanded="true" />
           </folding>
@@ -1057,8 +1043,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="-2413">
+          <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
             <marker date="1557760299280" expanded="true" signature="2804:2809" ph="..." />
