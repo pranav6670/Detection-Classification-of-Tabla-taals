@@ -38,8 +38,8 @@
    <widget class="QPushButton" name="exit">
     <property name="geometry">
      <rect>
-      <x>640</x>
-      <y>380</y>
+      <x>450</x>
+      <y>370</y>
       <width>111</width>
       <height>41</height>
      </rect>
@@ -126,7 +126,7 @@ font: 12pt &quot;Comfortaa&quot;;</string>
    <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
-      <x>140</x>
+      <x>10</x>
       <y>290</y>
       <width>111</width>
       <height>121</height>
@@ -241,8 +241,8 @@ background-color: rgb(255, 52, 52);
    <widget class="QFrame" name="frame_2">
     <property name="geometry">
      <rect>
-      <x>260</x>
-      <y>190</y>
+      <x>140</x>
+      <y>296</y>
       <width>221</width>
       <height>111</height>
      </rect>
@@ -526,8 +526,8 @@ background-color: rgb(0, 170, 127);</string>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>260</x>
-      <y>170</y>
+      <x>142</x>
+      <y>270</y>
       <width>241</width>
       <height>17</height>
      </rect>
@@ -573,8 +573,8 @@ background-color: rgb(0, 170, 127);</string>
    <widget class="QLabel" name="label_9">
     <property name="geometry">
      <rect>
-      <x>147</x>
-      <y>268</y>
+      <x>17</x>
+      <y>270</y>
       <width>101</width>
       <height>17</height>
      </rect>
@@ -947,7 +947,6 @@ border-color: black;
    <zorder>label_7</zorder>
    <zorder>frame_4</zorder>
    <zorder>line</zorder>
-   <zorder>status</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>

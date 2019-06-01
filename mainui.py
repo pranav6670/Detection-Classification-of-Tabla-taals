@@ -26,7 +26,7 @@ class Ui_MainWindow(object):
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.exit = QtWidgets.QPushButton(self.centralwidget)
-        self.exit.setGeometry(QtCore.QRect(640, 380, 111, 41))
+        self.exit.setGeometry(QtCore.QRect(450, 370, 111, 41))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setBold(True)
@@ -72,7 +72,7 @@ class Ui_MainWindow(object):
 "font: 12pt \"Comfortaa\";")
         self.title2.setObjectName("title2")
         self.frame = QtWidgets.QFrame(self.centralwidget)
-        self.frame.setGeometry(QtCore.QRect(140, 290, 111, 121))
+        self.frame.setGeometry(QtCore.QRect(10, 290, 111, 121))
         self.frame.setStyleSheet(".QFrame#frame{\n"
 "border-style: outset;\n"
 "border-width: 2px;\n"
@@ -144,7 +144,7 @@ class Ui_MainWindow(object):
 "")
         self.stop.setObjectName("stop")
         self.frame_2 = QtWidgets.QFrame(self.centralwidget)
-        self.frame_2.setGeometry(QtCore.QRect(260, 190, 221, 111))
+        self.frame_2.setGeometry(QtCore.QRect(140, 296, 221, 111))
         self.frame_2.setStyleSheet(".QFrame#frame_2{\n"
 "border-style: outset;\n"
 "border-width: 2px;\n"
@@ -306,7 +306,7 @@ class Ui_MainWindow(object):
         self.recordlabel.setStyleSheet("color: rgb(255, 0, 0);")
         self.recordlabel.setObjectName("recordlabel")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(260, 170, 241, 17))
+        self.label_2.setGeometry(QtCore.QRect(142, 270, 241, 17))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setPointSize(11)
@@ -325,7 +325,7 @@ class Ui_MainWindow(object):
         self.label_3.setStyleSheet("color: rgb(170, 85, 127);")
         self.label_3.setObjectName("label_3")
         self.label_9 = QtWidgets.QLabel(self.centralwidget)
-        self.label_9.setGeometry(QtCore.QRect(147, 268, 101, 17))
+        self.label_9.setGeometry(QtCore.QRect(17, 270, 101, 17))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setPointSize(12)
@@ -507,7 +507,6 @@ class Ui_MainWindow(object):
         self.label_7.raise_()
         self.frame_4.raise_()
         self.line.raise_()
-        self.status.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
