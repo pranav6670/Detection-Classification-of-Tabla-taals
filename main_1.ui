@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>783</width>
+    <width>793</width>
     <height>623</height>
    </rect>
   </property>
@@ -38,10 +38,10 @@
    <widget class="QPushButton" name="exit">
     <property name="geometry">
      <rect>
-      <x>560</x>
-      <y>200</y>
-      <width>211</width>
-      <height>41</height>
+      <x>670</x>
+      <y>460</y>
+      <width>101</width>
+      <height>121</height>
      </rect>
     </property>
     <property name="font">
@@ -510,6 +510,10 @@ background-color: rgb(255, 76, 241);
       <string>Analyze</string>
      </property>
     </widget>
+    <zorder>optaala</zorder>
+    <zorder>label_5</zorder>
+    <zorder>analyze</zorder>
+    <zorder>line_10</zorder>
    </widget>
    <widget class="QLabel" name="recordlabel">
     <property name="geometry">
@@ -888,8 +892,8 @@ border-color: black;
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>560</x>
-      <y>50</y>
+      <x>570</x>
+      <y>90</y>
       <width>191</width>
       <height>151</height>
      </rect>
@@ -1105,7 +1109,7 @@ background-color: rgb(255, 76, 241);
      <string notr="true">color: rgb(0, 170, 0);</string>
     </property>
     <property name="text">
-     <string>Data Visualisations</string>
+     <string>Data Visualizations</string>
     </property>
    </widget>
    <widget class="Line" name="line">
@@ -1152,7 +1156,7 @@ background-color: rgb(255, 76, 241);
      <rect>
       <x>10</x>
       <y>418</y>
-      <width>781</width>
+      <width>771</width>
       <height>16</height>
      </rect>
     </property>
@@ -1179,7 +1183,7 @@ background-color: rgb(255, 76, 241);
       <x>540</x>
       <y>50</y>
       <width>20</width>
-      <height>201</height>
+      <height>211</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -1208,7 +1212,7 @@ background-color: rgb(255, 76, 241);
       <x>550</x>
       <y>40</y>
       <width>231</width>
-      <height>16</height>
+      <height>20</height>
      </rect>
     </property>
     <property name="orientation">
@@ -1221,7 +1225,7 @@ background-color: rgb(255, 76, 241);
       <x>770</x>
       <y>50</y>
       <width>20</width>
-      <height>201</height>
+      <height>211</height>
      </rect>
     </property>
     <property name="orientation">
@@ -1241,14 +1245,203 @@ background-color: rgb(255, 76, 241);
      <enum>Qt::Vertical</enum>
     </property>
    </widget>
-   <zorder>line_9</zorder>
-   <zorder>line_10</zorder>
-   <zorder>line_8</zorder>
-   <zorder>line_5</zorder>
+   <widget class="QFrame" name="frame_7">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>454</y>
+      <width>311</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">.QFrame#frame_7{
+border-style: outset;
+border-width: 2px;
+background-color: rgb(255, 240, 237);
+border-radius: 13px;
+border-color: rgb(0, 0, 0);
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="pushButton_6">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>120</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: rgb(187, 255, 176); 
+    color: rgb(0, 170, 0); 
+   	 border-style: outset;
+    border-width: 2px;
+    border-radius: 13px;
+    border-color: black;
+}
+QPushButton:hover {
+background-color: rgb(151, 255, 128);
+}
+QPushButton:pressed {
+background-color: rgb(85, 255, 0);
+    border-color: green;
+
+}    </string>
+     </property>
+     <property name="text">
+      <string>CNN Summary</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_7">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>80</y>
+       <width>120</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: rgb(187, 255, 176); 
+    color: rgb(0, 170, 0); 
+   	 border-style: outset;
+    border-width: 2px;
+    border-radius: 13px;
+    border-color: black;
+}
+QPushButton:hover {
+background-color: rgb(151, 255, 128);
+}
+QPushButton:pressed {
+background-color: rgb(85, 255, 0);
+    border-color: green;
+
+}    </string>
+     </property>
+     <property name="text">
+      <string>LSTM Summary</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_8">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>20</y>
+       <width>120</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+color: rgb(150, 0, 0);
+border-style: outset;
+border-width: 2px;
+border-radius: 13px;
+border-color: black;
+background-color: rgb(255, 119, 121);
+}
+QPushButton:hover {
+background-color: rgb(255, 99, 78);
+
+}
+QPushButton:pressed {
+background-color: rgb(255, 52, 52);
+
+}    
+
+
+
+
+
+
+
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>CNN Graph</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_9">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>80</y>
+       <width>120</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+color: rgb(150, 0, 0);
+border-style: outset;
+border-width: 2px;
+border-radius: 13px;
+border-color: black;
+background-color: rgb(255, 119, 121);
+}
+QPushButton:hover {
+background-color: rgb(255, 99, 78);
+
+}
+QPushButton:pressed {
+background-color: rgb(255, 52, 52);
+
+}    
+
+
+
+
+
+
+
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>LSTM Graph</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>430</y>
+      <width>151</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Trebuchet MS</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 170, 0);</string>
+    </property>
+    <property name="text">
+     <string>Model Visualizations</string>
+    </property>
+   </widget>
+   <zorder>line_4</zorder>
    <zorder>line_6</zorder>
+   <zorder>line_8</zorder>
+   <zorder>line_10</zorder>
+   <zorder>line_5</zorder>
    <zorder>line</zorder>
    <zorder>line_2</zorder>
-   <zorder>line_4</zorder>
    <zorder>label_9</zorder>
    <zorder>label</zorder>
    <zorder>frame_3</zorder>
@@ -1266,6 +1459,9 @@ background-color: rgb(255, 76, 241);
    <zorder>label_7</zorder>
    <zorder>line_3</zorder>
    <zorder>line_7</zorder>
+   <zorder>frame_7</zorder>
+   <zorder>line_9</zorder>
+   <zorder>label_8</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
