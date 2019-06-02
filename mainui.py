@@ -26,7 +26,7 @@ class Ui_MainWindow(object):
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.exit = QtWidgets.QPushButton(self.centralwidget)
-        self.exit.setGeometry(QtCore.QRect(670, 490, 101, 71))
+        self.exit.setGeometry(QtCore.QRect(670, 486, 101, 71))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setBold(True)
@@ -650,12 +650,12 @@ class Ui_MainWindow(object):
         self.line_9.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_9.setObjectName("line_9")
         self.line_10 = QtWidgets.QFrame(self.centralwidget)
-        self.line_10.setGeometry(QtCore.QRect(320, 430, 20, 181))
+        self.line_10.setGeometry(QtCore.QRect(328, 430, 20, 181))
         self.line_10.setFrameShape(QtWidgets.QFrame.VLine)
         self.line_10.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_10.setObjectName("line_10")
         self.frame_7 = QtWidgets.QFrame(self.centralwidget)
-        self.frame_7.setGeometry(QtCore.QRect(340, 454, 311, 141))
+        self.frame_7.setGeometry(QtCore.QRect(360, 460, 271, 111))
         self.frame_7.setStyleSheet(".QFrame#frame_7{\n"
 "border-style: outset;\n"
 "border-width: 2px;\n"
@@ -667,7 +667,7 @@ class Ui_MainWindow(object):
         self.frame_7.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_7.setObjectName("frame_7")
         self.cnn_sum = QtWidgets.QPushButton(self.frame_7)
-        self.cnn_sum.setGeometry(QtCore.QRect(20, 20, 120, 40))
+        self.cnn_sum.setGeometry(QtCore.QRect(10, 10, 120, 40))
         self.cnn_sum.setStyleSheet("QPushButton {\n"
 "    background-color: rgb(187, 255, 176); \n"
 "    color: rgb(0, 170, 0); \n"
@@ -686,7 +686,7 @@ class Ui_MainWindow(object):
 "}    ")
         self.cnn_sum.setObjectName("cnn_sum")
         self.lstm_sum = QtWidgets.QPushButton(self.frame_7)
-        self.lstm_sum.setGeometry(QtCore.QRect(20, 80, 120, 40))
+        self.lstm_sum.setGeometry(QtCore.QRect(10, 60, 120, 40))
         self.lstm_sum.setStyleSheet("QPushButton {\n"
 "    background-color: rgb(187, 255, 176); \n"
 "    color: rgb(0, 170, 0); \n"
@@ -704,37 +704,8 @@ class Ui_MainWindow(object):
 "\n"
 "}    ")
         self.lstm_sum.setObjectName("lstm_sum")
-        self.cnn_graph = QtWidgets.QPushButton(self.frame_7)
-        self.cnn_graph.setGeometry(QtCore.QRect(160, 20, 120, 40))
-        self.cnn_graph.setStyleSheet("QPushButton {\n"
-"color: rgb(150, 0, 0);\n"
-"border-style: outset;\n"
-"border-width: 2px;\n"
-"border-radius: 13px;\n"
-"border-color: black;\n"
-"background-color: rgb(255, 119, 121);\n"
-"}\n"
-"QPushButton:hover {\n"
-"background-color: rgb(255, 99, 78);\n"
-"\n"
-"}\n"
-"QPushButton:pressed {\n"
-"background-color: rgb(255, 52, 52);\n"
-"\n"
-"}    \n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"")
-        self.cnn_graph.setObjectName("cnn_graph")
         self.lstm_graph = QtWidgets.QPushButton(self.frame_7)
-        self.lstm_graph.setGeometry(QtCore.QRect(160, 80, 120, 40))
+        self.lstm_graph.setGeometry(QtCore.QRect(136, 10, 120, 40))
         self.lstm_graph.setStyleSheet("QPushButton {\n"
 "color: rgb(150, 0, 0);\n"
 "border-style: outset;\n"
@@ -762,13 +733,47 @@ class Ui_MainWindow(object):
 "\n"
 "")
         self.lstm_graph.setObjectName("lstm_graph")
+        self.cnn_graph = QtWidgets.QPushButton(self.frame_7)
+        self.cnn_graph.setGeometry(QtCore.QRect(136, 60, 120, 40))
+        self.cnn_graph.setStyleSheet("QPushButton {\n"
+"color: rgb(150, 0, 0);\n"
+"border-style: outset;\n"
+"border-width: 2px;\n"
+"border-radius: 13px;\n"
+"border-color: black;\n"
+"background-color: rgb(255, 119, 121);\n"
+"}\n"
+"QPushButton:hover {\n"
+"background-color: rgb(255, 99, 78);\n"
+"\n"
+"}\n"
+"QPushButton:pressed {\n"
+"background-color: rgb(255, 52, 52);\n"
+"\n"
+"}    \n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"")
+        self.cnn_graph.setObjectName("cnn_graph")
         self.label_8 = QtWidgets.QLabel(self.centralwidget)
-        self.label_8.setGeometry(QtCore.QRect(430, 430, 151, 17))
+        self.label_8.setGeometry(QtCore.QRect(420, 433, 151, 17))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         self.label_8.setFont(font)
         self.label_8.setStyleSheet("color: rgb(255, 170, 0);")
         self.label_8.setObjectName("label_8")
+        self.line_11 = QtWidgets.QFrame(self.centralwidget)
+        self.line_11.setGeometry(QtCore.QRect(640, 430, 20, 181))
+        self.line_11.setFrameShape(QtWidgets.QFrame.VLine)
+        self.line_11.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line_11.setObjectName("line_11")
         self.line_7.raise_()
         self.line_4.raise_()
         self.line_6.raise_()
@@ -796,6 +801,7 @@ class Ui_MainWindow(object):
         self.frame_7.raise_()
         self.line_9.raise_()
         self.label_8.raise_()
+        self.line_11.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
@@ -833,8 +839,8 @@ class Ui_MainWindow(object):
         self.label_7.setText(_translate("MainWindow", "Data Visualizations"))
         self.cnn_sum.setText(_translate("MainWindow", "CNN Summary"))
         self.lstm_sum.setText(_translate("MainWindow", "LSTM Summary"))
-        self.cnn_graph.setText(_translate("MainWindow", "CNN Graph"))
         self.lstm_graph.setText(_translate("MainWindow", "LSTM Graph"))
+        self.cnn_graph.setText(_translate("MainWindow", "CNN Graph"))
         self.label_8.setText(_translate("MainWindow", "Model Visualizations"))
 
 
