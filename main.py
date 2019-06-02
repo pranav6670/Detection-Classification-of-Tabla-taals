@@ -85,7 +85,7 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
     def seccals(self):
         self.ip_rec.valueChanged.connect(self.value_dialchange)
         self.ip_rec.setMinimum(10)
-        self.ip_rec.setMaximum(30)
+        self.ip_rec.setMaximum(60)
         self.RECORD_SECONDS = self.ip_rec.value()
 
     def margincalc(self):
