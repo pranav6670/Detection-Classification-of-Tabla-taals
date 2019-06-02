@@ -842,7 +842,7 @@ class Ui_MainWindow(object):
         self.lstm_graph.setText(_translate("MainWindow", "LSTM Graph"))
         self.cnn_graph.setText(_translate("MainWindow", "CNN Graph"))
         self.label_8.setText(_translate("MainWindow", "Model Visualizations"))
-
+#
 
 
 

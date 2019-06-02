@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73955db2-7166-448b-a020-900152631ce8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dataops.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainui.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainui.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,17 +73,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mainui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13086">
-              <caret line="844" selection-start-line="844" selection-end-line="844" />
+            <state relative-caret-position="3456">
+              <caret line="844" column="1" selection-start-line="844" selection-start-column="1" selection-end-line="844" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2394">
-              <caret line="24" column="43" lean-forward="true" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+            <state relative-caret-position="3040">
+              <caret line="160" lean-forward="true" selection-start-line="160" selection-end-line="160" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
                 <marker date="1559476144852" expanded="true" signature="2804:2809" ph="..." />
@@ -92,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dataops.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="47" column="52" lean-forward="true" selection-start-line="47" selection-start-column="52" selection-end-line="47" selection-end-column="52" />
+            <state relative-caret-position="969">
+              <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -143,10 +143,10 @@
         <option value="$PROJECT_DIR$/spectograms.py" />
         <option value="$PROJECT_DIR$/guiGO.py" />
         <option value="$PROJECT_DIR$/liveSpectogram.py" />
-        <option value="$PROJECT_DIR$/mainui.py" />
         <option value="$PROJECT_DIR$/Vocalseparation.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/dataops.py" />
+        <option value="$PROJECT_DIR$/mainui.py" />
       </list>
     </option>
   </component>
@@ -196,7 +196,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.dataops">
+  <component name="RunManager" selected="Python.main">
     <configuration name="Vocalseparation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="myfinalProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -338,8 +338,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.dataops" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.dataops" />
         <item itemvalue="Python.Vocalseparation" />
         <item itemvalue="Python.spectograms" />
         <item itemvalue="Python.guiGO" />
@@ -406,14 +406,7 @@
       <workItem from="1559304249987" duration="5690000" />
       <workItem from="1559452445942" duration="872000" />
       <workItem from="1559472556451" duration="167000" />
-      <workItem from="1559473169041" duration="4404000" />
-    </task>
-    <task id="LOCAL-00104" summary="Changes to Main and GUI">
-      <created>1555954654213</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1555954654213</updated>
+      <workItem from="1559473169041" duration="5381000" />
     </task>
     <task id="LOCAL-00105" summary="Changes to Main and GUI">
       <created>1556005697830</created>
@@ -751,11 +744,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559476408295</updated>
     </task>
-    <option name="localTasksCounter" value="153" />
+    <task id="LOCAL-00153" summary="Data loading and Cleaning">
+      <created>1559482720684</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1559482720684</updated>
+    </task>
+    <option name="localTasksCounter" value="154" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133851000" />
+    <option name="totallyTimeSpent" value="134828000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -772,10 +772,10 @@
     <layout>
       <window_info id="Structure" order="0" sideWeight="0.5037369" side_tool="true" weight="0.2189394" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.4962631" visible="true" weight="0.23787878" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.4962631" visible="true" weight="0.23787878" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49469697" weight="0.38565022" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49469697" visible="true" weight="0.38565022" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.39760837" />
@@ -785,7 +785,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.505303" side_tool="true" weight="0.38565022" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32884902" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49924242" visible="true" weight="0.32884902" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49924242" weight="0.32884902" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -824,7 +824,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Extract required data from nested dictionary" />
     <MESSAGE value="Basic real-time audio visuals." />
     <MESSAGE value="Re-tried HPRSS" />
     <MESSAGE value="Adding GUI to the project" />
@@ -849,7 +848,8 @@
     <MESSAGE value="Changes to Main and GUI &amp; Responsive GUI" />
     <MESSAGE value="Vocal Separation" />
     <MESSAGE value="Changes to GUI and main" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes to GUI and main" />
+    <MESSAGE value="Data loading and Cleaning" />
+    <option name="LAST_COMMIT_MESSAGE" value="Data loading and Cleaning" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -865,7 +865,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/myrepo$guiGO.coverage" NAME="guiGO Coverage Results" MODIFIED="1555866799971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/myrepo$dataops.coverage" NAME="dataops Coverage Results" MODIFIED="1559482512092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/myrepo$main.coverage" NAME="main Coverage Results" MODIFIED="1559481116675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/myrepo$main.coverage" NAME="main Coverage Results" MODIFIED="1559482899867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/myrepo$Vocalseparation.coverage" NAME="Vocalseparation Coverage Results" MODIFIED="1557035972513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/myrepo$mainui.coverage" NAME="mainui Coverage Results" MODIFIED="1555826796667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/myrepo$spectograms.coverage" NAME="spectograms Coverage Results" MODIFIED="1556388679587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -1052,30 +1052,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dataops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mainui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13086">
-          <caret line="844" selection-start-line="844" selection-end-line="844" />
+        <state relative-caret-position="3456">
+          <caret line="844" column="1" selection-start-line="844" selection-start-column="1" selection-end-line="844" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2394">
-          <caret line="24" column="43" lean-forward="true" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+        <state relative-caret-position="3040">
+          <caret line="160" lean-forward="true" selection-start-line="160" selection-end-line="160" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
             <marker date="1559476144852" expanded="true" signature="2804:2809" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="47" column="52" lean-forward="true" selection-start-line="47" selection-start-column="52" selection-end-line="47" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
