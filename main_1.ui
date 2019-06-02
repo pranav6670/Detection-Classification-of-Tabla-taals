@@ -39,9 +39,9 @@
     <property name="geometry">
      <rect>
       <x>670</x>
-      <y>460</y>
+      <y>490</y>
       <width>101</width>
-      <height>121</height>
+      <height>71</height>
      </rect>
     </property>
     <property name="font">
@@ -56,7 +56,7 @@
 color: rgb(170, 0, 0);
 border-style: outset;
 border-width: 2px;
-border-radius: 13px;
+border-radius: 30px;
 background-color: rgb(255, 51, 51);
 border-color: black;
 }
@@ -510,15 +510,11 @@ background-color: rgb(255, 76, 241);
       <string>Analyze</string>
      </property>
     </widget>
-    <zorder>optaala</zorder>
-    <zorder>label_5</zorder>
-    <zorder>analyze</zorder>
-    <zorder>line_10</zorder>
    </widget>
    <widget class="QLabel" name="recordlabel">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>80</x>
       <y>108</y>
       <width>71</width>
       <height>17</height>
@@ -565,7 +561,7 @@ background-color: rgb(255, 76, 241);
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>18</x>
+      <x>120</x>
       <y>432</y>
       <width>81</width>
       <height>17</height>
@@ -724,8 +720,8 @@ border-color: rgb(0, 0, 0);</string>
    <widget class="QFrame" name="frame_5">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>130</y>
+      <x>278</x>
+      <y>123</y>
       <width>261</width>
       <height>121</height>
      </rect>
@@ -880,14 +876,6 @@ border-color: black;
       <string>Margin @Per </string>
      </property>
     </widget>
-    <zorder>label_4</zorder>
-    <zorder>status</zorder>
-    <zorder>marginvalue_per</zorder>
-    <zorder>marginvalue_har</zorder>
-    <zorder>text_margin</zorder>
-    <zorder>label_6</zorder>
-    <zorder>label_10</zorder>
-    <zorder>recop</zorder>
    </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
@@ -929,7 +917,7 @@ border-color: rgb(0, 0, 0);
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="datadis">
      <property name="geometry">
       <rect>
        <x>13</x>
@@ -960,7 +948,7 @@ background-color: rgb(85, 255, 0);
       <string>Data Distribution</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_2">
+    <widget class="QPushButton" name="mfcccoe">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -991,7 +979,7 @@ background-color: rgb(255, 76, 241);
       <string>MFCC Coefficients</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_3">
+    <widget class="QPushButton" name="fastft">
      <property name="geometry">
       <rect>
        <x>151</x>
@@ -1032,7 +1020,7 @@ background-color: rgb(255, 52, 52);
       <string>FFT</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_4">
+    <widget class="QPushButton" name="specshow">
      <property name="geometry">
       <rect>
        <x>260</x>
@@ -1061,7 +1049,7 @@ background-color: rgb(255, 76, 241);
       <string>Spectogram</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_5">
+    <widget class="QPushButton" name="fbe">
      <property name="geometry">
       <rect>
        <x>190</x>
@@ -1094,7 +1082,7 @@ background-color: rgb(255, 76, 241);
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>396</x>
+      <x>510</x>
       <y>270</y>
       <width>141</width>
       <height>17</height>
@@ -1197,7 +1185,7 @@ background-color: rgb(255, 76, 241);
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>90</y>
+      <y>96</y>
       <width>541</width>
       <height>16</height>
      </rect>
@@ -1269,7 +1257,7 @@ border-color: rgb(0, 0, 0);
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QPushButton" name="pushButton_6">
+    <widget class="QPushButton" name="cnn_sum">
      <property name="geometry">
       <rect>
        <x>20</x>
@@ -1300,7 +1288,7 @@ background-color: rgb(85, 255, 0);
       <string>CNN Summary</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_7">
+    <widget class="QPushButton" name="lstm_sum">
      <property name="geometry">
       <rect>
        <x>20</x>
@@ -1331,7 +1319,7 @@ background-color: rgb(85, 255, 0);
       <string>LSTM Summary</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_8">
+    <widget class="QPushButton" name="cnn_graph">
      <property name="geometry">
       <rect>
        <x>160</x>
@@ -1372,7 +1360,7 @@ background-color: rgb(255, 52, 52);
       <string>CNN Graph</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_9">
+    <widget class="QPushButton" name="lstm_graph">
      <property name="geometry">
       <rect>
        <x>160</x>
@@ -1417,7 +1405,7 @@ background-color: rgb(255, 52, 52);
    <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>430</x>
       <y>430</y>
       <width>151</width>
       <height>17</height>
@@ -1435,6 +1423,7 @@ background-color: rgb(255, 52, 52);
      <string>Model Visualizations</string>
     </property>
    </widget>
+   <zorder>line_7</zorder>
    <zorder>line_4</zorder>
    <zorder>line_6</zorder>
    <zorder>line_8</zorder>
@@ -1458,7 +1447,6 @@ background-color: rgb(255, 52, 52);
    <zorder>frame_6</zorder>
    <zorder>label_7</zorder>
    <zorder>line_3</zorder>
-   <zorder>line_7</zorder>
    <zorder>frame_7</zorder>
    <zorder>line_9</zorder>
    <zorder>label_8</zorder>

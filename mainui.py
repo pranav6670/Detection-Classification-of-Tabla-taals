@@ -12,7 +12,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(783, 623)
+        MainWindow.resize(793, 623)
         font = QtGui.QFont()
         font.setFamily("Tlwg Typo")
         MainWindow.setFont(font)
@@ -26,7 +26,7 @@ class Ui_MainWindow(object):
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.exit = QtWidgets.QPushButton(self.centralwidget)
-        self.exit.setGeometry(QtCore.QRect(560, 200, 211, 41))
+        self.exit.setGeometry(QtCore.QRect(670, 490, 101, 71))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setBold(True)
@@ -36,7 +36,7 @@ class Ui_MainWindow(object):
 "color: rgb(170, 0, 0);\n"
 "border-style: outset;\n"
 "border-width: 2px;\n"
-"border-radius: 13px;\n"
+"border-radius: 30px;\n"
 "background-color: rgb(255, 51, 51);\n"
 "border-color: black;\n"
 "}\n"
@@ -308,7 +308,7 @@ class Ui_MainWindow(object):
 "}    ")
         self.analyze.setObjectName("analyze")
         self.recordlabel = QtWidgets.QLabel(self.centralwidget)
-        self.recordlabel.setGeometry(QtCore.QRect(20, 108, 71, 17))
+        self.recordlabel.setGeometry(QtCore.QRect(80, 108, 71, 17))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setPointSize(12)
@@ -327,7 +327,7 @@ class Ui_MainWindow(object):
         self.label_2.setStyleSheet("color: rgb(170, 0, 255);")
         self.label_2.setObjectName("label_2")
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
-        self.label_3.setGeometry(QtCore.QRect(18, 432, 81, 17))
+        self.label_3.setGeometry(QtCore.QRect(120, 432, 81, 17))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         font.setPointSize(12)
@@ -401,7 +401,7 @@ class Ui_MainWindow(object):
 "border-color: rgb(0, 0, 0);")
         self.recop.setObjectName("recop")
         self.frame_5 = QtWidgets.QFrame(self.centralwidget)
-        self.frame_5.setGeometry(QtCore.QRect(280, 130, 261, 121))
+        self.frame_5.setGeometry(QtCore.QRect(278, 123, 261, 121))
         self.frame_5.setStyleSheet(".QFrame#frame_5{\n"
 "border-style: outset;\n"
 "border-width: 2px;\n"
@@ -478,16 +478,8 @@ class Ui_MainWindow(object):
 "border-color: black;\n"
 "")
         self.label_6.setObjectName("label_6")
-        self.label_4.raise_()
-        self.status.raise_()
-        self.marginvalue_per.raise_()
-        self.marginvalue_har.raise_()
-        self.text_margin.raise_()
-        self.label_6.raise_()
-        self.label_10.raise_()
-        self.recop.raise_()
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(560, 50, 191, 151))
+        self.label.setGeometry(QtCore.QRect(570, 90, 191, 151))
         self.label.setText("")
         self.label.setPixmap(QtGui.QPixmap("final_tabla.png"))
         self.label.setObjectName("label")
@@ -503,9 +495,9 @@ class Ui_MainWindow(object):
         self.frame_6.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_6.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_6.setObjectName("frame_6")
-        self.pushButton = QtWidgets.QPushButton(self.frame_6)
-        self.pushButton.setGeometry(QtCore.QRect(13, 20, 131, 27))
-        self.pushButton.setStyleSheet("QPushButton {\n"
+        self.datadis = QtWidgets.QPushButton(self.frame_6)
+        self.datadis.setGeometry(QtCore.QRect(13, 20, 131, 27))
+        self.datadis.setStyleSheet("QPushButton {\n"
 "    background-color: rgb(187, 255, 176); \n"
 "    color: rgb(0, 170, 0); \n"
 "        border-style: outset;\n"
@@ -521,10 +513,10 @@ class Ui_MainWindow(object):
 "    border-color: green;\n"
 "\n"
 "}    ")
-        self.pushButton.setObjectName("pushButton")
-        self.pushButton_2 = QtWidgets.QPushButton(self.frame_6)
-        self.pushButton_2.setGeometry(QtCore.QRect(30, 60, 151, 27))
-        self.pushButton_2.setStyleSheet("\n"
+        self.datadis.setObjectName("datadis")
+        self.mfcccoe = QtWidgets.QPushButton(self.frame_6)
+        self.mfcccoe.setGeometry(QtCore.QRect(30, 60, 151, 27))
+        self.mfcccoe.setStyleSheet("\n"
 "QPushButton {\n"
 "border-style: outset;\n"
 "color: rgb(0, 0, 0);\n"
@@ -540,10 +532,10 @@ class Ui_MainWindow(object):
 "QPushButton:pressed {\n"
 "background-color: rgb(255, 76, 241);\n"
 "}    ")
-        self.pushButton_2.setObjectName("pushButton_2")
-        self.pushButton_3 = QtWidgets.QPushButton(self.frame_6)
-        self.pushButton_3.setGeometry(QtCore.QRect(151, 20, 99, 27))
-        self.pushButton_3.setStyleSheet("QPushButton {\n"
+        self.mfcccoe.setObjectName("mfcccoe")
+        self.fastft = QtWidgets.QPushButton(self.frame_6)
+        self.fastft.setGeometry(QtCore.QRect(151, 20, 99, 27))
+        self.fastft.setStyleSheet("QPushButton {\n"
 "color: rgb(150, 0, 0);\n"
 "border-style: outset;\n"
 "border-width: 2px;\n"
@@ -569,10 +561,10 @@ class Ui_MainWindow(object):
 "\n"
 "\n"
 "")
-        self.pushButton_3.setObjectName("pushButton_3")
-        self.pushButton_4 = QtWidgets.QPushButton(self.frame_6)
-        self.pushButton_4.setGeometry(QtCore.QRect(260, 20, 99, 27))
-        self.pushButton_4.setStyleSheet("QPushButton {\n"
+        self.fastft.setObjectName("fastft")
+        self.specshow = QtWidgets.QPushButton(self.frame_6)
+        self.specshow.setGeometry(QtCore.QRect(260, 20, 99, 27))
+        self.specshow.setStyleSheet("QPushButton {\n"
 "border-style: outset;\n"
 "color: rgb(170, 85, 255);\n"
 "border-width: 2px;\n"
@@ -586,10 +578,10 @@ class Ui_MainWindow(object):
 "QPushButton:pressed {\n"
 "background-color: rgb(255, 76, 241);\n"
 "}    ")
-        self.pushButton_4.setObjectName("pushButton_4")
-        self.pushButton_5 = QtWidgets.QPushButton(self.frame_6)
-        self.pushButton_5.setGeometry(QtCore.QRect(190, 60, 151, 27))
-        self.pushButton_5.setStyleSheet("QPushButton {\n"
+        self.specshow.setObjectName("specshow")
+        self.fbe = QtWidgets.QPushButton(self.frame_6)
+        self.fbe.setGeometry(QtCore.QRect(190, 60, 151, 27))
+        self.fbe.setStyleSheet("QPushButton {\n"
 "border-style: outset;\n"
 "border-width: 2px;\n"
 "color: rgb(255, 85, 0);\n"
@@ -603,9 +595,9 @@ class Ui_MainWindow(object):
 "QPushButton:pressed {\n"
 "background-color: rgb(255, 76, 241);\n"
 "}    ")
-        self.pushButton_5.setObjectName("pushButton_5")
+        self.fbe.setObjectName("fbe")
         self.label_7 = QtWidgets.QLabel(self.centralwidget)
-        self.label_7.setGeometry(QtCore.QRect(396, 270, 141, 17))
+        self.label_7.setGeometry(QtCore.QRect(510, 270, 141, 17))
         font = QtGui.QFont()
         font.setFamily("Trebuchet MS")
         self.label_7.setFont(font)
@@ -627,7 +619,7 @@ class Ui_MainWindow(object):
         self.line_4.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_4.setObjectName("line_4")
         self.line_5 = QtWidgets.QFrame(self.centralwidget)
-        self.line_5.setGeometry(QtCore.QRect(10, 418, 781, 16))
+        self.line_5.setGeometry(QtCore.QRect(10, 418, 771, 16))
         self.line_5.setFrameShape(QtWidgets.QFrame.HLine)
         self.line_5.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_5.setObjectName("line_5")
@@ -637,23 +629,23 @@ class Ui_MainWindow(object):
         self.line_3.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_3.setObjectName("line_3")
         self.line_6 = QtWidgets.QFrame(self.centralwidget)
-        self.line_6.setGeometry(QtCore.QRect(540, 50, 20, 201))
+        self.line_6.setGeometry(QtCore.QRect(540, 50, 20, 211))
         self.line_6.setStyleSheet("")
         self.line_6.setFrameShape(QtWidgets.QFrame.VLine)
         self.line_6.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_6.setObjectName("line_6")
         self.line_7 = QtWidgets.QFrame(self.centralwidget)
-        self.line_7.setGeometry(QtCore.QRect(0, 90, 541, 16))
+        self.line_7.setGeometry(QtCore.QRect(0, 96, 541, 16))
         self.line_7.setFrameShape(QtWidgets.QFrame.HLine)
         self.line_7.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_7.setObjectName("line_7")
         self.line_8 = QtWidgets.QFrame(self.centralwidget)
-        self.line_8.setGeometry(QtCore.QRect(550, 40, 231, 16))
+        self.line_8.setGeometry(QtCore.QRect(550, 40, 231, 20))
         self.line_8.setFrameShape(QtWidgets.QFrame.HLine)
         self.line_8.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_8.setObjectName("line_8")
         self.line_9 = QtWidgets.QFrame(self.centralwidget)
-        self.line_9.setGeometry(QtCore.QRect(770, 50, 20, 201))
+        self.line_9.setGeometry(QtCore.QRect(770, 50, 20, 211))
         self.line_9.setFrameShape(QtWidgets.QFrame.VLine)
         self.line_9.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_9.setObjectName("line_9")
@@ -662,14 +654,129 @@ class Ui_MainWindow(object):
         self.line_10.setFrameShape(QtWidgets.QFrame.VLine)
         self.line_10.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_10.setObjectName("line_10")
-        self.line_9.raise_()
-        self.line_10.raise_()
-        self.line_8.raise_()
-        self.line_5.raise_()
+        self.frame_7 = QtWidgets.QFrame(self.centralwidget)
+        self.frame_7.setGeometry(QtCore.QRect(340, 454, 311, 141))
+        self.frame_7.setStyleSheet(".QFrame#frame_7{\n"
+"border-style: outset;\n"
+"border-width: 2px;\n"
+"background-color: rgb(255, 240, 237);\n"
+"border-radius: 13px;\n"
+"border-color: rgb(0, 0, 0);\n"
+"}")
+        self.frame_7.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_7.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_7.setObjectName("frame_7")
+        self.cnn_sum = QtWidgets.QPushButton(self.frame_7)
+        self.cnn_sum.setGeometry(QtCore.QRect(20, 20, 120, 40))
+        self.cnn_sum.setStyleSheet("QPushButton {\n"
+"    background-color: rgb(187, 255, 176); \n"
+"    color: rgb(0, 170, 0); \n"
+"        border-style: outset;\n"
+"    border-width: 2px;\n"
+"    border-radius: 13px;\n"
+"    border-color: black;\n"
+"}\n"
+"QPushButton:hover {\n"
+"background-color: rgb(151, 255, 128);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"background-color: rgb(85, 255, 0);\n"
+"    border-color: green;\n"
+"\n"
+"}    ")
+        self.cnn_sum.setObjectName("cnn_sum")
+        self.lstm_sum = QtWidgets.QPushButton(self.frame_7)
+        self.lstm_sum.setGeometry(QtCore.QRect(20, 80, 120, 40))
+        self.lstm_sum.setStyleSheet("QPushButton {\n"
+"    background-color: rgb(187, 255, 176); \n"
+"    color: rgb(0, 170, 0); \n"
+"        border-style: outset;\n"
+"    border-width: 2px;\n"
+"    border-radius: 13px;\n"
+"    border-color: black;\n"
+"}\n"
+"QPushButton:hover {\n"
+"background-color: rgb(151, 255, 128);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"background-color: rgb(85, 255, 0);\n"
+"    border-color: green;\n"
+"\n"
+"}    ")
+        self.lstm_sum.setObjectName("lstm_sum")
+        self.cnn_graph = QtWidgets.QPushButton(self.frame_7)
+        self.cnn_graph.setGeometry(QtCore.QRect(160, 20, 120, 40))
+        self.cnn_graph.setStyleSheet("QPushButton {\n"
+"color: rgb(150, 0, 0);\n"
+"border-style: outset;\n"
+"border-width: 2px;\n"
+"border-radius: 13px;\n"
+"border-color: black;\n"
+"background-color: rgb(255, 119, 121);\n"
+"}\n"
+"QPushButton:hover {\n"
+"background-color: rgb(255, 99, 78);\n"
+"\n"
+"}\n"
+"QPushButton:pressed {\n"
+"background-color: rgb(255, 52, 52);\n"
+"\n"
+"}    \n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"")
+        self.cnn_graph.setObjectName("cnn_graph")
+        self.lstm_graph = QtWidgets.QPushButton(self.frame_7)
+        self.lstm_graph.setGeometry(QtCore.QRect(160, 80, 120, 40))
+        self.lstm_graph.setStyleSheet("QPushButton {\n"
+"color: rgb(150, 0, 0);\n"
+"border-style: outset;\n"
+"border-width: 2px;\n"
+"border-radius: 13px;\n"
+"border-color: black;\n"
+"background-color: rgb(255, 119, 121);\n"
+"}\n"
+"QPushButton:hover {\n"
+"background-color: rgb(255, 99, 78);\n"
+"\n"
+"}\n"
+"QPushButton:pressed {\n"
+"background-color: rgb(255, 52, 52);\n"
+"\n"
+"}    \n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"")
+        self.lstm_graph.setObjectName("lstm_graph")
+        self.label_8 = QtWidgets.QLabel(self.centralwidget)
+        self.label_8.setGeometry(QtCore.QRect(430, 430, 151, 17))
+        font = QtGui.QFont()
+        font.setFamily("Trebuchet MS")
+        self.label_8.setFont(font)
+        self.label_8.setStyleSheet("color: rgb(255, 170, 0);")
+        self.label_8.setObjectName("label_8")
+        self.line_7.raise_()
+        self.line_4.raise_()
         self.line_6.raise_()
+        self.line_8.raise_()
+        self.line_10.raise_()
+        self.line_5.raise_()
         self.line.raise_()
         self.line_2.raise_()
-        self.line_4.raise_()
         self.label_9.raise_()
         self.label.raise_()
         self.frame_3.raise_()
@@ -686,7 +793,9 @@ class Ui_MainWindow(object):
         self.frame_6.raise_()
         self.label_7.raise_()
         self.line_3.raise_()
-        self.line_7.raise_()
+        self.frame_7.raise_()
+        self.line_9.raise_()
+        self.label_8.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
@@ -716,12 +825,17 @@ class Ui_MainWindow(object):
         self.label_4.setText(_translate("MainWindow", "Status :-"))
         self.text_margin.setText(_translate("MainWindow", "Margin @Har"))
         self.label_6.setText(_translate("MainWindow", "Margin @Per "))
-        self.pushButton.setText(_translate("MainWindow", "Data Distribution"))
-        self.pushButton_2.setText(_translate("MainWindow", "MFCC Coefficients"))
-        self.pushButton_3.setText(_translate("MainWindow", "FFT"))
-        self.pushButton_4.setText(_translate("MainWindow", "Spectogram"))
-        self.pushButton_5.setText(_translate("MainWindow", "Filter Bank Energies"))
-        self.label_7.setText(_translate("MainWindow", "Data Visualisations"))
+        self.datadis.setText(_translate("MainWindow", "Data Distribution"))
+        self.mfcccoe.setText(_translate("MainWindow", "MFCC Coefficients"))
+        self.fastft.setText(_translate("MainWindow", "FFT"))
+        self.specshow.setText(_translate("MainWindow", "Spectogram"))
+        self.fbe.setText(_translate("MainWindow", "Filter Bank Energies"))
+        self.label_7.setText(_translate("MainWindow", "Data Visualizations"))
+        self.cnn_sum.setText(_translate("MainWindow", "CNN Summary"))
+        self.lstm_sum.setText(_translate("MainWindow", "LSTM Summary"))
+        self.cnn_graph.setText(_translate("MainWindow", "CNN Graph"))
+        self.lstm_graph.setText(_translate("MainWindow", "LSTM Graph"))
+        self.label_8.setText(_translate("MainWindow", "Model Visualizations"))
 
 
 
