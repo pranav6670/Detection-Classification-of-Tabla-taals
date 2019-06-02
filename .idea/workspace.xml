@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="73955db2-7166-448b-a020-900152631ce8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainui.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainui.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3040">
-              <caret line="160" lean-forward="true" selection-start-line="160" selection-end-line="160" />
+            <state>
+              <caret line="135" column="49" selection-start-line="135" selection-start-column="49" selection-end-line="135" selection-end-column="49" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
                 <marker date="1559476144852" expanded="true" signature="2804:2809" ph="..." />
@@ -92,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dataops.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
-              <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
+            <state relative-caret-position="1235">
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -145,8 +144,8 @@
         <option value="$PROJECT_DIR$/liveSpectogram.py" />
         <option value="$PROJECT_DIR$/Vocalseparation.py" />
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/dataops.py" />
         <option value="$PROJECT_DIR$/mainui.py" />
+        <option value="$PROJECT_DIR$/dataops.py" />
       </list>
     </option>
   </component>
@@ -179,7 +178,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Everyday ML" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -406,21 +405,7 @@
       <workItem from="1559304249987" duration="5690000" />
       <workItem from="1559452445942" duration="872000" />
       <workItem from="1559472556451" duration="167000" />
-      <workItem from="1559473169041" duration="5381000" />
-    </task>
-    <task id="LOCAL-00105" summary="Changes to Main and GUI">
-      <created>1556005697830</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1556005697831</updated>
-    </task>
-    <task id="LOCAL-00106" summary="Changes to Main and GUI">
-      <created>1556031364145</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1556031364146</updated>
+      <workItem from="1559473169041" duration="6385000" />
     </task>
     <task id="LOCAL-00107" summary="Changes to Main and GUI">
       <created>1556039108112</created>
@@ -751,11 +736,25 @@
       <option name="project" value="LOCAL" />
       <updated>1559482720684</updated>
     </task>
-    <option name="localTasksCounter" value="154" />
+    <task id="LOCAL-00154" summary="Data loading and Cleaning">
+      <created>1559483476382</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1559483476382</updated>
+    </task>
+    <task id="LOCAL-00155" summary="Data loading and Cleaning">
+      <created>1559485556060</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1559485556060</updated>
+    </task>
+    <option name="localTasksCounter" value="156" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134828000" />
+    <option name="totallyTimeSpent" value="135832000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -772,10 +771,10 @@
     <layout>
       <window_info id="Structure" order="0" sideWeight="0.5037369" side_tool="true" weight="0.2189394" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.4962631" visible="true" weight="0.23787878" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.4962631" visible="true" weight="0.23787878" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49469697" visible="true" weight="0.38565022" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49469697" weight="0.38565022" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.39760837" />
@@ -1052,16 +1051,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mainui.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3456">
@@ -1071,11 +1060,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3040">
-          <caret line="160" lean-forward="true" selection-start-line="160" selection-end-line="160" />
+        <state>
+          <caret line="135" column="49" selection-start-line="135" selection-start-column="49" selection-end-line="135" selection-end-column="49" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
             <marker date="1559476144852" expanded="true" signature="2804:2809" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1235">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
