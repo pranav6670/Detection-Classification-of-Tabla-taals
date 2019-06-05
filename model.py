@@ -77,7 +77,7 @@ def get_conv_model():
     model.add(Flatten())
     model.add(Dense(128, activation='relu'))
     model.add(Dense(64, activation='relu'))
-    model.add(Dense(10, activation='softmax')) # Change
+    model.add(Dense(8, activation='softmax')) # Change
     model.summary()
     model.compile(loss='categorical_crossentropy',
                   optimizer='adam',
@@ -94,7 +94,7 @@ def get_recurrent_model():
     model.add(TimeDistributed(Dense(16, activation='relu')))
     model.add(TimeDistributed(Dense(8, activation='relu')))
     model.add(Flatten())
-    model.add(Dense(10, activation='softmax')) # Change
+    model.add(Dense(8, activation='softmax')) # Change
     model.summary()
     model.compile(loss='categorical_crossentropy',
                   optimizer='adam',
