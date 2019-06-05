@@ -6,6 +6,7 @@ from scipy.io import wavfile
 from python_speech_features import mfcc
 from keras.models import load_model
 
+
 def build_predictions(audio_dir):
     print('Extracting features from the data')
 
