@@ -15,6 +15,7 @@ from cfg import Config
 from keras.callbacks import ModelCheckpoint
 import pickle
 
+
 def check_data():
     if os.path.isfile(config.p_path):
         print('Loading existing data for {} model'.format(config.mode))
@@ -35,7 +36,7 @@ def build_rand_feat():
     for _ in tqdm(range(n_samples)):
         rand_class = np.random.choice(class_dist.index, p=prob_dist)
         file = np.random.choice(df[df.label == rand_class].index)
-        rate, wav = wavfile.read('clean/'+file)
+        rate, wav = wavfile.read('wavfiles/'+file)
         label = df.at[file, 'label']
         rand_index = np.random.randint(0, wav.shape[0] - config.step)
         sample = wav[rand_index:rand_index+config.step]
@@ -54,7 +55,7 @@ def build_rand_feat():
         X.reshape(X.shape[0], X.shape[1], X.shape[2], 1)
     elif config.mode == 'rec':
         X.reshape(X.shape[0], X.shape[1], X.shape[2])
-    y = to_categorical(y ,num_classes=10) # Change
+    y = to_categorical(y ,num_classes=8) # Change
     config.data = (X, y)
 
     with open(config.p_path, 'wb') as handle:
@@ -72,9 +73,21 @@ def get_conv_model():
                      padding='same'))
     model.add(Conv2D(128, (3, 3), activation='relu', strides=(1,1),
                      padding='same'))
+    model.add(Conv2D(256, (3, 3), activation='relu', strides=(1,1),
+                     padding='same'))
+    model.add(Conv2D(512, (3, 3), activation='relu', strides=(1,1),
+                     padding='same'))
+    model.add(Conv2D(1024, (3, 3), activation='relu', strides=(1,1),
+                     padding='same'))
+    model.add(Conv2D(2048, (3, 3), activation='relu', strides=(1,1),
+                     padding='same'))
     model.add(MaxPool2D(2, 2))
-    model.add(Dropout(0.5))
+    model.add(Dropout(0.45))
     model.add(Flatten())
+    model.add(Dense(2048, activation='relu'))
+    model.add(Dense(1024, activation='relu'))
+    model.add(Dense(512, activation='relu'))
+    model.add(Dense(256, activation='relu'))
     model.add(Dense(128, activation='relu'))
     model.add(Dense(64, activation='relu'))
     model.add(Dense(8, activation='softmax')) # Change
@@ -101,11 +114,12 @@ def get_recurrent_model():
                   metrics=['acc'])
     return model
 
-df = pd.read_csv('instruments.csv')
+
+df = pd.read_csv('test.csv')
 df.set_index('fname', inplace=True)
 
 for f in df.index:
-    rate, signal = wavfile.read('clean/'+f)
+    rate, signal = wavfile.read('wavfiles/'+f)
     df.at[f, 'length'] = signal.shape[0]/rate
 
 classes = list(np.unique(df.label))
@@ -137,15 +151,18 @@ elif config.mode == 'rec':
     input_shape = (X.shape[1], X.shape[2])
     model = get_recurrent_model()
 
+l = np.unique(y_flat)
 class_weight = compute_class_weight('balanced',
-                                    np.unique(y_flat),
+                                    l,
                                     y_flat)
 
 checkpoint = ModelCheckpoint(config.model_path, monitor='val_acc',
                              verbose=1, mode='max', save_best_only=True,
                              save_weights_only=False, period=1)
 
-model.fit(X, y, epochs=10, batch_size=32, shuffle=True,
-          class_weight=class_weight, validation_split=0.1, callbacks=[checkpoint])
+
+model.fit(X, y, epochs=5, batch_size=32, shuffle=True,
+          class_weight=class_weight,
+          validation_split=0.1, callbacks=[checkpoint])
 
 model.save(config.model_path)

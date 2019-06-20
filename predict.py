@@ -5,9 +5,11 @@ from tqdm import tqdm
 from scipy.io import wavfile
 from python_speech_features import mfcc
 from keras.models import load_model
-
+import pandas as pd
+from sklearn.metrics import accuracy_score
 
 def build_predictions(audio_dir):
+    # y_pred = []
     print('Extracting features from the data')
 
     for fn in tqdm(os.listdir(audio_dir)):
@@ -26,19 +28,25 @@ def build_predictions(audio_dir):
             elif config.mode == 'rec':
                 x = np.expand_dims(x, axis=0)
 
-            # if x.shape != (9 , 13 , 1): continue
+
+            # if x.shape != (19 , 13 , 1):
+            #     continue
 
             y_hat = model.predict(x)
+
             y_pred = np.argmax(y_hat)
 
-    return y_pred
+    return  y_pred
 
-p_path = os.path.join('pickles', 'conv.p')
+
+p_path = os.path.join('pickles', 'rec.p')
 
 with open(p_path, 'rb') as handle:
     config = pickle.load(handle)
 
 model = load_model(config.model_path)
 
-y_preds = build_predictions('test')
-print(y_preds)
+# y_predd = build_predictions('testdir')
+# print(y_predd)
+
+

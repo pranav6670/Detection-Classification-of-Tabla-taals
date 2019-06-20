@@ -1,0 +1,171 @@
+pranav@pranavlp:~$ cd Desktop/myrepo/
+pranav@pranavlp:~/Desktop/myrepo$ python3 model.py
+Using TensorFlow backend.
+/usr/local/lib/python3.5/dist-packages/requests/__init__.py:91: RequestsDependencyWarning: urllib3 (1.25.2) or chardet (3.0.4) doesn't match a supported version!
+  RequestsDependencyWarning)
+100%|█████████████████████████████████████| 65108/65108 [45:12<00:00, 24.00it/s]
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_1 (Conv2D)            (None, 19, 13, 16)        160       
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 19, 13, 32)        4640      
+_________________________________________________________________
+conv2d_3 (Conv2D)            (None, 19, 13, 64)        18496     
+_________________________________________________________________
+conv2d_4 (Conv2D)            (None, 19, 13, 128)       73856     
+_________________________________________________________________
+max_pooling2d_1 (MaxPooling2 (None, 9, 6, 128)         0         
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 9, 6, 128)         0         
+_________________________________________________________________
+flatten_1 (Flatten)          (None, 6912)              0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 128)               884864    
+_________________________________________________________________
+dense_2 (Dense)              (None, 64)                8256      
+_________________________________________________________________
+dense_3 (Dense)              (None, 8)                 520       
+=================================================================
+Total params: 990,792
+Trainable params: 990,792
+Non-trainable params: 0
+_________________________________________________________________
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Train on 58597 samples, validate on 6511 samples
+Epoch 1/10
+2019-06-06 15:11:00.370214: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 1895595000 Hz
+2019-06-06 15:11:00.392000: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0xc9cd200 executing computations on platform Host. Devices:
+2019-06-06 15:11:00.392115: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+58597/58597 [==============================] - 362s 6ms/step - loss: 1.5514 - acc: 0.4085 - val_loss: 1.3201 - val_acc: 0.5008
+
+Epoch 00001: val_acc improved from -inf to 0.50084, saving model to models/conv.model
+Epoch 2/10
+58597/58597 [==============================] - 359s 6ms/step - loss: 1.2718 - acc: 0.5142 - val_loss: 1.1825 - val_acc: 0.5478
+
+Epoch 00002: val_acc improved from 0.50084 to 0.54784, saving model to models/conv.model
+Epoch 3/10
+58597/58597 [==============================] - 356s 6ms/step - loss: 1.1658 - acc: 0.5573 - val_loss: 1.0931 - val_acc: 0.5824
+
+Epoch 00003: val_acc improved from 0.54784 to 0.58240, saving model to models/conv.model
+Epoch 4/10
+58597/58597 [==============================] - 358s 6ms/step - loss: 1.0993 - acc: 0.5826 - val_loss: 1.0418 - val_acc: 0.6070
+
+Epoch 00004: val_acc improved from 0.58240 to 0.60697, saving model to models/conv.model
+Epoch 5/10
+58597/58597 [==============================] - 363s 6ms/step - loss: 1.0400 - acc: 0.6075 - val_loss: 0.9795 - val_acc: 0.6337
+
+Epoch 00005: val_acc improved from 0.60697 to 0.63370, saving model to models/conv.model
+Epoch 6/10
+58597/58597 [==============================] - 358s 6ms/step - loss: 1.0006 - acc: 0.6209 - val_loss: 1.0047 - val_acc: 0.6225
+
+Epoch 00006: val_acc did not improve from 0.63370
+Epoch 7/10
+58597/58597 [==============================] - 358s 6ms/step - loss: 0.9605 - acc: 0.6348 - val_loss: 0.9426 - val_acc: 0.6417
+
+Epoch 00007: val_acc improved from 0.63370 to 0.64168, saving model to models/conv.model
+Epoch 8/10
+58597/58597 [==============================] - 316s 5ms/step - loss: 0.9205 - acc: 0.6501 - val_loss: 0.8842 - val_acc: 0.6583
+
+Epoch 00008: val_acc improved from 0.64168 to 0.65827, saving model to models/conv.model
+Epoch 9/10
+58597/58597 [==============================] - 323s 6ms/step - loss: 0.8909 - acc: 0.6601 - val_loss: 0.8730 - val_acc: 0.6635
+
+Epoch 00009: val_acc improved from 0.65827 to 0.66349, saving model to models/conv.model
+Epoch 10/10
+58597/58597 [==============================] - 325s 6ms/step - loss: 0.8657 - acc: 0.6704 - val_loss: 0.8714 - val_acc: 0.6679
+
+Epoch 00010: val_acc improved from 0.66349 to 0.66795, saving model to models/conv.model
+pranav@pranavlp:~/Desktop/myrepo$ python3 model.py
+Using TensorFlow backend.
+/usr/local/lib/python3.5/dist-packages/requests/__init__.py:91: RequestsDependencyWarning: urllib3 (1.25.2) or chardet (3.0.4) doesn't match a supported version!
+  RequestsDependencyWarning)
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████| 65108/65108 [50:47<00:00, 21.37it/s]
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+lstm_1 (LSTM)                (None, 19, 128)           72704     
+_________________________________________________________________
+lstm_2 (LSTM)                (None, 19, 128)           131584    
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 19, 128)           0         
+_________________________________________________________________
+time_distributed_1 (TimeDist (None, 19, 64)            8256      
+_________________________________________________________________
+time_distributed_2 (TimeDist (None, 19, 32)            2080      
+_________________________________________________________________
+time_distributed_3 (TimeDist (None, 19, 16)            528       
+_________________________________________________________________
+time_distributed_4 (TimeDist (None, 19, 8)             136       
+_________________________________________________________________
+flatten_1 (Flatten)          (None, 152)               0         
+_________________________________________________________________
+dense_5 (Dense)              (None, 8)                 1224      
+=================================================================
+Total params: 216,512
+Trainable params: 216,512
+Non-trainable params: 0
+_________________________________________________________________
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Train on 58597 samples, validate on 6511 samples
+Epoch 1/10
+2019-06-06 17:01:09.719212: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 1895595000 Hz
+2019-06-06 17:01:09.748421: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x723f9e0 executing computations on platform Host. Devices:
+2019-06-06 17:01:09.748505: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+58597/58597 [==============================] - 150s 3ms/step - loss: 1.9531 - acc: 0.2355 - val_loss: 1.8199 - val_acc: 0.3129
+
+Epoch 00001: val_acc improved from -inf to 0.31286, saving model to models/rec.model
+Epoch 2/10
+58597/58597 [==============================] - 143s 2ms/step - loss: 1.6974 - acc: 0.3522 - val_loss: 1.5887 - val_acc: 0.3921
+
+Epoch 00002: val_acc improved from 0.31286 to 0.39211, saving model to models/rec.model
+Epoch 3/10
+58597/58597 [==============================] - 138s 2ms/step - loss: 1.5636 - acc: 0.4017 - val_loss: 1.5164 - val_acc: 0.4165
+
+Epoch 00003: val_acc improved from 0.39211 to 0.41653, saving model to models/rec.model
+Epoch 4/10
+58597/58597 [==============================] - 125s 2ms/step - loss: 1.4707 - acc: 0.4373 - val_loss: 1.4378 - val_acc: 0.4611
+
+Epoch 00004: val_acc improved from 0.41653 to 0.46107, saving model to models/rec.model
+Epoch 5/10
+58597/58597 [==============================] - 127s 2ms/step - loss: 1.4052 - acc: 0.4663 - val_loss: 1.3186 - val_acc: 0.4967
+
+Epoch 00005: val_acc improved from 0.46107 to 0.49670, saving model to models/rec.model
+Epoch 6/10
+58597/58597 [==============================] - 126s 2ms/step - loss: 1.3448 - acc: 0.4888 - val_loss: 1.3049 - val_acc: 0.4985
+
+Epoch 00006: val_acc improved from 0.49670 to 0.49854, saving model to models/rec.model
+Epoch 7/10
+58597/58597 [==============================] - 125s 2ms/step - loss: 1.2742 - acc: 0.5152 - val_loss: 1.1901 - val_acc: 0.5615
+
+Epoch 00007: val_acc improved from 0.49854 to 0.56151, saving model to models/rec.model
+Epoch 8/10
+58597/58597 [==============================] - 128s 2ms/step - loss: 1.2087 - acc: 0.5440 - val_loss: 1.2022 - val_acc: 0.5540
+
+Epoch 00008: val_acc did not improve from 0.56151
+Epoch 9/10
+58597/58597 [==============================] - 125s 2ms/step - loss: 1.1307 - acc: 0.5716 - val_loss: 1.1143 - val_acc: 0.5876
+
+Epoch 00009: val_acc improved from 0.56151 to 0.58762, saving model to models/rec.model
+Epoch 10/10
+58597/58597 [==============================] - 125s 2ms/step - loss: 1.0737 - acc: 0.5969 - val_loss: 1.0558 - val_acc: 0.6117
+
+Epoch 00010: val_acc improved from 0.58762 to 0.61173, saving model to models/rec.model
+pranav@pranavlp:~/Desktop/myrepo$ 
+

@@ -1,0 +1,248 @@
+pranav@pranavlp:~$ cd Desktop/myrepo/
+pranav@pranavlp:~/Desktop/myrepo$ python3 model.py
+Using TensorFlow backend.
+/usr/local/lib/python3.5/dist-packages/requests/__init__.py:91: RequestsDependencyWarning: urllib3 (1.25.2) or chardet (3.0.4) doesn't match a supported version!
+  RequestsDependencyWarning)
+Loading existing data for conv model
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_1 (Conv2D)            (None, 19, 13, 16)        160       
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 19, 13, 32)        4640      
+_________________________________________________________________
+conv2d_3 (Conv2D)            (None, 19, 13, 64)        18496     
+_________________________________________________________________
+conv2d_4 (Conv2D)            (None, 19, 13, 128)       73856     
+_________________________________________________________________
+max_pooling2d_1 (MaxPooling2 (None, 9, 6, 128)         0         
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 9, 6, 128)         0         
+_________________________________________________________________
+flatten_1 (Flatten)          (None, 6912)              0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 128)               884864    
+_________________________________________________________________
+dense_2 (Dense)              (None, 64)                8256      
+_________________________________________________________________
+dense_3 (Dense)              (None, 8)                 520       
+=================================================================
+Total params: 990,792
+Trainable params: 990,792
+Non-trainable params: 0
+_________________________________________________________________
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Train on 58597 samples, validate on 6511 samples
+Epoch 1/50
+2019-06-06 18:26:36.434372: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 1895595000 Hz
+2019-06-06 18:26:36.521234: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x6f43d60 executing computations on platform Host. Devices:
+2019-06-06 18:26:36.521298: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+58597/58597 [==============================] - 363s 6ms/step - loss: 1.5378 - acc: 0.4158 - val_loss: 1.3214 - val_acc: 0.4987
+
+Epoch 00001: val_acc improved from -inf to 0.49869, saving model to models/conv.model
+Epoch 2/50
+58597/58597 [==============================] - 372s 6ms/step - loss: 1.2712 - acc: 0.5172 - val_loss: 1.1976 - val_acc: 0.5445
+
+Epoch 00002: val_acc improved from 0.49869 to 0.54446, saving model to models/conv.model
+Epoch 3/50
+58597/58597 [==============================] - 360s 6ms/step - loss: 1.1705 - acc: 0.5563 - val_loss: 1.1198 - val_acc: 0.5672
+
+Epoch 00003: val_acc improved from 0.54446 to 0.56719, saving model to models/conv.model
+Epoch 4/50
+58597/58597 [==============================] - 403s 7ms/step - loss: 1.1037 - acc: 0.5801 - val_loss: 1.0719 - val_acc: 0.5898
+
+Epoch 00004: val_acc improved from 0.56719 to 0.58977, saving model to models/conv.model
+Epoch 5/50
+58597/58597 [==============================] - 445s 8ms/step - loss: 1.0463 - acc: 0.6020 - val_loss: 1.0049 - val_acc: 0.6254				
+
+Epoch 00005: val_acc improved from 0.58977 to 0.62540, saving model to models/conv.model
+Epoch 6/50
+58597/58597 [==============================] - 404s 7ms/step - loss: 0.9942 - acc: 0.6211 - val_loss: 0.9923 - val_acc: 0.6220
+
+Epoch 00006: val_acc did not improve from 0.62540
+Epoch 7/50
+58597/58597 [==============================] - 383s 7ms/step - loss: 0.9567 - acc: 0.6367 - val_loss: 1.0090 - val_acc: 0.6180
+
+Epoch 00007: val_acc did not improve from 0.62540
+Epoch 8/50
+58597/58597 [==============================] - 384s 7ms/step - loss: 0.9227 - acc: 0.6499 - val_loss: 0.9075 - val_acc: 0.6501
+
+Epoch 00008: val_acc improved from 0.62540 to 0.65013, saving model to models/conv.model
+Epoch 9/50
+58597/58597 [==============================] - 358s 6ms/step - loss: 0.8946 - acc: 0.6596 - val_loss: 0.8813 - val_acc: 0.6658
+
+Epoch 00009: val_acc improved from 0.65013 to 0.66580, saving model to models/conv.model
+Epoch 10/50
+58597/58597 [==============================] - 344s 6ms/step - loss: 0.8704 - acc: 0.6676 - val_loss: 0.8791 - val_acc: 0.6718
+
+Epoch 00010: val_acc improved from 0.66580 to 0.67179, saving model to models/conv.model
+Epoch 11/50
+58597/58597 [==============================] - 322s 6ms/step - loss: 0.8443 - acc: 0.6791 - val_loss: 0.9575 - val_acc: 0.6428
+
+Epoch 00011: val_acc did not improve from 0.67179
+Epoch 12/50
+58597/58597 [==============================] - 321s 5ms/step - loss: 0.8215 - acc: 0.6875 - val_loss: 0.8672 - val_acc: 0.6726
+
+Epoch 00012: val_acc improved from 0.67179 to 0.67255, saving model to models/conv.model
+Epoch 13/50
+58597/58597 [==============================] - 313s 5ms/step - loss: 0.8081 - acc: 0.6919 - val_loss: 0.8308 - val_acc: 0.6835
+
+Epoch 00013: val_acc improved from 0.67255 to 0.68346, saving model to models/conv.model
+Epoch 14/50
+58597/58597 [==============================] - 312s 5ms/step - loss: 0.7923 - acc: 0.6982 - val_loss: 0.8373 - val_acc: 0.6825
+
+Epoch 00014: val_acc did not improve from 0.68346
+Epoch 15/50
+58597/58597 [==============================] - 313s 5ms/step - loss: 0.7709 - acc: 0.7092 - val_loss: 0.8271 - val_acc: 0.6850
+
+Epoch 00015: val_acc improved from 0.68346 to 0.68499, saving model to models/conv.model
+Epoch 16/50
+58597/58597 [==============================] - 313s 5ms/step - loss: 0.7506 - acc: 0.7148 - val_loss: 0.8366 - val_acc: 0.6864
+
+Epoch 00016: val_acc improved from 0.68499 to 0.68638, saving model to models/conv.model
+Epoch 17/50
+58597/58597 [==============================] - 313s 5ms/step - loss: 0.7445 - acc: 0.7170 - val_loss: 0.7800 - val_acc: 0.7047
+
+Epoch 00017: val_acc improved from 0.68638 to 0.70465, saving model to models/conv.model
+Epoch 18/50
+58597/58597 [==============================] - 313s 5ms/step - loss: 0.7286 - acc: 0.7223 - val_loss: 0.7844 - val_acc: 0.7042
+
+Epoch 00018: val_acc did not improve from 0.70465
+Epoch 19/50
+58597/58597 [==============================] - 312s 5ms/step - loss: 0.7143 - acc: 0.7274 - val_loss: 0.7673 - val_acc: 0.7076
+
+Epoch 00019: val_acc improved from 0.70465 to 0.70757, saving model to models/conv.model
+Epoch 20/50
+58597/58597 [==============================] - 313s 5ms/step - loss: 0.7034 - acc: 0.7319 - val_loss: 0.7579 - val_acc: 0.7103
+
+Epoch 00020: val_acc improved from 0.70757 to 0.71034, saving model to models/conv.model
+Epoch 21/50
+58597/58597 [==============================] - 312s 5ms/step - loss: 0.6937 - acc: 0.7381 - val_loss: 0.7865 - val_acc: 0.7037
+
+Epoch 00021: val_acc did not improve from 0.71034
+Epoch 22/50
+58597/58597 [==============================] - 313s 5ms/step - loss: 0.6830 - acc: 0.7397 - val_loss: 0.7607 - val_acc: 0.7120
+
+Epoch 00022: val_acc improved from 0.71034 to 0.71203, saving model to models/conv.model
+Epoch 23/50
+58597/58597 [==============================] - 312s 5ms/step - loss: 0.6631 - acc: 0.7484 - val_loss: 0.7516 - val_acc: 0.7199
+
+Epoch 00023: val_acc improved from 0.71203 to 0.71986, saving model to models/conv.model
+Epoch 24/50
+58597/58597 [==============================] - 313s 5ms/step - loss: 0.6594 - acc: 0.7489 - val_loss: 0.7578 - val_acc: 0.7146
+
+Epoch 00024: val_acc did not improve from 0.71986
+Epoch 25/50
+58597/58597 [==============================] - 313s 5ms/step - loss: 0.6396 - acc: 0.7550 - val_loss: 0.7393 - val_acc: 0.7229
+
+Epoch 00025: val_acc improved from 0.71986 to 0.72293, saving model to models/conv.model
+Epoch 26/50
+58597/58597 [==============================] - 313s 5ms/step - loss: 0.6365 - acc: 0.7574 - val_loss: 0.7779 - val_acc: 0.7079
+
+Epoch 00026: val_acc did not improve from 0.72293
+Epoch 27/50
+58597/58597 [==============================] - 313s 5ms/step - loss: 0.6210 - acc: 0.7651 - val_loss: 0.7241 - val_acc: 0.7291
+
+Epoch 00027: val_acc improved from 0.72293 to 0.72907, saving model to models/conv.model
+Epoch 28/50
+58597/58597 [==============================] - 313s 5ms/step - loss: 0.6147 - acc: 0.7659 - val_loss: 0.7428 - val_acc: 0.7240
+
+Epoch 00028: val_acc did not improve from 0.72907
+Epoch 29/50
+58597/58597 [==============================] - 312s 5ms/step - loss: 0.6090 - acc: 0.7691 - val_loss: 0.7340 - val_acc: 0.7232
+
+Epoch 00029: val_acc did not improve from 0.72907
+Epoch 30/50
+58597/58597 [==============================] - 312s 5ms/step - loss: 0.5904 - acc: 0.7773 - val_loss: 0.7238 - val_acc: 0.7309
+
+Epoch 00030: val_acc improved from 0.72907 to 0.73092, saving model to models/conv.model
+Epoch 31/50
+58597/58597 [==============================] - 313s 5ms/step - loss: 0.5892 - acc: 0.7764 - val_loss: 0.7282 - val_acc: 0.7305
+
+Epoch 00031: val_acc did not improve from 0.73092
+Epoch 32/50
+58597/58597 [==============================] - 313s 5ms/step - loss: 0.5833 - acc: 0.7787 - val_loss: 0.7378 - val_acc: 0.7239
+
+Epoch 00032: val_acc did not improve from 0.73092
+Epoch 33/50
+58597/58597 [==============================] - 313s 5ms/step - loss: 0.5672 - acc: 0.7857 - val_loss: 0.7548 - val_acc: 0.7214
+
+Epoch 00033: val_acc did not improve from 0.73092
+Epoch 34/50
+58597/58597 [==============================] - 312s 5ms/step - loss: 0.5648 - acc: 0.7879 - val_loss: 0.7337 - val_acc: 0.7321
+
+Epoch 00034: val_acc improved from 0.73092 to 0.73215, saving model to models/conv.model
+Epoch 35/50
+58597/58597 [==============================] - 312s 5ms/step - loss: 0.5541 - acc: 0.7915 - val_loss: 0.7463 - val_acc: 0.7222
+
+Epoch 00035: val_acc did not improve from 0.73215
+Epoch 36/50
+58597/58597 [==============================] - 313s 5ms/step - loss: 0.5512 - acc: 0.7898 - val_loss: 0.7320 - val_acc: 0.7282
+
+Epoch 00036: val_acc did not improve from 0.73215
+Epoch 37/50
+58597/58597 [==============================] - 312s 5ms/step - loss: 0.5371 - acc: 0.7965 - val_loss: 0.7144 - val_acc: 0.7355
+
+Epoch 00037: val_acc improved from 0.73215 to 0.73552, saving model to models/conv.model
+Epoch 38/50
+58597/58597 [==============================] - 312s 5ms/step - loss: 0.5281 - acc: 0.8024 - val_loss: 0.7572 - val_acc: 0.7235
+
+Epoch 00038: val_acc did not improve from 0.73552
+Epoch 39/50
+58597/58597 [==============================] - 313s 5ms/step - loss: 0.5296 - acc: 0.7983 - val_loss: 0.7304 - val_acc: 0.7329
+
+Epoch 00039: val_acc did not improve from 0.73552
+Epoch 40/50
+58597/58597 [==============================] - 312s 5ms/step - loss: 0.5179 - acc: 0.8048 - val_loss: 0.7288 - val_acc: 0.7321
+
+Epoch 00040: val_acc did not improve from 0.73552
+Epoch 41/50
+58597/58597 [==============================] - 312s 5ms/step - loss: 0.5146 - acc: 0.8042 - val_loss: 0.8056 - val_acc: 0.7113
+
+Epoch 00041: val_acc did not improve from 0.73552
+Epoch 42/50
+58597/58597 [==============================] - 313s 5ms/step - loss: 0.5055 - acc: 0.8091 - val_loss: 0.7549 - val_acc: 0.7260
+
+Epoch 00042: val_acc did not improve from 0.73552
+Epoch 43/50
+58597/58597 [==============================] - 312s 5ms/step - loss: 0.5029 - acc: 0.8106 - val_loss: 0.7664 - val_acc: 0.7249
+
+Epoch 00043: val_acc did not improve from 0.73552
+Epoch 44/50
+58597/58597 [==============================] - 314s 5ms/step - loss: 0.4989 - acc: 0.8133 - val_loss: 0.7739 - val_acc: 0.7289
+
+Epoch 00044: val_acc did not improve from 0.73552
+Epoch 45/50
+58597/58597 [==============================] - 317s 5ms/step - loss: 0.4899 - acc: 0.8166 - val_loss: 0.7666 - val_acc: 0.7240
+
+Epoch 00045: val_acc did not improve from 0.73552
+Epoch 46/50
+58597/58597 [==============================] - 312s 5ms/step - loss: 0.4790 - acc: 0.8199 - val_loss: 0.7329 - val_acc: 0.7391
+
+Epoch 00046: val_acc improved from 0.73552 to 0.73906, saving model to models/conv.model
+Epoch 47/50
+58597/58597 [==============================] - 312s 5ms/step - loss: 0.4787 - acc: 0.8201 - val_loss: 0.7414 - val_acc: 0.7400
+
+Epoch 00047: val_acc improved from 0.73906 to 0.73998, saving model to models/conv.model
+Epoch 48/50
+58597/58597 [==============================] - 312s 5ms/step - loss: 0.4799 - acc: 0.8217 - val_loss: 0.7409 - val_acc: 0.7301
+
+Epoch 00048: val_acc did not improve from 0.73998
+Epoch 49/50
+58597/58597 [==============================] - 312s 5ms/step - loss: 0.4708 - acc: 0.8235 - val_loss: 0.7425 - val_acc: 0.7421
+
+Epoch 00049: val_acc improved from 0.73998 to 0.74213, saving model to models/conv.model
+Epoch 50/50
+58597/58597 [==============================] - 313s 5ms/step - loss: 0.4587 - acc: 0.8283 - val_loss: 0.7678 - val_acc: 0.7354
+
+Epoch 00050: val_acc did not improve from 0.74213
+pranav@pranavlp:~/Desktop/myrepo$ 
+

@@ -1,4 +1,5 @@
 import mainui
+import cv2
 from PyQt5 import QtGui, QtCore, QtWidgets
 import librosa
 import librosa.display
@@ -8,6 +9,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pyaudio
 plt.style.use('ggplot')
+import predict
+import pickle
+import os
+from keras.models import load_model
 
 
 class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
@@ -44,6 +49,16 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
         self.onrecordclicked()
         # self.RECORD_SECONDS = self.ip_rec.value()
         # print(self.RECORD_SECONDS)
+        self.ondistclicked()
+        self.onrawclicked()
+        self.onftclicked()
+        self.onfbeclicked()
+        self.onmfccclicked()
+        self.onopencnnclicked()
+        self.onopenlstmclisked()
+        self.onopencnnsumclicked()
+        self.onopenlstmsumclicked()
+        self.onanalyzeclicked()
 
     def record(self):
         self.RECORD_SECONDS = self.ip_rec.value()
@@ -187,6 +202,96 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
             QtCore.QProcess.startDetached("bash", ["-c", "pkill -f {}".format(script)])
         super(MainApp, self).closeEvent(event)
 
+    def opendatadist(self):
+        self.img = cv2.imread('distribution.png')
+        cv2.imshow('Distribution', self.img)
+
+    def ondistclicked(self):
+        self.datadis.clicked.connect(self.opendatadist)
+
+    def openraw(self):
+        self.img = cv2.imread('timedata.png')
+        cv2.imshow('Time data', self.img)
+
+    def onrawclicked(self):
+        self.timedata.clicked.connect(self.openraw)
+
+    def openft(self):
+        self.img = cv2.imread('data_ft.png')
+        cv2.imshow('Fourier Transform', self.img)
+
+    def onftclicked(self):
+        self.fastft.clicked.connect(self.openft)
+
+    def openfbe(self):
+        self.img = cv2.imread('filterbankenergies.png')
+        cv2.imshow('Filter Bank Energies', self.img)
+
+    def onfbeclicked(self):
+        self.fbe.clicked.connect(self.openfbe)
+
+    def openmfcc(self):
+        self.img = cv2.imread('data_mfccs.png')
+        cv2.imshow('MFCCs', self.img)
+
+    def onmfccclicked(self):
+        self.mfcccoe.clicked.connect(self.openmfcc)
+
+    def opencnngraph(self):
+        self.img = cv2.imread('convmodel.png')
+        cv2.imshow('CNN Model', self.img)
+
+    def onopencnnclicked(self):
+        self.cnn_graph.clicked.connect(self.opencnngraph)
+
+    def openlstmgraph(self):
+        self.img = cv2.imread('recmodel.png')
+        cv2.imshow('LSTM Model', self.img)
+
+    def onopenlstmclisked(self):
+        self.lstm_graph.clicked.connect(self.openlstmgraph)
+
+    def opencnnsumm(self):
+        self.img = cv2.imread('conv_summ.png')
+        cv2.imshow('CNN Summary', self.img)
+
+    def onopencnnsumclicked(self):
+        self.cnn_sum.clicked.connect(self.opencnnsumm)
+
+    def openlstmsumm(self):
+        self.img = cv2.imread('rec_summ.png')
+        cv2.imshow('CNN Summary', self.img)
+
+    def onopenlstmsumclicked(self):
+        self.lstm_sum.clicked.connect(self.openlstmsumm)
+
+    def prediction(self):
+        self.font = QtGui.QFont()
+        self.font.setFamily("Trebuchet MS")
+        self.font.setPointSize(15 )
+        self.optaala.setFont(self.font)
+        self.optaala.setTextColor(QtGui.QColor(255, 0, 0))
+        self.answer = predict.build_predictions('testdir')
+        print(self.answer)
+        if self.answer == 0:
+            self.optaala.setText("Addhatrital")
+        elif self.answer == 1:
+            self.optaala.setText("Bhajani")
+        elif self.answer == 2:
+            self.optaala.setText("Dadra")
+        elif self.answer == 3:
+            self.optaala.setText("Deepchandi")
+        elif self.answer == 4:
+            self.optaala.setText("Ektal")
+        elif self.answer == 5:
+            self.optaala.setText("Jhaptaal")
+        elif self.answer == 6:
+            self.optaala.setText("Rupak")
+        elif self.answer == 7:
+            self.optaala.setText("Trital")
+
+    def onanalyzeclicked(self):
+        self.analyze.clicked.connect(self.prediction)
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)

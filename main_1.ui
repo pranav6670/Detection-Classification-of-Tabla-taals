@@ -428,7 +428,7 @@ border-color: black;
      <property name="geometry">
       <rect>
        <x>190</x>
-       <y>70</y>
+       <y>72</y>
        <width>111</width>
        <height>41</height>
       </rect>
@@ -896,10 +896,10 @@ border-color: black;
    <widget class="QFrame" name="frame_6">
     <property name="geometry">
      <rect>
-      <x>392</x>
-      <y>295</y>
-      <width>371</width>
-      <height>111</height>
+      <x>390</x>
+      <y>300</y>
+      <width>381</width>
+      <height>91</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -920,8 +920,8 @@ border-color: rgb(0, 0, 0);
     <widget class="QPushButton" name="datadis">
      <property name="geometry">
       <rect>
-       <x>13</x>
-       <y>20</y>
+       <x>9</x>
+       <y>10</y>
        <width>131</width>
        <height>27</height>
       </rect>
@@ -951,9 +951,9 @@ background-color: rgb(85, 255, 0);
     <widget class="QPushButton" name="mfcccoe">
      <property name="geometry">
       <rect>
-       <x>30</x>
-       <y>60</y>
-       <width>151</width>
+       <x>10</x>
+       <y>50</y>
+       <width>171</width>
        <height>27</height>
       </rect>
      </property>
@@ -982,9 +982,9 @@ background-color: rgb(255, 76, 241);
     <widget class="QPushButton" name="fastft">
      <property name="geometry">
       <rect>
-       <x>151</x>
-       <y>20</y>
-       <width>99</width>
+       <x>270</x>
+       <y>10</y>
+       <width>91</width>
        <height>27</height>
       </rect>
      </property>
@@ -1020,41 +1020,41 @@ background-color: rgb(255, 52, 52);
       <string>FFT</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="specshow">
+    <widget class="QPushButton" name="timedata">
      <property name="geometry">
       <rect>
-       <x>260</x>
-       <y>20</y>
-       <width>99</width>
+       <x>150</x>
+       <y>10</y>
+       <width>111</width>
        <height>27</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">QPushButton {
+color: rgb(170, 0, 0);
 border-style: outset;
-color: rgb(170, 85, 255);
 border-width: 2px;
 border-radius: 13px;
-background-color: rgb(170, 170, 255);
+background-color: rgb(255, 51, 51);
 border-color: black;
 }
 QPushButton:hover {
-background-color: rgb(85, 170, 255);
+background-color: rgb(255, 0, 0);
 }
 QPushButton:pressed {
-background-color: rgb(255, 76, 241);
+background-color: rgb(255, 138, 138);
 }    </string>
      </property>
      <property name="text">
-      <string>Spectogram</string>
+      <string>Raw</string>
      </property>
     </widget>
     <widget class="QPushButton" name="fbe">
      <property name="geometry">
       <rect>
        <x>190</x>
-       <y>60</y>
-       <width>151</width>
+       <y>50</y>
+       <width>171</width>
        <height>27</height>
       </rect>
      </property>

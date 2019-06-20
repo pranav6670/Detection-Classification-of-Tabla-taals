@@ -259,7 +259,7 @@ class Ui_MainWindow(object):
         self.frame_3.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_3.setObjectName("frame_3")
         self.optaala = QtWidgets.QTextEdit(self.frame_3)
-        self.optaala.setGeometry(QtCore.QRect(190, 70, 111, 41))
+        self.optaala.setGeometry(QtCore.QRect(190, 72, 111, 41))
         self.optaala.setStyleSheet("\n"
 "background-color: rgb(249, 255, 181);\n"
 "border-radius: 1px;\n"
@@ -484,7 +484,7 @@ class Ui_MainWindow(object):
         self.label.setPixmap(QtGui.QPixmap("final_tabla.png"))
         self.label.setObjectName("label")
         self.frame_6 = QtWidgets.QFrame(self.centralwidget)
-        self.frame_6.setGeometry(QtCore.QRect(392, 295, 371, 111))
+        self.frame_6.setGeometry(QtCore.QRect(390, 300, 381, 91))
         self.frame_6.setStyleSheet(".QFrame#frame_6{\n"
 "border-style: outset;\n"
 "border-width: 2px;\n"
@@ -496,7 +496,7 @@ class Ui_MainWindow(object):
         self.frame_6.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_6.setObjectName("frame_6")
         self.datadis = QtWidgets.QPushButton(self.frame_6)
-        self.datadis.setGeometry(QtCore.QRect(13, 20, 131, 27))
+        self.datadis.setGeometry(QtCore.QRect(9, 10, 131, 27))
         self.datadis.setStyleSheet("QPushButton {\n"
 "    background-color: rgb(187, 255, 176); \n"
 "    color: rgb(0, 170, 0); \n"
@@ -515,7 +515,7 @@ class Ui_MainWindow(object):
 "}    ")
         self.datadis.setObjectName("datadis")
         self.mfcccoe = QtWidgets.QPushButton(self.frame_6)
-        self.mfcccoe.setGeometry(QtCore.QRect(30, 60, 151, 27))
+        self.mfcccoe.setGeometry(QtCore.QRect(10, 50, 171, 27))
         self.mfcccoe.setStyleSheet("\n"
 "QPushButton {\n"
 "border-style: outset;\n"
@@ -534,7 +534,7 @@ class Ui_MainWindow(object):
 "}    ")
         self.mfcccoe.setObjectName("mfcccoe")
         self.fastft = QtWidgets.QPushButton(self.frame_6)
-        self.fastft.setGeometry(QtCore.QRect(151, 20, 99, 27))
+        self.fastft.setGeometry(QtCore.QRect(270, 10, 91, 27))
         self.fastft.setStyleSheet("QPushButton {\n"
 "color: rgb(150, 0, 0);\n"
 "border-style: outset;\n"
@@ -562,25 +562,25 @@ class Ui_MainWindow(object):
 "\n"
 "")
         self.fastft.setObjectName("fastft")
-        self.specshow = QtWidgets.QPushButton(self.frame_6)
-        self.specshow.setGeometry(QtCore.QRect(260, 20, 99, 27))
-        self.specshow.setStyleSheet("QPushButton {\n"
+        self.timedata = QtWidgets.QPushButton(self.frame_6)
+        self.timedata.setGeometry(QtCore.QRect(150, 10, 111, 27))
+        self.timedata.setStyleSheet("QPushButton {\n"
+"color: rgb(170, 0, 0);\n"
 "border-style: outset;\n"
-"color: rgb(170, 85, 255);\n"
 "border-width: 2px;\n"
 "border-radius: 13px;\n"
-"background-color: rgb(170, 170, 255);\n"
+"background-color: rgb(255, 51, 51);\n"
 "border-color: black;\n"
 "}\n"
 "QPushButton:hover {\n"
-"background-color: rgb(85, 170, 255);\n"
+"background-color: rgb(255, 0, 0);\n"
 "}\n"
 "QPushButton:pressed {\n"
-"background-color: rgb(255, 76, 241);\n"
+"background-color: rgb(255, 138, 138);\n"
 "}    ")
-        self.specshow.setObjectName("specshow")
+        self.timedata.setObjectName("timedata")
         self.fbe = QtWidgets.QPushButton(self.frame_6)
-        self.fbe.setGeometry(QtCore.QRect(190, 60, 151, 27))
+        self.fbe.setGeometry(QtCore.QRect(190, 50, 171, 27))
         self.fbe.setStyleSheet("QPushButton {\n"
 "border-style: outset;\n"
 "border-width: 2px;\n"
@@ -834,7 +834,7 @@ class Ui_MainWindow(object):
         self.datadis.setText(_translate("MainWindow", "Data Distribution"))
         self.mfcccoe.setText(_translate("MainWindow", "MFCC Coefficients"))
         self.fastft.setText(_translate("MainWindow", "FFT"))
-        self.specshow.setText(_translate("MainWindow", "Spectogram"))
+        self.timedata.setText(_translate("MainWindow", "Raw"))
         self.fbe.setText(_translate("MainWindow", "Filter Bank Energies"))
         self.label_7.setText(_translate("MainWindow", "Data Visualizations"))
         self.cnn_sum.setText(_translate("MainWindow", "CNN Summary"))
@@ -842,7 +842,7 @@ class Ui_MainWindow(object):
         self.lstm_graph.setText(_translate("MainWindow", "LSTM Graph"))
         self.cnn_graph.setText(_translate("MainWindow", "CNN Graph"))
         self.label_8.setText(_translate("MainWindow", "Model Visualizations"))
-#
+
 
 
 
