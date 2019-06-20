@@ -8,6 +8,7 @@ import librosa
 from python_speech_features import mfcc, logfbank
 plt.style.use('seaborn-pastel')
 
+
 def plot_signals(signals):
     fig, axes = plt.subplots(nrows=2, ncols=4, sharex=False,
                              sharey=True, figsize=(20,5))
