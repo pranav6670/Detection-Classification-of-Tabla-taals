@@ -9,7 +9,18 @@
 2. Signal Processing
   * Downsampling (from 44100 to 16000)
   * Noise Threshold Detection (Using envelope detection)
+  * Harmonic-Percussive Source Separation [HPSS](https://librosa.github.io/librosa/auto_examples/plot_hprss.html)
   
+  
+### File description 
+
+1. `PNstreamsetup.py` - Audio backend for live audio and FFT.
+2. `GUI.py` - QtDesigner generated code converted to Python using `pyuic`
+3. `Vocalseparation.py` - Implementation of vocal separation as shown [here](https://librosa.github.io/librosa/auto_examples/plot_vocal_separation.html).
+4. `dataops.py` - Perform pre-processing on data.
+5. `model.py` - Models and pickles form here.
+6. `predict.py` - Predict on a sample using this.
+7. `main.py` - Real-time visualisations, recording and classification
 
 ### Getting Started
 
@@ -25,10 +36,21 @@
 
 6. Under `models` directory, you will find the `conv.model` and `rec.model` formed, after training. Use these models to predict using `predict.py`
 
+7. Also run `main.py` after training to do the classification real-time.
+
+### HPSS
+
+![HPSS](https://github.com/pranav6670/Detection-Classification-of-Tabla-taals/blob/master/1margin.png)
+
 ### Data Distribution
 
 ![Data](https://github.com/pranav6670/Detection-Classification-of-Tabla-taals/blob/master/distribution.png)
 
+### GUI
+
+Made using PyQt5
+
+![GUI](https://github.com/pranav6670/Detection-Classification-of-Tabla-taals/blob/master/GUI.png)
 
 
   
