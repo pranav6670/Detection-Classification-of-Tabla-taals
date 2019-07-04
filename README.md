@@ -3,12 +3,12 @@
 ### Methods used
 
 1. Models
-  1. Convolutional Neural Network 
-  2. Long Short-Term Memory Network
+  * Convolutional Neural Network 
+  * Long Short-Term Memory Network
   
 2. Signal Processing
-  1. Downsampling (from 44100 to 16000)
-  2. Noise Threshold Detection (Using envelope detection)
+  * Downsampling (from 44100 to 16000)
+  * Noise Threshold Detection (Using envelope detection)
   
 
 ### Getting Started
