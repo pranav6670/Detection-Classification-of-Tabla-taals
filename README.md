@@ -44,6 +44,8 @@ The work done by people around the world from the Music Information Retrieval<a 
 6. `predict.py` - Predict on a sample using this.
 7. `main.py` - Real-time visualisations, recording and classification
 
+---
+
 ### Getting Started
 
 1. Clone this repository `git clone https://github.com/pranav6670/Detection-Classification-of-Tabla-taals.git`.
@@ -60,19 +62,54 @@ The work done by people around the world from the Music Information Retrieval<a 
 
 7. Also run `main.py` after training to do the classification real-time.
 
+---
+
+### Tools used for real-time visuals
+
+1. Raw and FFT plot
+
+<img src="data_ft_raw.png" alt="Screenshot"/> 
+
+2. Spectogram
+
+<img src="spec.png" alt="Screenshot"/> 
+
+---
+
 ### HPSS
 
 <img src="1margin.png" alt="Screenshot"/> 
 
+---
+
 ### Data Distribution
 
-![Data](https://github.com/pranav6670/Detection-Classification-of-Tabla-taals/blob/master/distribution.png)
+<img src="distribution.png" alt="Screenshot"/> 
+
+---
+
+### Features
+
+| Time(Raw)  | FFT     | 
+|------------|---------| 
+|<img src="timedata.png" alt="Screenshot"/>    | <img src="data_ft.png" alt="Screenshot"/>  |
+
+
+| Filter Bank Energies  | MFCC    | 
+|------------|---------- | 
+| <img src="filterbankenergies.png" alt="Screenshot"/>   | <img src="data_mfccs.png" alt="Screenshot"/>    |
 
 ### GUI
 
 Made using PyQt5
 
-![GUI](https://github.com/pranav6670/Detection-Classification-of-Tabla-taals/blob/master/GUI.png)
+<img src="GUI.png" alt="Screenshot"/> 
+
+---
+
+
+
+
 
 
   
