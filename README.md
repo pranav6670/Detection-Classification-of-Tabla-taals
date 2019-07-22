@@ -1,5 +1,7 @@
 ## Automatic Detection and classification of tabla talas from given music
 
+---
+
 ## Introduction
 
 <div style="text-align: justify">
@@ -28,6 +30,8 @@ The work done by people around the world from the Music Information Retrieval<a 
   * Downsampling (from 44100 to 16000)
   * Noise Threshold Detection (Using envelope detection)
   * Harmonic-Percussive Source Separation [HPSS](https://librosa.github.io/librosa/auto_examples/plot_hprss.html)
+  
+  ---
   
   
 ### File description 
@@ -58,7 +62,7 @@ The work done by people around the world from the Music Information Retrieval<a 
 
 ### HPSS
 
-![HPSS](https://github.com/pranav6670/Detection-Classification-of-Tabla-taals/blob/master/1margin.png)
+<img src="1margin.png" alt="Screenshot"/> 
 
 ### Data Distribution
 
