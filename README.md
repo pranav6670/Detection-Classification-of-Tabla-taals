@@ -66,11 +66,11 @@ The work done by people around the world from the Music Information Retrieval<a 
 
 ### Tools used for real-time visuals
 
-1. Raw and FFT plot
+* Raw and FFT plot
 
 <img src="data_ft_raw.png" alt="Screenshot"/> 
 
-2. Spectogram
+* Spectogram
 
 <img src="spec.png" alt="Screenshot"/> 
 
