@@ -99,6 +99,8 @@ The work done by people around the world from the Music Information Retrieval<a 
 |------------|---------- | 
 | <img src="filterbankenergies.png" alt="Screenshot"/>   | <img src="data_mfccs.png" alt="Screenshot"/>    |
 
+---
+
 ### GUI
 
 Made using PyQt5
