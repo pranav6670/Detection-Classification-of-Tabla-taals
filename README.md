@@ -6,7 +6,7 @@
 
 <div style="text-align: justify">
 This project work aims on developing a system that would be able to first detect a <a href="https://en.wikipedia.org/wiki/Tabla">tabla</a> <a href="https://en.wikipedia.org/wiki/Tala_(music)">tala</a>
-from a mix(a song) of an Indian or Carnatic Classical Music and then classify the tala. Tala is specific pattern which occurs in all of the Indian Classical Music and Tabla is percussive accompanying instrument.
+from a mix(a song) of an Indian or Carnatic Classical Music and then classify the tala. Tala is a specific pattern which occurs in all of the Indian Classical Music and Tabla is the percussive accompanying instrument.
 </div>
 
 ---
