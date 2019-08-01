@@ -1,6 +1,5 @@
 ## Automatic Detection and Classification of tabla talas from the Indian Classical music
 
----
 
 ## Introduction
 
