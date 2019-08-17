@@ -14,7 +14,6 @@ import pickle
 import os
 from keras.models import load_model
 
-
 class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
     def __init__(self, parent=None):
         super(MainApp, self).__init__(parent)

@@ -73,21 +73,9 @@ def get_conv_model():
                      padding='same'))
     model.add(Conv2D(128, (3, 3), activation='relu', strides=(1,1),
                      padding='same'))
-    model.add(Conv2D(256, (3, 3), activation='relu', strides=(1,1),
-                     padding='same'))
-    model.add(Conv2D(512, (3, 3), activation='relu', strides=(1,1),
-                     padding='same'))
-    model.add(Conv2D(1024, (3, 3), activation='relu', strides=(1,1),
-                     padding='same'))
-    model.add(Conv2D(2048, (3, 3), activation='relu', strides=(1,1),
-                     padding='same'))
     model.add(MaxPool2D(2, 2))
-    model.add(Dropout(0.45))
+    model.add(Dropout(0.5))
     model.add(Flatten())
-    model.add(Dense(2048, activation='relu'))
-    model.add(Dense(1024, activation='relu'))
-    model.add(Dense(512, activation='relu'))
-    model.add(Dense(256, activation='relu'))
     model.add(Dense(128, activation='relu'))
     model.add(Dense(64, activation='relu'))
     model.add(Dense(8, activation='softmax')) # Change
