@@ -57,7 +57,7 @@ The work done by people around the world from the Music Information Retrieval
 
 4. Then create two folders named `models` and `pickles` into the directory.
 
-5. Run `model.py` to form pickles out of the data and start training. The `cfg.py` can be used to adjust the parameters of MFCC function. `In model.py`, `config.mode == 'conv'` will select the CNN model while `config.mode == 'rec'` will select the LSTM model. The difference between these is only the shape of input data to the model. Once pickles are formed for both the models, the data dosen't load again the next time, saving alot of time. The models are easy to modify.
+5. Run `model.py` to form pickles out of the data and start training. The `cfg.py` can be used to adjust the parameters of MFCC function. In `model.py`, `config.mode == 'conv'` will select the CNN model while `config.mode == 'rec'` will select the LSTM model. The difference between these is only the shape of input data to the model. Once pickles are formed for both the models, the data dosen't load again the next time, saving alot of time. The models are easy to modify.
 
 6. Under `models` directory, you will find the `conv.model` and `rec.model` formed, after training. Use these models to predict using `predict.py`
 
