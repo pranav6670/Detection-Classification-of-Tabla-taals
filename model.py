@@ -3,16 +3,16 @@ from scipy.io import wavfile
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-from keras.layers import Conv2D, MaxPool2D, Flatten, LSTM
-from keras.layers import Dropout, Dense, TimeDistributed
-from keras.models import Sequential
-from keras.utils import to_categorical
+from tensorflow.keras.layers import Conv2D, MaxPool2D, Flatten, LSTM
+from tensorflow.keras.layers import Dropout, Dense, TimeDistributed
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.utils import to_categorical
 from sklearn.utils.class_weight import compute_class_weight
 from tqdm import tqdm
 from python_speech_features import mfcc
 plt.style.use('seaborn-pastel')
 from cfg import Config
-from keras.callbacks import ModelCheckpoint
+from tensorflow.keras.callbacks import ModelCheckpoint
 import pickle
 
 

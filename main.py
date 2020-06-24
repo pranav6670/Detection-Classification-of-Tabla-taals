@@ -12,7 +12,7 @@ plt.style.use('ggplot')
 import predict
 import pickle
 import os
-from keras.models import load_model
+from tensorflow.keras.models import load_model
 
 class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
     def __init__(self, parent=None):

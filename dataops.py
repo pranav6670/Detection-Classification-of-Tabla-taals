@@ -11,7 +11,7 @@ plt.grid(True)
 
 def plot_signals(signals):
     fig, axes = plt.subplots(nrows=2, ncols=4, sharex=False,
-                             sharey=True, figsize=(20,5))
+                             sharey=True, figsize=(20, 5))
     fig.suptitle('Time Series', size=16)
     i = 0
     for x in range(2):
