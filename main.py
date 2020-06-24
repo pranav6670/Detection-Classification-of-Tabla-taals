@@ -203,35 +203,41 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
 
     def opendatadist(self):
         self.img = cv2.imread('distribution.png')
-        cv2.imshow('Distribution', self.img)
+        newim = cv2.resize(self.img, (1024, 576))
+        cv2.imshow('Distribution', newim)
 
     def ondistclicked(self):
         self.datadis.clicked.connect(self.opendatadist)
 
     def openraw(self):
         self.img = cv2.imread('timedata.png')
-        cv2.imshow('Time data', self.img)
+        newim = cv2.resize(self.img, (1024, 576))
+        cv2.imshow('Time data', newim)
 
     def onrawclicked(self):
         self.timedata.clicked.connect(self.openraw)
 
     def openft(self):
         self.img = cv2.imread('data_ft.png')
-        cv2.imshow('Fourier Transform', self.img)
+        newim = cv2.resize(self.img, (1024, 576))
+        cv2.imshow('Fourier Transform', newim)
+
 
     def onftclicked(self):
         self.fastft.clicked.connect(self.openft)
 
     def openfbe(self):
         self.img = cv2.imread('filterbankenergies.png')
-        cv2.imshow('Filter Bank Energies', self.img)
+        newim = cv2.resize(self.img, (1024, 576))
+        cv2.imshow('Filter Bank Energies', newim)
 
     def onfbeclicked(self):
         self.fbe.clicked.connect(self.openfbe)
 
     def openmfcc(self):
         self.img = cv2.imread('data_mfccs.png')
-        cv2.imshow('MFCCs', self.img)
+        newim = cv2.resize(self.img, (1024, 576))
+        cv2.imshow('MFCCs', newim)
 
     def onmfccclicked(self):
         self.mfcccoe.clicked.connect(self.openmfcc)
@@ -259,7 +265,7 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
 
     def openlstmsumm(self):
         self.img = cv2.imread('rec_summ.png')
-        cv2.imshow('CNN Summary', self.img)
+        cv2.imshow('LSTM Summary', self.img)
 
     def onopenlstmsumclicked(self):
         self.lstm_sum.clicked.connect(self.openlstmsumm)
@@ -291,6 +297,7 @@ class MainApp(QtWidgets.QMainWindow, mainui.Ui_MainWindow):
 
     def onanalyzeclicked(self):
         self.analyze.clicked.connect(self.prediction)
+
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)

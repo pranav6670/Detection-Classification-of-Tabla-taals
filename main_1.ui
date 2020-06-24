@@ -76,7 +76,7 @@ background-color: rgb(255, 138, 138);
      <rect>
       <x>0</x>
       <y>10</y>
-      <width>741</width>
+      <width>611</width>
       <height>31</height>
      </rect>
     </property>
@@ -94,15 +94,15 @@ background-color: rgb(255, 138, 138);
 font: 12pt &quot;Comfortaa&quot;;</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;Automatic Detection and Classification of tabla&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Automatic Detection and Classification of tabla&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="title2">
     <property name="geometry">
      <rect>
-      <x>7</x>
-      <y>50</y>
-      <width>541</width>
+      <x>0</x>
+      <y>40</y>
+      <width>451</width>
       <height>31</height>
      </rect>
     </property>
@@ -120,7 +120,7 @@ font: 12pt &quot;Comfortaa&quot;;</string>
 font: 12pt &quot;Comfortaa&quot;;</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;taalas from Indian Classical Music &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;taalas from Indian Classical Music &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QFrame" name="frame">

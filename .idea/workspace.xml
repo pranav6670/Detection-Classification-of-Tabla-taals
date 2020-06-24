@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="73955db2-7166-448b-a020-900152631ce8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg.py" beforeDir="false" afterPath="$PROJECT_DIR$/cfg.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/createcsv.py" beforeDir="false" afterPath="$PROJECT_DIR$/createcsv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataops.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataops.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/predict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_1.ui" beforeDir="false" afterPath="$PROJECT_DIR$/main_1.ui" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -304,14 +300,8 @@
       <workItem from="1566053553351" duration="351000" />
       <workItem from="1579441425073" duration="195000" />
       <workItem from="1587472024025" duration="199000" />
-      <workItem from="1592979556625" duration="1264000" />
-    </task>
-    <task id="LOCAL-00116" summary="Changes to Main and GUI">
-      <created>1556462320158</created>
-      <option name="number" value="00116" />
-      <option name="presentableId" value="LOCAL-00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1556462320160</updated>
+      <workItem from="1592979556625" duration="1330000" />
+      <workItem from="1592984545844" duration="450000" />
     </task>
     <task id="LOCAL-00117" summary="Changes to Main and GUI">
       <created>1556463955305</created>
@@ -649,7 +639,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566053891951</updated>
     </task>
-    <option name="localTasksCounter" value="165" />
+    <task id="LOCAL-00165" summary="Minor code changes">
+      <created>1592982381169</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1592982381169</updated>
+    </task>
+    <option name="localTasksCounter" value="166" />
     <servers />
   </component>
   <component name="TodoView">
@@ -665,7 +662,6 @@
     <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added PyAudio real time visuals" />
     <MESSAGE value="GUI in PyQt4instead of Tkinter" />
     <MESSAGE value="Audio visual modified to class and using Qt" />
     <MESSAGE value="Creating my model" />
@@ -690,29 +686,22 @@
     <MESSAGE value="Modelling and Training" />
     <MESSAGE value="Path Cleaning" />
     <MESSAGE value="Changed config" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed config" />
+    <MESSAGE value="Minor code changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor code changes" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="228" y="27" width="955" height="741" key="CommitChangelistDialog2" timestamp="1592982380160">
+      <screen x="55" y="27" width="1311" height="741" />
+    </state>
+    <state x="228" y="27" width="955" height="741" key="CommitChangelistDialog2/55.27.1311.741@55.27.1311.741" timestamp="1592982380160" />
     <state x="466" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1587472219826">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="466" y="154" width="424" height="484" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1587472219826" />
-    <state width="1320" height="210" key="GridCell.Tab.0.bottom" timestamp="1579441624478">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state x="305" y="128" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1592982387922">
+      <screen x="55" y="27" width="1311" height="741" />
     </state>
-    <state width="1320" height="210" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1579441624478" />
-    <state width="1320" height="210" key="GridCell.Tab.0.center" timestamp="1579441624477">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state width="1320" height="210" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1579441624477" />
-    <state width="1320" height="210" key="GridCell.Tab.0.left" timestamp="1579441624477">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state width="1320" height="210" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1579441624477" />
-    <state width="1320" height="210" key="GridCell.Tab.0.right" timestamp="1579441624478">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state width="1320" height="210" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1579441624478" />
+    <state x="305" y="128" width="800" height="536" key="Vcs.Push.Dialog.v2/55.27.1311.741@55.27.1311.741" timestamp="1592982387922" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
