@@ -1,6 +1,7 @@
 ## Automatic Detection and Classification of tabla talas from the Indian Classical music
-
-
+```diff
+! TensorFlow Community Spotlight Winner(First of the program!)
+```
 ## Introduction
 
 <div style="text-align: justify">
