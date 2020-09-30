@@ -101,7 +101,6 @@ Made using PyQt5
 
 
 
-Main Reference for the project is [here](https://www.youtube.com/user/seth8141/)
 
 
 
